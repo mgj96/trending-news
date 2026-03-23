@@ -20,7 +20,10 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Run script
-        run: python trending.py 
+        env:
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        run: python trending.py
 
       - name: Commit and Push
         run: |

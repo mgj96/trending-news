@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 import os
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 def get_github_trending():
     url = "https://github.com/trending"
@@ -66,3 +69,34 @@ def save_as_html(data):
 if __name__ == "__main__":
     data = get_github_trending()
     save_as_html(data)
+
+    def send_email(html_content):
+    # GitHub Secrets에서 환경변수 가져오기
+    email_user = os.environ.get('EMAIL_USER')
+    email_password = os.environ.get('EMAIL_PASSWORD')
+    
+    if not email_user or not email_password:
+        print("이메일 설정 정보가 없습니다.")
+        return
+
+    msg = MIMEMultipart()
+    msg['From'] = email_user
+    msg['To'] = email_user  # 본인에게 발송
+    msg['Subject'] = f"🚀 GitHub Trending Report ({datetime.now().strftime('%Y-%m-%d')})"
+
+    msg.attach(MIMEText(html_content, 'html'))
+
+    try:
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+            smtp.login(email_user, email_password)
+            smtp.send_message(msg)
+        print("이메일 발송 성공!")
+    except Exception as e:
+        print(f"이메일 발송 실패: {e}")
+
+if __name__ == "__main__":
+    data = get_github_trending()
+    # HTML 생성 시 사용한 문자열을 변수에 담아 이메일로 전달
+    html_report = make_html_string(data) # HTML 생성 함수를 문자열 반환형으로 수정 권장
+    save_as_html(html_report) 
+    send_email(html_report)
