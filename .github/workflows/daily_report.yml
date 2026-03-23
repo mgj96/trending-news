@@ -1,0 +1,24 @@
+name: Daily GitHub Trending Report
+on:
+  schedule:
+    - cron: '0 0 * * *' # 매일 한국시간 오전 9시 (UTC 00:00)
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Run script
+        run: python your_script_name.py
+      - name: Commit and Push
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add outputs/
+          git commit -m "Add daily trending report $(date +%Y-%m-%d)"
+          git push
