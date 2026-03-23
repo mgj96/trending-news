@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
       - name: Run script
-        run: python your_script_name.py # 실제 파이썬 파일 이름으로 수정 확인!
+        run: python trending.py # 실제 파이썬 파일 이름으로 수정 확인!
       - name: Commit and Push
         run: |
           git config --global user.name 'github-actions[bot]'
