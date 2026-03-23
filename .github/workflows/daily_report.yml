@@ -1,26 +1,37 @@
 name: Daily GitHub Trending Report
 on:
   schedule:
-    - cron: '0 0 * * *' # 매일 한국시간 오전 9시 (UTC 00:00)
-  workflow_dispatch:
+    - cron: '0 0 * * *' # 매일 한국시간 오전 9시
+  workflow_dispatch:    # 수동 실행 버튼
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4 # 최신 버전 사용
+
+      - name: Check files in runner
+        # 현재 실행 환경에 어떤 파일들이 있는지 목록을 출력합니다. (에러 확인용)
+        run: ls -R
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
+
       - name: Install dependencies
         run: pip install requests beautifulsoup4
+
       - name: Run script
-        run: python trending.py # 실제 파이썬 파일 이름으로 수정 확인!
+        # 파일이 루트에 있다면 그대로 실행, 폴더 안에 있다면 경로 수정 필요
+        run: python trending.py 
+
       - name: Commit and Push
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          mkdir -p outputs
           git add outputs/
           git commit -m "Add daily trending report $(date +%Y-%m-%d)" || echo "No changes to commit"
           git push
