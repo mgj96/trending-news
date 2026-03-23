@@ -66,11 +66,7 @@ def save_as_html(data):
         f.write(html_content)
     print(f"리포트 생성 완료: {filename}")
 
-if __name__ == "__main__":
-    data = get_github_trending()
-    save_as_html(data)
-
-    def send_email(html_content):
+def send_email(html_content):
     # GitHub Secrets에서 환경변수 가져오기
     email_user = os.environ.get('EMAIL_USER')
     email_password = os.environ.get('EMAIL_PASSWORD')
