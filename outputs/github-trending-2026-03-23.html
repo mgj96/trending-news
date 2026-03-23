@@ -3,15 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <style>
-            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.8; padding: 20px; color: #333; }
-            .container { max-width: 800px; margin: auto; border: 1px solid #ddd; padding: 20px; border-radius: 10px; }
-            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; }
-            .repo { margin-bottom: 30px; padding: 15px; background-color: #f6f8fa; border-radius: 6px; }
-            .repo-title { font-size: 1.2em; font-weight: bold; margin-bottom: 10px; }
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.6; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            .repo { margin-bottom: 25px; padding: 20px; border: 1px solid #e1e4e8; border-radius: 8px; transition: all 0.2s ease; }
+            .repo:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-color: #0366d6; }
+            .repo-title { font-size: 1.3em; font-weight: bold; margin-bottom: 12px; }
             a { color: #0366d6; text-decoration: none; }
             a:hover { text-decoration: underline; }
-            .desc { color: #586069; margin-bottom: 10px; }
-            .detail { font-size: 0.9em; color: #444; background: #fff; padding: 10px; border-left: 4px solid #28a745; }
+            .stats { margin-bottom: 15px; display: flex; gap: 10px; flex-wrap: wrap; }
+            .badge { padding: 5px 10px; border-radius: 20px; font-size: 0.85em; font-weight: bold; display: flex; align-items: center; gap: 5px; }
+            .badge.lang { background-color: #e1efff; color: #0969da; border: 1px solid #b6d4fe; }
+            .badge.star { background-color: #fff8c5; color: #9a6700; border: 1px solid #f9e28f; }
+            .badge.fork { background-color: #f3f2f2; color: #57606a; border: 1px solid #d0d7de; }
+            .badge.today { background-color: #dafbe1; color: #1a7f37; border: 1px solid #a3e635; }
+            .desc { color: #24292f; margin-bottom: 15px; font-size: 0.95em; }
+            .detail { font-size: 0.9em; color: #57606a; background: #f6f8fa; padding: 12px; border-radius: 6px; border-left: 4px solid #0969da; line-height: 1.5; }
         </style>
     </head>
     <body>
@@ -20,116 +27,196 @@
             <p>마광님, 오늘 자 GitHub 트렌딩 주요 프로젝트 요약 리포트입니다.</p>
     
         <div class="repo">
-            <div class="repo-title">🔗 <a href="https://github.com/FujiwaraChoki/MoneyPrinterV2">FujiwaraChoki/MoneyPrinterV2</a></div>
+            <div class="repo-title">🔗 <a href="https://github.com/FujiwaraChoki/MoneyPrinterV2" target="_blank">FujiwaraChoki/MoneyPrinterV2</a></div>
+            
+            <div class="stats">
+                <span class="badge lang">💻 Python</span>
+                <span class="badge star">⭐ 20,911</span>
+                <span class="badge fork">🍴 2,172</span>
+                <span class="badge today">📈 1,787 stars today</span>
+            </div>
+
             <div class="desc"><strong>요약:</strong> Automate the process of making money online.</div>
+            
             <div class="detail">
-                <strong>상세 분석:</strong> 이 프로젝트는 현재 개발자 커뮤니티에서 높은 관심을 받고 있는 오픈소스입니다. 
-                해당 레포지토리는 최신 기술 스택을 활용하거나 혁신적인 솔루션을 제안하고 있으며, 
-                코드 구조와 스타(Star) 증가 추세를 볼 때 향후 영향력이 커질 것으로 예상됩니다. 
-                자세한 구현 방식은 위 링크를 통해 직접 확인해 보시는 것을 추천드립니다.
+                <strong>💡 포인트:</strong> 이 레포지토리는 오늘 하루 동안 <strong>1,787 stars today</strong>를 획득하며 급상승 중입니다. 
+                현재 <strong>Python</strong> 생태계에서 주목받고 있으며, 전체 20,911개의 스타와 2,172개의 포크를 기록하고 있습니다. 
+                어떤 기술적 차별점이 있는지 코드를 직접 확인해 보세요!
             </div>
         </div>
         
         <div class="repo">
-            <div class="repo-title">🔗 <a href="https://github.com/TauricResearch/TradingAgents">TauricResearch/TradingAgents</a></div>
+            <div class="repo-title">🔗 <a href="https://github.com/TauricResearch/TradingAgents" target="_blank">TauricResearch/TradingAgents</a></div>
+            
+            <div class="stats">
+                <span class="badge lang">💻 Python</span>
+                <span class="badge star">⭐ 38,188</span>
+                <span class="badge fork">🍴 7,174</span>
+                <span class="badge today">📈 1,051 stars today</span>
+            </div>
+
             <div class="desc"><strong>요약:</strong> TradingAgents: Multi-Agents LLM Financial Trading Framework</div>
+            
             <div class="detail">
-                <strong>상세 분석:</strong> 이 프로젝트는 현재 개발자 커뮤니티에서 높은 관심을 받고 있는 오픈소스입니다. 
-                해당 레포지토리는 최신 기술 스택을 활용하거나 혁신적인 솔루션을 제안하고 있으며, 
-                코드 구조와 스타(Star) 증가 추세를 볼 때 향후 영향력이 커질 것으로 예상됩니다. 
-                자세한 구현 방식은 위 링크를 통해 직접 확인해 보시는 것을 추천드립니다.
+                <strong>💡 포인트:</strong> 이 레포지토리는 오늘 하루 동안 <strong>1,051 stars today</strong>를 획득하며 급상승 중입니다. 
+                현재 <strong>Python</strong> 생태계에서 주목받고 있으며, 전체 38,188개의 스타와 7,174개의 포크를 기록하고 있습니다. 
+                어떤 기술적 차별점이 있는지 코드를 직접 확인해 보세요!
             </div>
         </div>
         
         <div class="repo">
-            <div class="repo-title">🔗 <a href="https://github.com/vxcontrol/pentagi">vxcontrol/pentagi</a></div>
+            <div class="repo-title">🔗 <a href="https://github.com/vxcontrol/pentagi" target="_blank">vxcontrol/pentagi</a></div>
+            
+            <div class="stats">
+                <span class="badge lang">💻 Go</span>
+                <span class="badge star">⭐ 12,475</span>
+                <span class="badge fork">🍴 1,556</span>
+                <span class="badge today">📈 1,069 stars today</span>
+            </div>
+
             <div class="desc"><strong>요약:</strong> Fully autonomous AI Agents system capable of performing complex penetration testing tasks</div>
+            
             <div class="detail">
-                <strong>상세 분석:</strong> 이 프로젝트는 현재 개발자 커뮤니티에서 높은 관심을 받고 있는 오픈소스입니다. 
-                해당 레포지토리는 최신 기술 스택을 활용하거나 혁신적인 솔루션을 제안하고 있으며, 
-                코드 구조와 스타(Star) 증가 추세를 볼 때 향후 영향력이 커질 것으로 예상됩니다. 
-                자세한 구현 방식은 위 링크를 통해 직접 확인해 보시는 것을 추천드립니다.
+                <strong>💡 포인트:</strong> 이 레포지토리는 오늘 하루 동안 <strong>1,069 stars today</strong>를 획득하며 급상승 중입니다. 
+                현재 <strong>Go</strong> 생태계에서 주목받고 있으며, 전체 12,475개의 스타와 1,556개의 포크를 기록하고 있습니다. 
+                어떤 기술적 차별점이 있는지 코드를 직접 확인해 보세요!
             </div>
         </div>
         
         <div class="repo">
-            <div class="repo-title">🔗 <a href="https://github.com/jamwithai/production-agentic-rag-course">jamwithai/production-agentic-rag-course</a></div>
+            <div class="repo-title">🔗 <a href="https://github.com/jamwithai/production-agentic-rag-course" target="_blank">jamwithai/production-agentic-rag-course</a></div>
+            
+            <div class="stats">
+                <span class="badge lang">💻 Python</span>
+                <span class="badge star">⭐ 4,976</span>
+                <span class="badge fork">🍴 1,197</span>
+                <span class="badge today">📈 237 stars today</span>
+            </div>
+
             <div class="desc"><strong>요약:</strong> 상세 설명이 제공되지 않은 프로젝트입니다.</div>
+            
             <div class="detail">
-                <strong>상세 분석:</strong> 이 프로젝트는 현재 개발자 커뮤니티에서 높은 관심을 받고 있는 오픈소스입니다. 
-                해당 레포지토리는 최신 기술 스택을 활용하거나 혁신적인 솔루션을 제안하고 있으며, 
-                코드 구조와 스타(Star) 증가 추세를 볼 때 향후 영향력이 커질 것으로 예상됩니다. 
-                자세한 구현 방식은 위 링크를 통해 직접 확인해 보시는 것을 추천드립니다.
+                <strong>💡 포인트:</strong> 이 레포지토리는 오늘 하루 동안 <strong>237 stars today</strong>를 획득하며 급상승 중입니다. 
+                현재 <strong>Python</strong> 생태계에서 주목받고 있으며, 전체 4,976개의 스타와 1,197개의 포크를 기록하고 있습니다. 
+                어떤 기술적 차별점이 있는지 코드를 직접 확인해 보세요!
             </div>
         </div>
         
         <div class="repo">
-            <div class="repo-title">🔗 <a href="https://github.com/affaan-m/everything-claude-code">affaan-m/everything-claude-code</a></div>
+            <div class="repo-title">🔗 <a href="https://github.com/affaan-m/everything-claude-code" target="_blank">affaan-m/everything-claude-code</a></div>
+            
+            <div class="stats">
+                <span class="badge lang">💻 JavaScript</span>
+                <span class="badge star">⭐ 99,732</span>
+                <span class="badge fork">🍴 12,999</span>
+                <span class="badge today">📈 3,724 stars today</span>
+            </div>
+
             <div class="desc"><strong>요약:</strong> The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</div>
+            
             <div class="detail">
-                <strong>상세 분석:</strong> 이 프로젝트는 현재 개발자 커뮤니티에서 높은 관심을 받고 있는 오픈소스입니다. 
-                해당 레포지토리는 최신 기술 스택을 활용하거나 혁신적인 솔루션을 제안하고 있으며, 
-                코드 구조와 스타(Star) 증가 추세를 볼 때 향후 영향력이 커질 것으로 예상됩니다. 
-                자세한 구현 방식은 위 링크를 통해 직접 확인해 보시는 것을 추천드립니다.
+                <strong>💡 포인트:</strong> 이 레포지토리는 오늘 하루 동안 <strong>3,724 stars today</strong>를 획득하며 급상승 중입니다. 
+                현재 <strong>JavaScript</strong> 생태계에서 주목받고 있으며, 전체 99,732개의 스타와 12,999개의 포크를 기록하고 있습니다. 
+                어떤 기술적 차별점이 있는지 코드를 직접 확인해 보세요!
             </div>
         </div>
         
         <div class="repo">
-            <div class="repo-title">🔗 <a href="https://github.com/jarrodwatts/claude-hud">jarrodwatts/claude-hud</a></div>
+            <div class="repo-title">🔗 <a href="https://github.com/jarrodwatts/claude-hud" target="_blank">jarrodwatts/claude-hud</a></div>
+            
+            <div class="stats">
+                <span class="badge lang">💻 JavaScript</span>
+                <span class="badge star">⭐ 11,588</span>
+                <span class="badge fork">🍴 489</span>
+                <span class="badge today">📈 834 stars today</span>
+            </div>
+
             <div class="desc"><strong>요약:</strong> A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress</div>
+            
             <div class="detail">
-                <strong>상세 분석:</strong> 이 프로젝트는 현재 개발자 커뮤니티에서 높은 관심을 받고 있는 오픈소스입니다. 
-                해당 레포지토리는 최신 기술 스택을 활용하거나 혁신적인 솔루션을 제안하고 있으며, 
-                코드 구조와 스타(Star) 증가 추세를 볼 때 향후 영향력이 커질 것으로 예상됩니다. 
-                자세한 구현 방식은 위 링크를 통해 직접 확인해 보시는 것을 추천드립니다.
+                <strong>💡 포인트:</strong> 이 레포지토리는 오늘 하루 동안 <strong>834 stars today</strong>를 획득하며 급상승 중입니다. 
+                현재 <strong>JavaScript</strong> 생태계에서 주목받고 있으며, 전체 11,588개의 스타와 489개의 포크를 기록하고 있습니다. 
+                어떤 기술적 차별점이 있는지 코드를 직접 확인해 보세요!
             </div>
         </div>
         
         <div class="repo">
-            <div class="repo-title">🔗 <a href="https://github.com/Crosstalk-Solutions/project-nomad">Crosstalk-Solutions/project-nomad</a></div>
+            <div class="repo-title">🔗 <a href="https://github.com/Crosstalk-Solutions/project-nomad" target="_blank">Crosstalk-Solutions/project-nomad</a></div>
+            
+            <div class="stats">
+                <span class="badge lang">💻 TypeScript</span>
+                <span class="badge star">⭐ 11,323</span>
+                <span class="badge fork">🍴 1,052</span>
+                <span class="badge today">📈 2,300 stars today</span>
+            </div>
+
             <div class="desc"><strong>요약:</strong> Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.</div>
+            
             <div class="detail">
-                <strong>상세 분석:</strong> 이 프로젝트는 현재 개발자 커뮤니티에서 높은 관심을 받고 있는 오픈소스입니다. 
-                해당 레포지토리는 최신 기술 스택을 활용하거나 혁신적인 솔루션을 제안하고 있으며, 
-                코드 구조와 스타(Star) 증가 추세를 볼 때 향후 영향력이 커질 것으로 예상됩니다. 
-                자세한 구현 방식은 위 링크를 통해 직접 확인해 보시는 것을 추천드립니다.
+                <strong>💡 포인트:</strong> 이 레포지토리는 오늘 하루 동안 <strong>2,300 stars today</strong>를 획득하며 급상승 중입니다. 
+                현재 <strong>TypeScript</strong> 생태계에서 주목받고 있으며, 전체 11,323개의 스타와 1,052개의 포크를 기록하고 있습니다. 
+                어떤 기술적 차별점이 있는지 코드를 직접 확인해 보세요!
             </div>
         </div>
         
         <div class="repo">
-            <div class="repo-title">🔗 <a href="https://github.com/systemd/systemd">systemd/systemd</a></div>
+            <div class="repo-title">🔗 <a href="https://github.com/systemd/systemd" target="_blank">systemd/systemd</a></div>
+            
+            <div class="stats">
+                <span class="badge lang">💻 C</span>
+                <span class="badge star">⭐ 16,078</span>
+                <span class="badge fork">🍴 4,374</span>
+                <span class="badge today">📈 313 stars today</span>
+            </div>
+
             <div class="desc"><strong>요약:</strong> The systemd System and Service Manager</div>
+            
             <div class="detail">
-                <strong>상세 분석:</strong> 이 프로젝트는 현재 개발자 커뮤니티에서 높은 관심을 받고 있는 오픈소스입니다. 
-                해당 레포지토리는 최신 기술 스택을 활용하거나 혁신적인 솔루션을 제안하고 있으며, 
-                코드 구조와 스타(Star) 증가 추세를 볼 때 향후 영향력이 커질 것으로 예상됩니다. 
-                자세한 구현 방식은 위 링크를 통해 직접 확인해 보시는 것을 추천드립니다.
+                <strong>💡 포인트:</strong> 이 레포지토리는 오늘 하루 동안 <strong>313 stars today</strong>를 획득하며 급상승 중입니다. 
+                현재 <strong>C</strong> 생태계에서 주목받고 있으며, 전체 16,078개의 스타와 4,374개의 포크를 기록하고 있습니다. 
+                어떤 기술적 차별점이 있는지 코드를 직접 확인해 보세요!
             </div>
         </div>
         
         <div class="repo">
-            <div class="repo-title">🔗 <a href="https://github.com/browser-use/browser-use">browser-use/browser-use</a></div>
+            <div class="repo-title">🔗 <a href="https://github.com/browser-use/browser-use" target="_blank">browser-use/browser-use</a></div>
+            
+            <div class="stats">
+                <span class="badge lang">💻 Python</span>
+                <span class="badge star">⭐ 83,043</span>
+                <span class="badge fork">🍴 9,697</span>
+                <span class="badge today">📈 428 stars today</span>
+            </div>
+
             <div class="desc"><strong>요약:</strong> 🌐 Make websites accessible for AI agents. Automate tasks online with ease.</div>
+            
             <div class="detail">
-                <strong>상세 분석:</strong> 이 프로젝트는 현재 개발자 커뮤니티에서 높은 관심을 받고 있는 오픈소스입니다. 
-                해당 레포지토리는 최신 기술 스택을 활용하거나 혁신적인 솔루션을 제안하고 있으며, 
-                코드 구조와 스타(Star) 증가 추세를 볼 때 향후 영향력이 커질 것으로 예상됩니다. 
-                자세한 구현 방식은 위 링크를 통해 직접 확인해 보시는 것을 추천드립니다.
+                <strong>💡 포인트:</strong> 이 레포지토리는 오늘 하루 동안 <strong>428 stars today</strong>를 획득하며 급상승 중입니다. 
+                현재 <strong>Python</strong> 생태계에서 주목받고 있으며, 전체 83,043개의 스타와 9,697개의 포크를 기록하고 있습니다. 
+                어떤 기술적 차별점이 있는지 코드를 직접 확인해 보세요!
             </div>
         </div>
         
         <div class="repo">
-            <div class="repo-title">🔗 <a href="https://github.com/HKUDS/LightRAG">HKUDS/LightRAG</a></div>
+            <div class="repo-title">🔗 <a href="https://github.com/HKUDS/LightRAG" target="_blank">HKUDS/LightRAG</a></div>
+            
+            <div class="stats">
+                <span class="badge lang">💻 Python</span>
+                <span class="badge star">⭐ 30,212</span>
+                <span class="badge fork">🍴 4,328</span>
+                <span class="badge today">📈 220 stars today</span>
+            </div>
+
             <div class="desc"><strong>요약:</strong> [EMNLP2025] "LightRAG: Simple and Fast Retrieval-Augmented Generation"</div>
+            
             <div class="detail">
-                <strong>상세 분석:</strong> 이 프로젝트는 현재 개발자 커뮤니티에서 높은 관심을 받고 있는 오픈소스입니다. 
-                해당 레포지토리는 최신 기술 스택을 활용하거나 혁신적인 솔루션을 제안하고 있으며, 
-                코드 구조와 스타(Star) 증가 추세를 볼 때 향후 영향력이 커질 것으로 예상됩니다. 
-                자세한 구현 방식은 위 링크를 통해 직접 확인해 보시는 것을 추천드립니다.
+                <strong>💡 포인트:</strong> 이 레포지토리는 오늘 하루 동안 <strong>220 stars today</strong>를 획득하며 급상승 중입니다. 
+                현재 <strong>Python</strong> 생태계에서 주목받고 있으며, 전체 30,212개의 스타와 4,328개의 포크를 기록하고 있습니다. 
+                어떤 기술적 차별점이 있는지 코드를 직접 확인해 보세요!
             </div>
         </div>
         
-            <p style="text-align: center; color: #888; font-size: 0.8em;">본 리포트는 GitHub Actions를 통해 자동 생성되었습니다.</p>
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions를 통해 자동 생성되었습니다.</p>
         </div>
     </body>
     </html>
