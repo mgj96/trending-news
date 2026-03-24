@@ -1,32 +1,45 @@
-name: Daily GitHub Trending Report
+name: GitHub Trending AI Report
+
 on:
   schedule:
-    - cron: '13 22 * * *' #트래픽 지연 방지 위해 22:13 UTC (한국 시간 7:13 PM)로 설정
-  workflow_dispatch:    # 수동 실행 버튼
+    - cron: '13 22 * * *' # 매일 한국시간 오전 7시 13분에 실행 (서버 지연 방지)
+  workflow_dispatch: # 수동으로 즉시 실행해 볼 수 있는 버튼 활성화
+
+permissions:
+  contents: write # 봇이 레포지토리에 파일을 쓸 수 있도록 권한을 강제로 부여
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4 # 최신 버전 사용
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 버전 꼬임 방지를 위해 전체 히스토리를 가져옴
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 google-generativeai
 
-      - name: Run script
+      - name: Run python script
         env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-        run: python trending.py
+        run: python main.py
 
-      - name: Commit and Push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "🚀 Add daily trending report"
-          branch: main
+      - name: Force Commit and Push
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "🚀 Update daily trending report $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          
+          git push --force origin main
