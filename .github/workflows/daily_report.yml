@@ -32,7 +32,4 @@ jobs:
           git add .
           git commit -m "Add daily trending report $(date +'%Y-%m-%d')" || echo "No changes to commit"
           
-          # 핵심: Push 하기 전에 원격 저장소의 최신 상태를 병합(Rebase)합니다.
-          git pull --rebase origin main
-          
-          git push origin main
+          git push --force origin main
