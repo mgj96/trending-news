@@ -105,7 +105,7 @@ def get_github_trending():
         
         # AI 분석 호출
         ai_insight = analyze_with_ai(name, description, language)
-        time.sleep(2) # API Rate Limit(호출 제한) 방지를 위한 2초 대기
+        time.sleep(20) # API Rate Limit(호출 제한) 방지를 위한 20초 대기 무료 모델이라 RPM이 5뿐이라 횟수를 늘려 시간이 늦더라도 상관없게 변경
         
         trending_data.append({
             "name": name, 
