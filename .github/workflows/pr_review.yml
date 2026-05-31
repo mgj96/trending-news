@@ -1,0 +1,58 @@
+name: PR AI Review
+
+# 언제 도나: PR이 열릴 때(opened)와 다시 열릴 때(reopened)만.
+# ⚠️ synchronize(커밋 push마다 재실행)는 일부러 뺐다.
+#    무료 Gemini 키는 하루 호출 횟수 제한이 있어, push마다 리뷰하면 금방 소진된다.
+#    → PR당 사실상 1회 리뷰로 최소화.
+on:
+  pull_request:
+    types: [opened, reopened]
+
+# 권한은 최소로:
+#   - contents: read       → 코드 읽기
+#   - pull-requests: write → PR에 리뷰 코멘트 달기
+# 그 외 권한은 주지 않는다 (최소 권한 원칙).
+permissions:
+  contents: read
+  pull-requests: write
+
+# 같은 PR에서 새 실행이 시작되면 진행 중이던 이전 실행은 취소 (중복 호출 방지).
+concurrency:
+  group: pr-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  ai-review:
+    runs-on: ubuntu-latest
+    # 초안(draft) PR은 리뷰하지 않는다 → 불필요한 호출 절약.
+    if: github.event.pull_request.draft == false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # base와 비교하려면 전체 히스토리 필요
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install google-generativeai
+
+      - name: Extract diff
+        # base 브랜치와 PR의 차이만 추출 (3-dot: 공통조상 기준)
+        run: git diff origin/${{ github.base_ref }}...HEAD > pr.diff
+
+      - name: Run AI review
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/pr_review.py
+
+      - name: Post review comment
+        env:
+          GH_TOKEN: ${{ github.token }} # 깃허브가 자동 발급하는 임시 토큰
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} \
+            --body-file review.md \
+            -R ${{ github.repository }}
