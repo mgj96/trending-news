@@ -55,7 +55,15 @@ def main() -> int:
     model = genai.GenerativeModel(MODEL_NAME)
     resp = model.generate_content(REVIEW_PROMPT.format(diff=diff))
 
-    body = f"## 🤖 AI 코드 리뷰 ({MODEL_NAME})\n\n{resp.text}\n"
+    # 세이프티 필터 등으로 응답이 차단되면 resp.text 접근이 예외를 던진다.
+    # (봇이 PR #2에서 지적한 유효한 케이스 → 방어 코드 추가)
+    try:
+        review_text = resp.text
+    except (ValueError, AttributeError):
+        _write("⚠️ AI 응답을 가져오지 못했습니다 (안전 필터 차단 또는 빈 응답).")
+        return 0
+
+    body = f"## 🤖 AI 코드 리뷰 ({MODEL_NAME})\n\n{review_text}\n"
     if truncated:
         body += (
             f"\n> ⚠️ diff가 {MAX_DIFF_CHARS:,}자를 초과해 앞부분만 리뷰했습니다."
