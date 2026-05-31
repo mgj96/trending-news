@@ -2,7 +2,7 @@
 
 - 입력: pr.diff (워크플로우에서 git diff로 생성)
 - 출력: review.md (워크플로우에서 PR 코멘트로 게시)
-- 사용 모델: gemini-1.5-flash (빠르고 저렴, 코드 리뷰에 충분)
+- 사용 모델: gemini-3-flash-preview (trending.py와 동일 모델로 통일)
 """
 import os
 import sys
@@ -11,7 +11,7 @@ import google.generativeai as genai
 # diff가 너무 크면 토큰 초과 → 앞부분만 잘라서 보냄 (약 6만 자 ≈ 1.5만 토큰)
 MAX_DIFF_CHARS = 60_000
 
-MODEL_NAME = "gemini-1.5-flash"
+MODEL_NAME = "gemini-3-flash-preview"
 
 REVIEW_PROMPT = """당신은 시니어 개발자입니다. 아래 GitHub Pull Request의 diff를 리뷰하세요.
 
