@@ -53,7 +53,10 @@ def main() -> int:
 
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel(MODEL_NAME)
-    resp = model.generate_content(REVIEW_PROMPT.format(diff=diff))
+    # str.format 대신 replace 사용: diff에 중괄호({,})가 있어도 KeyError 안 남.
+    # (봇이 PR #2에서 지적한 유효한 케이스)
+    prompt = REVIEW_PROMPT.replace("{diff}", diff)
+    resp = model.generate_content(prompt)
 
     # 세이프티 필터 등으로 응답이 차단되면 resp.text 접근이 예외를 던진다.
     # (봇이 PR #2에서 지적한 유효한 케이스 → 방어 코드 추가)

@@ -1,10 +1,12 @@
 name: PR AI Review
 
-# 언제 도나: PR이 열리거나(opened), 새 커밋이 푸시되거나(synchronize),
-#           닫힌 PR이 다시 열릴 때(reopened). PR 1건당 위 이벤트마다 1회 리뷰.
+# 언제 도나: PR이 열릴 때(opened)와 다시 열릴 때(reopened)만.
+# ⚠️ synchronize(커밋 push마다 재실행)는 일부러 뺐다.
+#    무료 Gemini 키는 하루 호출 횟수 제한이 있어, push마다 리뷰하면 금방 소진된다.
+#    → PR당 사실상 1회 리뷰로 최소화.
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, reopened]
 
 # 권한은 최소로:
 #   - contents: read       → 코드 읽기
@@ -14,9 +16,16 @@ permissions:
   contents: read
   pull-requests: write
 
+# 같은 PR에서 새 실행이 시작되면 진행 중이던 이전 실행은 취소 (중복 호출 방지).
+concurrency:
+  group: pr-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   ai-review:
     runs-on: ubuntu-latest
+    # 초안(draft) PR은 리뷰하지 않는다 → 불필요한 호출 절약.
+    if: github.event.pull_request.draft == false
     steps:
       - name: Checkout
         uses: actions/checkout@v4
