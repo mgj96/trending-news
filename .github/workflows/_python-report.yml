@@ -1,0 +1,72 @@
+name: _Reusable Python Report
+
+# workflow_call 트리거 → 다른 워크플로우에서 호출 가능한 "재사용 워크플로우"
+# 트리거(cron 등)는 호출하는 쪽(caller)이 담당하고, 여기는 실행 로직만 책임진다.
+on:
+  workflow_call:
+    inputs:
+      python-version:
+        description: '사용할 Python 버전'
+        type: string
+        required: false
+        default: '3.10'
+      script-name:
+        description: '실행할 파이썬 스크립트 파일명'
+        type: string
+        required: true
+      pip-packages:
+        description: '설치할 pip 패키지 (공백 구분)'
+        type: string
+        required: false
+        default: 'requests beautifulsoup4 google-generativeai'
+      commit-message:
+        description: '결과를 커밋할 때 쓸 메시지'
+        type: string
+        required: false
+        default: '🚀 Update report'
+    secrets:
+      GEMINI_API_KEY:
+        required: true
+      EMAIL_USER:
+        required: true
+      EMAIL_PASSWORD:
+        required: true
+
+# 재사용 워크플로우도 자기 권한을 선언한다. 단, caller의 권한을 넘어설 수는 없다.
+permissions:
+  contents: write
+
+jobs:
+  run-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 버전 꼬임 방지를 위해 전체 히스토리를 가져옴
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ inputs.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ${{ inputs.pip-packages }}
+
+      - name: Run python script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        run: python ${{ inputs.script-name }}
+
+      - name: Force Commit and Push
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "${{ inputs.commit-message }} $(date +'%Y-%m-%d')" || echo "No changes to commit"
+
+          git push --force origin main
