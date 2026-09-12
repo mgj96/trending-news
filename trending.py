@@ -23,36 +23,43 @@ def analyze_with_ai(name, desc, language):
     """AI를 활용해 영문 설명을 한글로 요약하고, 파생/활용 가능성을 분석합니다."""
     if not ai_model or desc == "상세 설명이 제공되지 않은 프로젝트입니다.":
         return {
-            "summary_kr": f"(원본) {desc}", 
+            "summary_kr": f"(원본) {desc}",
+            "why_trending": "AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다.",
             "use_case": "AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다."
         }
-    
+
     prompt = f"""
     다음은 GitHub 트렌딩에 올라온 '{name}' 이라는 오픈소스 프로젝트입니다.
     사용 언어: {language}
     원문 설명: {desc}
 
-    이 정보를 바탕으로 다음 두 가지 항목을 한국어로 작성해주세요.
+    당신은 개발자 대상 뉴스레터를 쓰는 에디터입니다. 아래 세 항목을 한국어로,
+    구체적인 수치나 예시를 들어 작성해주세요. 뭉뚱그린 일반론("유용합니다", "생산성이 높아집니다" 등)은 피하고,
+    실제 써본 사람의 톤으로 씁니다.
+
     1. Summary: 이 프로젝트가 한눈에 어떤 서비스/툴인지 일반 개발자가 파악할 수 있도록 1~2줄로 명확히 요약.
-    2. UseCase: 이 프로젝트의 실무 사용 용도와, 포크(Fork)해서 어떤 새로운 서비스나 비즈니스 로직으로 파생/활용될 수 있는지에 대한 전문가적 인사이트 (2~3줄).
-    
+    2. WhyTrending: 지금 이 프로젝트가 왜 뜨고 있는지 — 어떤 문제를 해결하길래 개발자들이 몰리는지 1~2줄로 설명.
+    3. UseCase: 이 프로젝트의 실무 사용 용도와, 포크(Fork)해서 어떤 새로운 서비스나 비즈니스 로직으로 파생/활용될 수 있는지에 대한 전문가적 인사이트 (2~3줄).
+
     출력 형식은 반드시 아래와 같이 해주세요:
     Summary: [요약 내용]
+    WhyTrending: [트렌딩 이유]
     UseCase: [활용 방안 내용]
     """
-    
+
     try:
         response = ai_model.generate_content(prompt)
         text = response.text
-        
+
         # AI 응답 텍스트 파싱
-        summary_kr = text.split('Summary:')[1].split('UseCase:')[0].strip() if 'Summary:' in text else desc
+        summary_kr = text.split('Summary:')[1].split('WhyTrending:')[0].strip() if 'Summary:' in text else desc
+        why_trending = text.split('WhyTrending:')[1].split('UseCase:')[0].strip() if 'WhyTrending:' in text else "분석 불가"
         use_case = text.split('UseCase:')[1].strip() if 'UseCase:' in text else "분석 불가"
-        
-        return {"summary_kr": summary_kr, "use_case": use_case}
+
+        return {"summary_kr": summary_kr, "why_trending": why_trending, "use_case": use_case}
     except Exception as e:
         print(f"AI 분석 실패 ({name}): {e}")
-        return {"summary_kr": desc, "use_case": "AI 분석 중 오류가 발생했습니다."}
+        return {"summary_kr": desc, "why_trending": "AI 분석 중 오류가 발생했습니다.", "use_case": "AI 분석 중 오류가 발생했습니다."}
 
 # ---------------------------------------------------------
 # 2. GitHub 크롤링 로직
@@ -106,16 +113,18 @@ def get_github_trending():
         # AI 분석 호출
         ai_insight = analyze_with_ai(name, description, language)
         time.sleep(20) # API Rate Limit(호출 제한) 방지를 위한 20초 대기 무료 모델이라 RPM이 5뿐이라 횟수를 늘려 시간이 늦더라도 상관없게 변경
-        
+
         trending_data.append({
-            "name": name, 
-            "link": link, 
+            "rank": len(trending_data) + 1,
+            "name": name,
+            "link": link,
             "desc": description,
             "language": language,
             "stars": stars,
             "forks": forks,
             "today_stars": today_stars,
             "summary_kr": ai_insight['summary_kr'],
+            "why_trending": ai_insight['why_trending'],
             "use_case": ai_insight['use_case']
         })
         print(f"[{name}] 크롤링 및 분석 완료")
@@ -146,21 +155,42 @@ def make_html_string(data):
             .badge.fork {{ background-color: #f3f2f2; color: #57606a; border: 1px solid #d0d7de; }}
             .badge.today {{ background-color: #dafbe1; color: #1a7f37; border: 1px solid #a3e635; }}
             .desc {{ color: #24292f; margin-bottom: 15px; font-size: 1.05em; line-height: 1.5; }}
+            .why {{ color: #444; margin-bottom: 15px; font-size: 0.98em; line-height: 1.5; }}
             .detail {{ font-size: 0.95em; color: #444; background: #f6f8fa; padding: 15px; border-radius: 6px; border-left: 4px solid #0969da; line-height: 1.6; }}
             .eng-desc {{ font-size: 0.8em; color: #888; font-style: italic; margin-bottom: 10px; }}
+            .index-table {{ width: 100%; border-collapse: collapse; margin-bottom: 25px; }}
+            .index-table th, .index-table td {{ padding: 8px 10px; border-bottom: 1px solid #eaecef; text-align: left; font-size: 0.95em; }}
+            .index-table th {{ color: #57606a; font-weight: 600; }}
+            .index-table td.rank {{ color: #888; width: 2em; }}
         </style>
     </head>
     <body>
         <div class="container">
             <h1>🚀 GitHub Trending AI Report ({today})</h1>
             <p>마광님, AI가 분석한 오늘 자 GitHub 트렌딩 주요 프로젝트 요약 및 인사이트 리포트입니다.</p>
+
+            <table class="index-table">
+                <tr><th>#</th><th>이름</th><th>URL</th></tr>
     """
-    
+
+    for item in data:
+        html_content += f"""
+                <tr>
+                    <td class="rank">{item['rank']}</td>
+                    <td>{item['name']}</td>
+                    <td><a href="{item['link']}" target="_blank">{item['link']}</a></td>
+                </tr>
+        """
+
+    html_content += """
+            </table>
+    """
+
     for item in data:
         html_content += f"""
         <div class="repo">
-            <div class="repo-title">🔗 <a href="{item['link']}" target="_blank">{item['name']}</a></div>
-            
+            <div class="repo-title">🔗 #{item['rank']} <a href="{item['link']}" target="_blank">{item['name']}</a></div>
+
             <div class="stats">
                 <span class="badge lang">💻 {item['language']}</span>
                 <span class="badge star">⭐ {item['stars']}</span>
@@ -169,6 +199,7 @@ def make_html_string(data):
             </div>
 
             <div class="desc"><strong>🎯 한줄 요약:</strong> {item['summary_kr']}</div>
+            <div class="why"><strong>🔥 왜 뜨는지:</strong> {item['why_trending']}</div>
             <div class="eng-desc">원문: {item['desc']}</div>
             
             <div class="detail">
