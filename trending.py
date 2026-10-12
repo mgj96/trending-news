@@ -41,8 +41,8 @@ def analyze_with_ai(name, desc, language):
     당신은 개발자 대상 뉴스레터를 쓰는 에디터입니다. 아래 세 항목을 한국어로 작성해주세요.
     뭉뚱그린 일반론("유용합니다", "생산성이 높아집니다" 등)은 피하고, 가능하면 구체적인 수치나 예시를 넣습니다.
 
-    1. Summary: 이 프로젝트가 무엇인지 60자 이내로 요약. 메일 본문 목록용입니다.
-    2. WhyTrending: 개발자들이 왜 흥미를 갖는지 — 해결하는 문제나 신선한 점을 70자 이내로.
+    1. Summary: 이 프로젝트가 무엇인지 55~60자로 요약 (너무 짧게 쓰지 말고 이 분량을 채울 것). 메일 본문 목록용입니다.
+    2. WhyTrending: 개발자들이 왜 흥미를 갖는지 — 해결하는 문제나 신선한 점을 65~70자로 (최대 70자, 이 분량을 채울 것).
     (1, 2번 작성 규칙: 완결된 문장 대신 개조식 축약체로 씁니다. 명사형으로 끝내고(~함, ~용, ~기반, ~지원),
      널리 쓰이는 약어(LLM, GPU, API, CLI, OSS 등)를 적극 사용해 글자 수 안에 정보를 최대한 담으세요.
      예: "70B급 LLM을 4GB VRAM GPU에서 구동하는 추론 엔진")
@@ -379,8 +379,8 @@ def make_html_string(data, overview, themes, quiz):
             <div class="row">
                 <span class="meta">#{item['rank']}</span> <a href="{esc(item['link'])}" target="_blank"><strong>{esc(item['name'])}</strong></a>{badges}
                 <span class="meta">· 오늘 {esc(today_num(item['today_stars']))}</span><br>
-                {esc(short(item['summary_kr'], 70))}
-                <div class="why">🔥 {esc(short(item['why_trending'], 80))}</div>
+                {esc(short(item['summary_kr'], 75))}
+                <div class="why">🔥 {esc(short(item['why_trending'], 90))}</div>
             </div>
             """
 
@@ -484,8 +484,8 @@ def make_text_string(data, overview, themes, quiz):
             extras = [x for x in (label if cls != "same" else "", streak_label(item)) if x]
             extra = f"  [{' / '.join(extras)}]" if extras else ""
             lines.append(f" #{item['rank']} {item['name']}{extra} ({today_num(item['today_stars'])})")
-            lines.append(f"    {short(item['summary_kr'], 70)}")
-            lines.append(f"    🔥 {short(item['why_trending'], 80)}")
+            lines.append(f"    {short(item['summary_kr'], 75)}")
+            lines.append(f"    🔥 {short(item['why_trending'], 90)}")
             lines.append(f"    {item['link']}")
 
     lines += ["", "본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다."]
