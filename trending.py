@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 import os
+import sys
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -239,7 +240,7 @@ def send_email(html_content):
     
     if not email_user or not email_password:
         print("⚠️ 이메일 설정(Secrets)이 되어있지 않아 발송을 건너뜁니다.")
-        return
+        return True
 
     msg = MIMEMultipart()
     msg['From'] = email_user
@@ -253,8 +254,10 @@ def send_email(html_content):
             smtp.login(email_user, email_password)
             smtp.send_message(msg)
         print("이메일 발송 성공!")
+        return True
     except Exception as e:
         print(f"이메일 발송 실패: {e}")
+        return False
 
 # ---------------------------------------------------------
 # 메인 실행부
@@ -268,7 +271,9 @@ if __name__ == "__main__":
     if trending_data:
         html_report = make_html_string(trending_data)
         save_as_html(html_report)
-        send_email(html_report)
+        # 리포트 저장은 이미 끝난 상태. 메일 실패는 워크플로우를 실패로 만들어 알림이 가게 한다.
+        if not send_email(html_report):
+            sys.exit(1)
         print("모든 작업이 성공적으로 완료되었습니다.")
     else:
         print("트렌딩 데이터를 가져오지 못했습니다. 네트워크 상태나 GitHub 페이지 구조 변경을 확인하세요.")

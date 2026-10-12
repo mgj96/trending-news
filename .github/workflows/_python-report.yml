@@ -62,7 +62,9 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python ${{ inputs.script-name }}
 
+      # 메일 발송이 실패해 위 단계가 실패해도, 이미 저장된 리포트는 아카이빙한다.
       - name: Force Commit and Push
+        if: always()
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
