@@ -3,277 +3,109 @@
     <head>
         <meta charset="UTF-8">
         <style>
-            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.6; padding: 20px; color: #333; background-color: #f9f9f9; }
-            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
             h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
-            .repo { margin-bottom: 25px; padding: 20px; border: 1px solid #e1e4e8; border-radius: 8px; transition: all 0.2s ease; }
-            .repo-title { font-size: 1.3em; font-weight: bold; margin-bottom: 12px; }
             a { color: #0366d6; text-decoration: none; }
-            .stats { margin-bottom: 15px; display: flex; gap: 10px; flex-wrap: wrap; }
-            .badge { padding: 5px 10px; border-radius: 20px; font-size: 0.85em; font-weight: bold; display: flex; align-items: center; gap: 5px; }
-            .badge.lang { background-color: #e1efff; color: #0969da; border: 1px solid #b6d4fe; }
-            .badge.star { background-color: #fff8c5; color: #9a6700; border: 1px solid #f9e28f; }
-            .badge.fork { background-color: #f3f2f2; color: #57606a; border: 1px solid #d0d7de; }
-            .badge.today { background-color: #dafbe1; color: #1a7f37; border: 1px solid #a3e635; }
-            .desc { color: #24292f; margin-bottom: 15px; font-size: 1.05em; line-height: 1.5; }
-            .why { color: #444; margin-bottom: 15px; font-size: 0.98em; line-height: 1.5; }
-            .detail { font-size: 0.95em; color: #444; background: #f6f8fa; padding: 15px; border-radius: 6px; border-left: 4px solid #0969da; line-height: 1.6; }
-            .eng-desc { font-size: 0.8em; color: #888; font-style: italic; margin-bottom: 10px; }
-            .index-table { width: 100%; border-collapse: collapse; margin-bottom: 25px; }
-            .index-table th, .index-table td { padding: 8px 10px; border-bottom: 1px solid #eaecef; text-align: left; font-size: 0.95em; }
-            .index-table th { color: #57606a; font-weight: 600; }
-            .index-table td.rank { color: #888; width: 2em; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
         </style>
     </head>
     <body>
         <div class="container">
-            <h1>🚀 GitHub Trending AI Report (2026-10-12)</h1>
-            <p>마광님, AI가 분석한 오늘 자 GitHub 트렌딩 주요 프로젝트 요약 및 인사이트 리포트입니다.</p>
-
-            <table class="index-table">
-                <tr><th>#</th><th>이름</th><th>URL</th></tr>
+            <h1>📖 GitHub Trending 상세 리포트 (2026-10-12)</h1>
     
-                <tr>
-                    <td class="rank">1</td>
-                    <td>morluto/rea</td>
-                    <td><a href="https://github.com/morluto/rea" target="_blank">https://github.com/morluto/rea</a></td>
-                </tr>
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> 저사양 환경을 위한 LLM 최적화 기술과 AI 에이전트의 효율적 운영을 돕는 도구들이 강세를 보이고 있습니다.</div>
         
-                <tr>
-                    <td class="rank">2</td>
-                    <td>boykopovar/AnyPS5</td>
-                    <td><a href="https://github.com/boykopovar/AnyPS5" target="_blank">https://github.com/boykopovar/AnyPS5</a></td>
-                </tr>
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/morluto/rea" target="_blank">morluto/rea</a> <span class="meta">🔁 6일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 144,468 · 🍴 33,416 · 오늘 +45,495 · 🤖 AI 에이전트 및 워크플로우</div>
+                <div class="orig">원문: Reverse engineer anything with agents, from app behavior down to native binaries.</div>
+                <div><span class="label">🎯 요약:</span> AI 에이전트 기반 전방위 리버스 엔지니어링 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 전문가의 영역인 바이너리 분석과 앱 로직 추론을 LLM 에이전트로 자동화해 진입장벽을 허묾.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>LLM 에이전트가 정적·동적 분석 도구를 제어하며 복잡한 바이너리 실행 흐름과 API 호출 패턴을 인간 대신 추론하고 시각화합니다. 단순 코드 해석을 넘어 앱의 UI 동작과 내부 로직 사이의 상관관계를 규명하므로, 문서 없는 레거시 시스템의 비즈니스 로직 복원이나 비공개 프로토콜 분석에 즉시 투입 가능합니다. 보안 담당자는 이를 활용해 제로데이 취약점 탐지 프로세스를 자동화할 수 있으며, 개발자는 타사 앱의 아키텍처를 벤치마킹하는 시간을 획기적으로 단축할 수 있습니다. 프로젝트를 포크하여 특정 모바일 OS(Android/iOS) 전용 분석 자동화 봇이나 악성코드 탐지 특화 에이전트로 확장하는 아이디어를 추천합니다.</div>
+            </div>
         
-                <tr>
-                    <td class="rank">3</td>
-                    <td>storytold/artcraft</td>
-                    <td><a href="https://github.com/storytold/artcraft" target="_blank">https://github.com/storytold/artcraft</a></td>
-                </tr>
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank">bilawalsidhu/gods-eye-view</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">JavaScript · ⭐ 53,149 · 🍴 10,547 · 오늘 +1,903 · 🎨 시각화 및 창작 엔진</div>
+                <div class="orig">원문: A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.</div>
+                <div><span class="label">🎯 요약:</span> 실시간 데이터 기반의 브라우저용 오픈소스 3D 첩보 위성 시뮬레이터</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 실시간 OSINT 데이터를 고해상도 3D 환경에서 웹 기술로 완벽히 시각화하여 큰 관심을 받았습니다.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>위성 궤도, 항공기 위치, 선박 경로 등 흩어져 있는 실시간 공간 지능(Spatial Intelligence) 데이터를 포토리얼리스틱한 3D 지구 모델 위에 통합 시각화합니다. JavaScript 환경에서 별도 설치 없이 브라우저만으로 고해상도 렌더링을 구현했으며, 실제 물리 세계의 움직임을 추적하는 실시간 API 연동 방식을 채택했습니다. 물류 공급망 모니터링이나 재난 재해 관제 시스템의 프런트엔드 프로토타입으로 즉시 활용 가능한 수준의 완성도를 보여줍니다. 이 프로젝트를 포크하여 특정 지역의 탄소 배출량 실시간 지도나 도심 항공 모빌리티(UAM) 관제용 대시보드로 확장해볼 수 있습니다.</div>
+            </div>
         
-                <tr>
-                    <td class="rank">4</td>
-                    <td>cathrynlavery/diagram-design</td>
-                    <td><a href="https://github.com/cathrynlavery/diagram-design" target="_blank">https://github.com/cathrynlavery/diagram-design</a></td>
-                </tr>
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/mksglu/context-mode" target="_blank">mksglu/context-mode</a> <span class="chg up">▲2</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 27,045 · 🍴 1,935 · 오늘 +394 · 🤖 AI 에이전트 및 워크플로우</div>
+                <div class="orig">원문: Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.</div>
+                <div><span class="label">🎯 요약:</span> 토큰 소모 98% 절감, AI 에이전트용 컨텍스트 최적화 솔루션</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 도구 출력물 98% 압축과 MCP 기반 17개 플랫폼 통합 제어로 에이전트 비용·성능 문제를 해결합니다.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 코딩 에이전트가 실행하는 도구의 방대한 출력 데이터를 샌드박싱하여 컨텍스트 윈도우 점유율을 최대 98%까지 혁신적으로 줄여줍니다. MCP(Model Context Protocol)와 커스텀 후크를 활용해 Cursor, Windsurf 등 17개 이상의 플랫폼에서 세션 메모리를 중단 없이 유지하고 라우팅을 강제합니다. 대규모 프로젝트 분석 시 불필요한 로그로 인한 토큰 낭비를 막고 에이전트의 추론 정확도를 높이는 데 실무적 강점이 있습니다. 이 프로젝트를 포크하여 특정 사내 보안 규정에 맞춘 민감 정보 필터링 레이어나 특정 언어/프레임워크에 특화된 컨텍스트 요약 엔진으로 확장해볼 수 있습니다.</div>
+            </div>
         
-                <tr>
-                    <td class="rank">5</td>
-                    <td>bilawalsidhu/gods-eye-view</td>
-                    <td><a href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank">https://github.com/bilawalsidhu/gods-eye-view</a></td>
-                </tr>
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/storytold/artcraft" target="_blank">storytold/artcraft</a> <span class="chg down">▼1</span> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">Rust · ⭐ 20,832 · 🍴 3,370 · 오늘 +4,106 · 🎨 시각화 및 창작 엔진</div>
+                <div class="orig">원문: ArtCraft is an intentional crafting engine for artists, designers, and filmmakers</div>
+                <div><span class="label">🎯 요약:</span> 아티스트와 디자이너를 위한 Rust 기반 의도적 창작 엔진</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI의 무작위성 대신 창작자의 세밀한 의도를 반영하는 Rust 기반 고성능 워크플로우를 제공합니다.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 생성형 AI의 결과물 예측 불가능성을 해결하기 위해, 아티스트가 레이아웃과 구도를 정밀하게 제어할 수 있는 &#x27;의도적 창작&#x27; 환경을 구축합니다. Rust의 성능을 활용해 복잡한 이미지 연산과 워크플로우를 지연 없이 처리하며, 영화 스토리보드나 캐릭터 디자인처럼 일관성이 핵심인 전문 작업에 특화되어 있습니다. 실무에서는 게임 에셋의 스타일 가이드라인을 강제하거나 광고 영상의 프리비즈(Pre-viz) 제작용 도구로 활용하기 적합합니다. 이 프로젝트를 포크한다면 특정 화풍에 최적화된 커스텀 노드를 설계하거나, 블렌더(Blender) 같은 3D 툴과 실시간으로 연동되는 플러그인을 개발해볼 수 있습니다.</div>
+            </div>
         
-                <tr>
-                    <td class="rank">6</td>
-                    <td>pytorch/pytorch</td>
-                    <td><a href="https://github.com/pytorch/pytorch" target="_blank">https://github.com/pytorch/pytorch</a></td>
-                </tr>
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/open-webui/open-webui" target="_blank">open-webui/open-webui</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 154,707 · 🍴 22,624 · 오늘 +142 · 🤖 AI 에이전트 및 워크플로우</div>
+                <div class="orig">원문: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)</div>
+                <div><span class="label">🎯 요약:</span> Ollama와 OpenAI를 통합 관리하는 자립형 AI 인터페이스</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Docker 한 줄로 RAG와 로컬 LLM 전용 ChatGPT 환경을 즉시 구축할 수 있기 때문입니다.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Docker를 통해 Ollama, OpenAI API 등 다양한 백엔드를 단일 웹 환경에 통합하며, PDF 등 문서 기반의 RAG(검색 증강 생성) 기능을 별도 설정 없이 제공합니다. 보안상 외부 AI 사용이 제한된 기업 환경에서 로컬 서버 기반의 프라이빗한 사내 챗봇을 구축할 때 실무적인 대안으로 활용됩니다. 프로젝트를 포크한다면 특정 직무용 프롬프트 템플릿을 내장하거나, 기업 내부 DB와 연동하여 커스텀 데이터 대시보드 형태의 AI 에이전트로 확장할 수 있습니다.</div>
+            </div>
         
-                <tr>
-                    <td class="rank">7</td>
-                    <td>lyogavin/airllm</td>
-                    <td><a href="https://github.com/lyogavin/airllm" target="_blank">https://github.com/lyogavin/airllm</a></td>
-                </tr>
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/cathrynlavery/diagram-design" target="_blank">cathrynlavery/diagram-design</a> <span class="chg down">▼2</span> <span class="meta">🔁 5일 연속</span></div>
+                <div class="meta">HTML · ⭐ 52,168 · 🍴 3,285 · 오늘 +2,100 · 🤖 AI 에이전트 및 워크플로우</div>
+                <div class="orig">원문: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.</div>
+                <div><span class="label">🎯 요약:</span> AI 협업 도구 맞춤형 44종 고품질 SVG/HTML 다이어그램 디자인</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Mermaid의 한계를 넘는 44종의 고정밀 HTML/SVG 편집용 다이어그램 디자인</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Claude Code나 Cursor와 같은 최신 AI 에이전트의 복잡한 시스템 아키텍처를 전문 잡지 수준의 고품질 HTML/SVG로 시각화합니다. 외부 라이브러리 의존성이나 불필요한 그림자 효과를 배제한 44개의 순수 코드로 구성되어 있어, 기술 문서나 프레젠테이션에 즉시 삽입할 수 있는 뛰어난 가독성을 자랑합니다. 실무에서는 RAG 파이프라인이나 멀티 에이전트 워크플로우를 도식화하는 데 최적이며, 이를 포크하여 자사 브랜드 가이드에 맞춘 UI 컴포넌트 라이브러리로 변환하거나 LLM 출력을 이 레이아웃에 맞추어 자동 시각화하는 도구로 확장할 수 있습니다.</div>
+            </div>
         
-                <tr>
-                    <td class="rank">8</td>
-                    <td>chrislgarry/Apollo-11</td>
-                    <td><a href="https://github.com/chrislgarry/Apollo-11" target="_blank">https://github.com/chrislgarry/Apollo-11</a></td>
-                </tr>
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/lyogavin/airllm" target="_blank">lyogavin/airllm</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Jupyter Notebook · ⭐ 37,278 · 🍴 3,856 · 오늘 +886 · ⚡ LLM 효율화 및 추론 기술</div>
+                <div class="orig">원문: AirLLM 70B inference with single 4GB GPU</div>
+                <div><span class="label">🎯 요약:</span> [4GB 저사양 GPU로 70B 대형 모델을 돌리는 추론 기술]</div>
+                <div><span class="label">🔥 흥미 포인트:</span> [수천만 원대 장비 없이 4GB VRAM 노트북에서 70B 거대 모델을 로컬 추론하는 파격성 때문입니다.]</div>
+                <div class="detail"><span class="label">📖 상세</span><br>[기존 70B 모델 구동에 필요한 140GB 이상의 VRAM 대신, 레이어 단위로 가중치를 순차 로드하는 방식을 통해 4GB GPU에서도 추론을 구현했습니다. 모델 전체를 메모리에 올리지 않고 디스크나 시스템 RAM에서 필요한 레이어만 &#x27;스트리밍&#x27;하여 연산하는 계층별 추론 기술이 핵심입니다. 고가의 클라우드 비용 없이 일반 사양의 PC에서 최신 거대 모델을 로컬에 구축하여 보안이 중요한 기업 내부 데이터를 처리하는 데 활용할 수 있습니다. 이를 포크하여 저사양 엣지 디바이스용 추론 엔진을 개발하거나, 보급형 PC에서도 작동하는 로컬 RAG(검색 증강 생성) 시스템으로 확장하는 아이디어가 가능합니다.]</div>
+            </div>
         
-            </table>
-    
-        <div class="repo">
-            <div class="repo-title">🔗 #1 <a href="https://github.com/morluto/rea" target="_blank">morluto/rea</a></div>
-
-            <div class="stats">
-                <span class="badge lang">💻 TypeScript</span>
-                <span class="badge star">⭐ 106,003</span>
-                <span class="badge fork">🍴 23,380</span>
-                <span class="badge today">📈 25,599 stars today</span>
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/microsoft/BitNet" target="_blank">microsoft/BitNet</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">C++ · ⭐ 40,811 · 🍴 3,802 · 오늘 +134 · ⚡ LLM 효율화 및 추론 기술</div>
+                <div class="orig">원문: Official inference framework for 1-bit LLMs</div>
+                <div><span class="label">🎯 요약:</span> MS가 공개한 1비트 LLM 전용 C++ 추론 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 행렬 곱셈을 덧셈으로 대체해 CPU에서도 LLM을 초고속으로 구동함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 가중치를 -1, 0, 1의 삼진법으로 제한하는 &#x27;BitNet b1.58&#x27; 기술을 활용해 FP16 대비 메모리 사용량을 획기적으로 줄입니다. 무거운 행렬 곱셈(MatMul) 연산을 단순한 정수 덧셈으로 변환함으로써, 고가의 GPU 없이 일반 CPU에서도 에너지 효율적인 추론이 가능한 구조를 갖췄습니다. 특히 모바일 기기나 엣지 디바이스처럼 자원이 제한된 환경에서 로컬 LLM을 실행할 때 독보적인 성능을 발휘합니다. 이를 포크하여 개인용 온디바이스 비서나 저전력 임베디드 AI 기반의 실시간 번역기 등을 개발하는 아이디어로 확장할 수 있습니다.</div>
             </div>
-
-            <div class="desc"><strong>🎯 한줄 요약:</strong> TypeScript 기반의 LLM 에이전트를 활용해, 복잡한 앱의 네트워크 동작부터 로우레벨 네이티브 바이너리까지의 논리 구조를 자동으로 분석하고 해독하는 리버스 엔지니어링 툴킷입니다.</div>
-            <div class="why"><strong>🔥 왜 뜨는지:</strong> 어셈블리 지식이 부족해도 에이전트가 시스템 콜과 바이너리 패턴을 추론하여 로직을 설명해주므로, 기존에 수작업으로 수 시간씩 걸리던 난독화 해제 및 코드 흐름 파악 시간을 분 단위로 단축했기 때문입니다.</div>
-            <div class="eng-desc">원문: Reverse engineer anything with agents, from app behavior down to native binaries.</div>
-            
-            <div class="detail">
-                <strong>💡 활용 포인트 (Fork & Use Case):</strong><br>
-                보안 취약점 점검 시 폐쇄형(Closed-source) 바이너리 내 숨겨진 API 엔드포인트를 자동 추출하거나, 이를 포크하여 문서가 유실된 레거시 시스템의 바이너리를 현대적 언어로 자동 재작성(Re-platforming)하는 AI 파이프라인으로 확장할 수 있습니다.
-                <br><br>
-                <span style="font-size: 0.85em; color: #57606a;">
-                오늘 하루 <strong>25,599 stars today</strong>를 획득하며 <strong>TypeScript</strong> 생태계에서 주목받고 있습니다.
-                </span>
-            </div>
-        </div>
         
-        <div class="repo">
-            <div class="repo-title">🔗 #2 <a href="https://github.com/boykopovar/AnyPS5" target="_blank">boykopovar/AnyPS5</a></div>
-
-            <div class="stats">
-                <span class="badge lang">💻 C++</span>
-                <span class="badge star">⭐ 30,186</span>
-                <span class="badge fork">🍴 2,598</span>
-                <span class="badge today">📈 3,952 stars today</span>
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/Alishahryar1/free-claude-code" target="_blank">Alishahryar1/free-claude-code</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 58,696 · 🍴 9,279 · 오늘 +705 · ⚡ LLM 효율화 및 추론 기술</div>
+                <div class="orig">원문: Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)</div>
+                <div><span class="label">🎯 요약:</span> 13억 개 무료 토큰으로 Claude Code 등 11개 AI 모델을 전 기기에서 무료 사용</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 고가인 Claude API를 13억 토큰까지 무료로 풀고, IDE와 브라우저 등 11개 채널을 통합해 제공하기 때문입니다.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Claude Code, Codex 등 유료 AI 도구를 터미널, IDE, 모바일에서 결제 없이 쓸 수 있도록 브라우저 세션 기반의 멀티 하네스 연동을 지원합니다. 13억 개 이상의 무료 토큰과 음성 인식을 활용해, 비용 부담 없이 복잡한 로직 설계나 대규모 코드 베이스 분석을 실시간으로 수행할 수 있습니다. 프로젝트를 포크하여 특정 프레임워크 전용 디버깅 에이전트를 구축하거나, 사내 보안 정책을 결합한 비용 절감형 LLM 게이트웨이로 확장하기에 용이합니다.</div>
             </div>
-
-            <div class="desc"><strong>🎯 한줄 요약:</strong> PS5 전용 바이너리(ELF/Self)를 별도의 소스 코드 수정 없이 리눅스와 윈도우 환경에서 실행 가능한 형태로 자동 변환해주는 로우레벨 포팅 툴킷입니다.</div>
-            <div class="why"><strong>🔥 왜 뜨는지:</strong> PS5의 x86-64 아키텍처 특성을 활용해 복잡한 시스템 호출(Syscall)과 셰이더 코드를 PC 표준 API로 매핑하는 과정을 자동화함으로써, 기존 에뮬레이션 방식보다 압도적으로 낮은 오버헤드와 네이티브에 가까운 성능 구현 가능성을 제시했기 때문입니다.</div>
-            <div class="eng-desc">원문: Tool for automatic PS5 executables porting to Linux and Windows</div>
-            
-            <div class="detail">
-                <strong>💡 활용 포인트 (Fork & Use Case):</strong><br>
-                콘솔 독점 타이틀의 PC 이식 시 초기 프로토타이핑 시간을 획기적으로 단축하는 도구로 활용할 수 있으며, 이 프로젝트를 포크하여 소니 전용 그래픽 API(GNM/GNMX)를 Vulkan이나 DX12로 정적 컴파일하는 전용 번역 엔진을 구축하거나 보안 취약점 분석을 위한 샌드박스 환경으로 파생시킬 수 있습니다.
-                <br><br>
-                <span style="font-size: 0.85em; color: #57606a;">
-                오늘 하루 <strong>3,952 stars today</strong>를 획득하며 <strong>C++</strong> 생태계에서 주목받고 있습니다.
-                </span>
-            </div>
-        </div>
-        
-        <div class="repo">
-            <div class="repo-title">🔗 #3 <a href="https://github.com/storytold/artcraft" target="_blank">storytold/artcraft</a></div>
-
-            <div class="stats">
-                <span class="badge lang">💻 Rust</span>
-                <span class="badge star">⭐ 17,985</span>
-                <span class="badge fork">🍴 2,943</span>
-                <span class="badge today">📈 2,957 stars today</span>
-            </div>
-
-            <div class="desc"><strong>🎯 한줄 요약:</strong> Rust의 고성능 병렬 처리 성능을 활용해, 아티스트가 복잡한 생성형 AI 워크플로우와 에셋 조립 과정을 하나의 구조화된 '의도적(Intentional)' 파이프라인으로 설계하고 관리할 수 있게 돕는 저작 엔진입니다.</div>
-            <div class="why"><strong>🔥 왜 뜨는지:</strong> 단순 프롬프트 입력을 넘어 제어 가능한(Deterministic) 창작 공정에 대한 수요가 급증한 상황에서, 기존의 무거운 게임 엔진 대신 Rust 기반의 가볍고 빠른 코어로 복잡한 시각적 논리를 자동화했다는 점이 개발자들의 흥미를 끌고 있습니다.</div>
-            <div class="eng-desc">원문: ArtCraft is an intentional crafting engine for artists, designers, and filmmakers</div>
-            
-            <div class="detail">
-                <strong>💡 활용 포인트 (Fork & Use Case):</strong><br>
-                텍스트 시나리오를 바탕으로 레이아웃과 구도를 자동 배치하는 영상 제작 SaaS의 코어 엔진으로 즉시 활용 가능하며, 이를 포크하여 특정 브랜드의 디자인 가이드라인(색상, 비율, 로고 위치 등)을 엄격히 준수하면서 수만 개의 마케팅 배너를 생성하는 '기업 맞춤형 디자인 자동화 시스템'으로 비즈니스 모델을 확장할 수 있습니다.
-                <br><br>
-                <span style="font-size: 0.85em; color: #57606a;">
-                오늘 하루 <strong>2,957 stars today</strong>를 획득하며 <strong>Rust</strong> 생태계에서 주목받고 있습니다.
-                </span>
-            </div>
-        </div>
-        
-        <div class="repo">
-            <div class="repo-title">🔗 #4 <a href="https://github.com/cathrynlavery/diagram-design" target="_blank">cathrynlavery/diagram-design</a></div>
-
-            <div class="stats">
-                <span class="badge lang">💻 HTML</span>
-                <span class="badge star">⭐ 50,392</span>
-                <span class="badge fork">🍴 3,200</span>
-                <span class="badge today">📈 1,083 stars today</span>
-            </div>
-
-            <div class="desc"><strong>🎯 한줄 요약:</strong> Claude Code나 GitHub Copilot 같은 AI 에이전트의 복잡한 추론 과정을 시각화하기 위해 설계된, 외부 라이브러리 의존성 없는 44종의 순수 HTML/SVG 다이어그램 에셋 라이브러리입니다.</div>
-            <div class="why"><strong>🔥 왜 뜨는지:</strong> 천편일률적인 Mermaid.js의 투박한 스타일에서 벗어나, 잡지 삽화 수준(Editorial)의 정교한 레이아웃을 코드 복사만으로 구현할 수 있어 고품질 기술 문서나 아티클을 작성하려는 개발자들의 니즈를 관통했습니다.</div>
-            <div class="eng-desc">원문: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.</div>
-            
-            <div class="detail">
-                <strong>💡 활용 포인트 (Fork & Use Case):</strong><br>
-                기술 블로그나 제품 문서에서 AI의 '계획-실행-피드백' 루프를 시각화하는 데 즉시 투입할 수 있으며, 이 SVG 구조를 템플릿화하여 실시간 데이터에 따라 동적으로 구조도나 시스템 아키텍처를 그려주는 경량 대시보드 도구로 확장 개발하기에 최적입니다.
-                <br><br>
-                <span style="font-size: 0.85em; color: #57606a;">
-                오늘 하루 <strong>1,083 stars today</strong>를 획득하며 <strong>HTML</strong> 생태계에서 주목받고 있습니다.
-                </span>
-            </div>
-        </div>
-        
-        <div class="repo">
-            <div class="repo-title">🔗 #5 <a href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank">bilawalsidhu/gods-eye-view</a></div>
-
-            <div class="stats">
-                <span class="badge lang">💻 JavaScript</span>
-                <span class="badge star">⭐ 51,725</span>
-                <span class="badge fork">🍴 10,385</span>
-                <span class="badge today">📈 886 stars today</span>
-            </div>
-
-            <div class="desc"><strong>🎯 한줄 요약:</strong> 웹 브라우저에서 실시간 위성 궤도 데이터(TLE)를 시각화하여, 전 세계 상공의 스파이 위성과 민간 위성의 위치를 고해상도 3D 글로브 위에서 실시간으로 추적하는 오픈소스 공간 지능(Spatial Intelligence) 시뮬레이터입니다.</div>
-            <div class="why"><strong>🔥 왜 뜨는지:</strong> 전문적인 GIS 소프트웨어 없이도 JavaScript 기반으로 위성 추적 및 관측 범위(Footprint) 시뮬레이션을 구현했으며, 최근 지정학적 이슈로 관심이 높아진 OSINT(공개 출처 정보) 데이터를 개발자가 직접 핸들링하고 시각화할 수 있는 강력한 템플릿을 제공하기 때문입니다.</div>
-            <div class="eng-desc">원문: A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.</div>
-            
-            <div class="detail">
-                <strong>💡 활용 포인트 (Fork & Use Case):</strong><br>
-                특정 위성이 특정 좌표를 통과하는 골든타임을 계산해 지상국 데이터 수집을 자동화하는 파이프라인으로 포크(Fork)하거나, 스타링크(Starlink) 같은 군집 위성의 네트워크 가시성 시뮬레이터로 확장할 수 있습니다. 또한, 선박(AIS)이나 항공기(ADSB) 실시간 위치 API를 결합하여 입체적인 글로벌 물류 모니터링 대시보드나 재난 상황 관제 시스템으로 비즈니스 로직을 파생시킬 수 있습니다.
-                <br><br>
-                <span style="font-size: 0.85em; color: #57606a;">
-                오늘 하루 <strong>886 stars today</strong>를 획득하며 <strong>JavaScript</strong> 생태계에서 주목받고 있습니다.
-                </span>
-            </div>
-        </div>
-        
-        <div class="repo">
-            <div class="repo-title">🔗 #6 <a href="https://github.com/pytorch/pytorch" target="_blank">pytorch/pytorch</a></div>
-
-            <div class="stats">
-                <span class="badge lang">💻 Python</span>
-                <span class="badge star">⭐ 104,506</span>
-                <span class="badge fork">🍴 32,130</span>
-                <span class="badge today">📈 315 stars today</span>
-            </div>
-
-            <div class="desc"><strong>🎯 한줄 요약:</strong> GPU 가속을 지원하는 n차원 텐서 연산과 'Define-by-Run' 기반의 동적 그래프 생성을 통해, Python 환경에서 딥러닝 모델을 가장 직관적으로 설계하고 디버깅할 수 있는 업계 표준 프레임워크입니다.</div>
-            <div class="why"><strong>🔥 왜 뜨는지:</strong> Llama 3.1이나 Stable Diffusion 같은 최신 SOTA 모델 대다수가 PyTorch로 구현되어 배포됨에 따라 모델 커스텀 수요가 폭증했고, 최근 `torch.compile`을 통한 가속화 등 대규모 연산 효율이 비약적으로 향상되었기 때문입니다.</div>
-            <div class="eng-desc">원문: Tensors and Dynamic neural networks in Python with strong GPU acceleration</div>
-            
-            <div class="detail">
-                <strong>💡 활용 포인트 (Fork & Use Case):</strong><br>
-                대규모 언어 모델(LLM)의 미세 조정(Fine-tuning)이나 복합적인 멀티모달 AI 파이프라인 구축에 즉시 투입 가능하며, 코어를 포크하여 특정 가속기(NPU)에 최적화된 하드웨어 전용 런타임을 개발하거나 저전력 엣지 디바이스용 경량화 추론 엔진 비즈니스로 파생시킬 수 있습니다.
-                <br><br>
-                <span style="font-size: 0.85em; color: #57606a;">
-                오늘 하루 <strong>315 stars today</strong>를 획득하며 <strong>Python</strong> 생태계에서 주목받고 있습니다.
-                </span>
-            </div>
-        </div>
-        
-        <div class="repo">
-            <div class="repo-title">🔗 #7 <a href="https://github.com/lyogavin/airllm" target="_blank">lyogavin/airllm</a></div>
-
-            <div class="stats">
-                <span class="badge lang">💻 Jupyter Notebook</span>
-                <span class="badge star">⭐ 36,508</span>
-                <span class="badge fork">🍴 3,818</span>
-                <span class="badge today">📈 548 stars today</span>
-            </div>
-
-            <div class="desc"><strong>🎯 한줄 요약:</strong> Llama 3나 Mixtral 같은 70B 파라미터급 거대 언어 모델을 고가의 A100(80GB) 대신 단 4GB VRAM의 보급형 GPU에서 레이어 단위 순차 로딩 방식으로 추론할 수 있게 해주는 라이브러리입니다.</div>
-            <div class="why"><strong>🔥 왜 뜨는지:</strong> 수천만 원대 하드웨어 없이도 RTX 3050급 노트북 GPU에서 '꿈의 모델'인 70B를 직접 로컬에 띄워 테스트할 수 있다는 점이 인프라 비용에 지친 개인 개발자들의 페인 포인트를 정확히 관통했습니다.</div>
-            <div class="eng-desc">원문: AirLLM 70B inference with single 4GB GPU</div>
-            
-            <div class="detail">
-                <strong>💡 활용 포인트 (Fork & Use Case):</strong><br>
-                보안이 생명인 사내 문서를 처리할 때 외부 API 없이 일반 사무용 PC 자원만으로 70B 기반의 고성능 로컬 RAG 시스템을 구축할 수 있으며, 이 레이어 스왑 로직을 포크해 저사양 엣지 디바이스용 LLM 구동 엔진으로 최적화하여 비즈니스 모델화하기 좋습니다.
-                <br><br>
-                <span style="font-size: 0.85em; color: #57606a;">
-                오늘 하루 <strong>548 stars today</strong>를 획득하며 <strong>Jupyter Notebook</strong> 생태계에서 주목받고 있습니다.
-                </span>
-            </div>
-        </div>
-        
-        <div class="repo">
-            <div class="repo-title">🔗 #8 <a href="https://github.com/chrislgarry/Apollo-11" target="_blank">chrislgarry/Apollo-11</a></div>
-
-            <div class="stats">
-                <span class="badge lang">💻 Assembly</span>
-                <span class="badge star">⭐ 74,271</span>
-                <span class="badge fork">🍴 8,104</span>
-                <span class="badge today">📈 466 stars today</span>
-            </div>
-
-            <div class="desc"><strong>🎯 한줄 요약:</strong> 1969년 아폴로 11호의 사령선(CM)과 달 착륙선(LM)을 실제 구동했던 AGC(Apollo Guidance Computer)의 오리지널 어셈블리 소스 코드를 현대적인 텍스트 환경으로 디지털화한 역사적 아카이브입니다.</div>
-            <div class="why"><strong>🔥 왜 뜨는지:</strong> 단 2K words(약 4KB)의 RAM과 36K words의 ROM이라는 극한의 제약 조건에서 실시간 멀티태스킹을 구현한 60년대 개발자들의 광기 어린 최적화 기법과 코드 곳곳에 숨겨진 'BURN_BABY_BURN' 같은 유머러스한 주석이 엔지니어들의 지적 호기심을 자극하고 있습니다.</div>
-            <div class="eng-desc">원문: Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.</div>
-            
-            <div class="detail">
-                <strong>💡 활용 포인트 (Fork & Use Case):</strong><br>
-                가상 AGC 에뮬레이터를 구축하여 1201/1202 프로그램 알람 발생 시의 실제 로직 작동을 검증하거나, 임베디드 시스템 개발 시 극단적인 메모리 절약과 인터럽트 스케줄링 설계의 근본적인 영감을 얻을 수 있습니다. 이를 포크하여 고전 하드웨어 복원 프로젝트나 실제 물리 연산이 가미된 정밀 우주 비행 시뮬레이션 게임의 코어 로직으로 이식하는 활용이 가능합니다.
-                <br><br>
-                <span style="font-size: 0.85em; color: #57606a;">
-                오늘 하루 <strong>466 stars today</strong>를 획득하며 <strong>Assembly</strong> 생태계에서 주목받고 있습니다.
-                </span>
-            </div>
-        </div>
         
             <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
         </div>
