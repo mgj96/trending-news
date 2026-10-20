@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-10-20)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> LLM 기반의 자율형 에이전트 생태계 확장과 효율적인 데이터 및 미디어 처리가 트렌드를 주도하고 있습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/MadsLorentzen/ai-job-search" target="_blank">MadsLorentzen/ai-job-search</a> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Python · ⭐ 57,301 · 🍴 18,204 · 오늘 +3,856 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.</div>
+                <div><span class="label">🎯 요약:</span> Claude Code 기반 로컬 AI 구직 도구로 공고 분석, CV 최적화, 커버레터 생성 및 면접 대비함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 민감 정보 유출 없는 Claude Code 기반 로컬 구직 자동화와 Python CLI 활용 CV 최적화, 면접 대비 등 에이전트급 워크플로우를 직접 구축함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Claude Code의 강력한 CLI 에이전트 기능을 활용해 채용 공고 분석부터 이력서(CV) 최적화, 맞춤형 커버레터 작성 및 기술 면접 대비까지의 전 과정을 로컬 환경에서 수행합니다. 기존 SaaS 형태의 도구와 달리 사용자의 민감한 경력 데이터를 외부 서버에 전송하지 않고 자신의 머신에서 직접 처리하여 보안성을 극대화한 것이 특징입니다. Python 기반의 오픈소스 구조를 채택해 사용자가 각 단계별 프롬프트나 에이전트 행동을 자유롭게 커스터마이징할 수 있으며, 포크 시 특정 도메인 맞춤형 RAG 시스템이나 LinkedIn API 연동 자동 지원 기능으로 확장 가능한 높은 유연성을 제공합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/anomalyco/opencode" target="_blank">anomalyco/opencode</a> <span class="chg up">▲1</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 217,821 · 🍴 29,114 · 오늘 +1,311 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: The open source coding agent.</div>
+                <div><span class="label">🎯 요약:</span> TypeScript 기반 오픈 소스 코딩 에이전트로 LLM 활용 자동 코드 생성 및 수정, 디버깅 기능을 CLI 환경에서 제공함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 독점적 유료 서비스 탈피 및 로컬 LLM 연동 기반 비용 절감, 투명한 소스 공개로 에이전트 제어권 확보와 맞춤형 파이프라인 구축 지원.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>폐쇄적인 상용 코딩 AI의 대안으로 등장하여 개발자가 직접 프롬프트와 에이전트 로직을 수정하고 로컬 환경에 최적화할 수 있도록 돕습니다. TypeScript로 작성되어 Node.js 생태계의 다양한 도구와 쉽게 결합되며, 단순 코드 작성을 넘어 터미널 명령 수행 및 유닛 테스트 자동화까지 자율적으로 처리합니다. 실무에서는 레거시 코드의 일괄 마이그레이션이나 복잡한 의존성 해결 작업에 활용할 수 있으며, 포크 시 특정 사내 코딩 컨벤션을 강제하는 전용 보안 에이전트로 파생 개발하기에 적합합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/akitaonrails/ai-memory" target="_blank">akitaonrails/ai-memory</a> <span class="chg up">▲3</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Rust · ⭐ 11,356 · 🍴 807 · 오늘 +666 · 🧠 지능형 메모리 및 최적화</div>
+                <div class="orig">원문: Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors</div>
+                <div><span class="label">🎯 요약:</span> CLI 코딩 에이전트용 Rust 기반 장기 기억 도구 및 벤더 간 프로젝트 맥락 공유와 작업 히스토리 핸드오프용 솔루션</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Cursor, Aider 등 도구 교체 시 발생하는 맥락 단절을 해결하며 Rust 기반 벡터 검색으로 에이전트 간 작업 이력 및 개발 의도 유지 기능을 지원함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>다양한 AI 코딩 에이전트를 번갈아 사용할 때 발생하는 맥락 손실 문제를 Rust 기반의 고속 벡터 검색과 로컬 저장소로 해결합니다. 프로젝트의 변경 이력, 특정 구현의 의도, 복잡한 코드 구조를 &#x27;장기 기억&#x27; 형태로 보관하여 새로운 에이전트 세션에서도 즉시 이전 맥락을 복구하도록 돕습니다. 실무에서는 대규모 코드베이스 리팩토링 시 여러 도구의 강점을 조합하는 워크플로우에 적용 가능하며, 에이전트가 수행한 작업에 대한 메타데이터 추적에 유용합니다. 이 프로젝트를 포크하여 특정 팀의 코딩 컨벤션이나 내부 API 문서를 우선 참조하는 커스텀 지식 베이스 에이전트 레이어로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/Comfy-Org/ComfyUI" target="_blank">Comfy-Org/ComfyUI</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 139,732 · 🍴 16,585 · 오늘 +1,011 · 🎨 미디어 생성 및 복원</div>
+                <div class="orig">원문: The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.</div>
+                <div><span class="label">🎯 요약:</span> 그래프 노드 방식 워크플로우 설계 및 세계 최고속 로컬 추론 성능을 보장하는 모듈형 디퓨전 모델 GUI 겸 API 백엔드</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 기존 대비 압도적 추론 속도 및 저사양 VRAM 최적화, JSON 기반 워크플로우 재사용과 API 연동을 통한 서비스급 파이프라인 구축 용이성</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존의 경직된 UI와 달리 노드 단위로 기능을 조립하여 복잡한 스테이블 디퓨전 연산 과정을 시각적으로 제어하고 최적화할 수 있습니다. 특히 낮은 VRAM 환경에서도 고해상도 이미지 생성이 가능할 만큼 엔진 효율이 뛰어나며, 모든 작업 흐름을 API와 JSON 파일로 관리하여 개발 생산성을 극대화합니다. 실무에서는 게임 에셋 생성이나 영상 합성 파이프라인의 백엔드로 주로 활용되며, 포크 시 특정 도메인에 특화된 커스텀 노드 패키지나 서버리스 기반의 이미지 생성 SaaS로 확장하기에 매우 적합합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/ruvnet/ruflo" target="_blank">ruvnet/ruflo</a> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 77,194 · 🍴 9,104 · 오늘 +564 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated</div>
+                <div><span class="label">🎯 요약:</span> Claude·Hermes 연동 적응형 메모리와 자가 학습 기반의 실시간 협업형 멀티 에이전트 스웜 구축용 TypeScript 하네스</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 단일 LLM 한계를 넘는 연합 에이전트 구조와 벡터 RAG 및 Claude Code 네이티브 통합으로 복잡한 자율 워크플로우 자동화 구현 가능</div>
+                <div class="detail"><span class="label">📖 상세</span><br>복잡한 태스크를 단일 에이전트가 아닌 여러 자율 에이전트의 협업(Swarm)으로 해결하며, 적응형 메모리와 벡터 RAG를 통해 컨텍스트 유지 능력을 극대화했습니다. Claude Code 및 Hermes 등 최신 모델을 네이티브로 지원하여 코드 생성부터 시스템 설계까지 실무 수준의 복잡한 워크플로우를 자동화하는 데 특화되어 있습니다. 특히 에이전트 간의 연합(Federation) 기능을 활용하면 서로 다른 보안 도메인에 속한 시스템들을 조율하는 기업용 AI 관제 센터를 구축할 수 있습니다. 이 프로젝트를 포크하여 특정 도메인 지식 베이스를 결합한 전문 직군별 AI 비서 스웜이나, 분산 컴퓨팅 자원을 활용한 대규모 병렬 데이터 분석 툴로 확장하기에 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/stablyai/orca" target="_blank">stablyai/orca</a> <span class="chg up">▲1</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 98,300 · 🍴 6,267 · 오늘 +1,590 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.</div>
+                <div><span class="label">🎯 요약:</span> Grok, Claude 등 다양한 코딩 에이전트를 개인 구독권으로 데스크톱, 모바일 및 원격 런타임에서 통합 실행하고 관리하는 에이전트 허브</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 특정 플랫폼에 종속되지 않고 보유한 API/구독권을 활용해 고성능 에이전트를 멀티 디바이스에서 제약 없이 동기화하여 개발 생산성을 극대화하는 유연성</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Grok Bot이나 Claude Code 등 파편화된 AI 에이전트를 단일 인터페이스에서 통합 관리하며, 사용자 소유의 구독 계정을 연동해 추가 비용 없이 활용 가능한 런타임을 제공합니다. 데스크톱과 모바일, 원격 환경을 동시 지원하여 장소 제약 없이 복잡한 코딩 작업을 에이전트 군단(Fleet)에 위임하고 실시간으로 결과물을 제어할 수 있습니다. 실무에서는 여러 에이전트에 모듈별 병렬 개발을 지시하는 방식으로 활용 가능하며, 포크 시 특정 기술 스택에 최적화된 에이전트를 추가하거나 팀 단위로 작업 히스토리를 공유하는 협업 툴로 확장하기에 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/headroomlabs-ai/headroom" target="_blank">headroomlabs-ai/headroom</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 76,252 · 🍴 5,923 · 오늘 +310 · 🧠 지능형 메모리 및 최적화</div>
+                <div class="orig">원문: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.</div>
+                <div><span class="label">🎯 요약:</span> LLM 입력 전 로그, RAG 청크, JSON 등을 압축해 토큰을 절감하는 도구. 코딩 20%, JSON 최대 95% 절약 및 원본 응답 품질 유지용</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 컨텍스트 윈도우 한계와 비용 문제를 해결하기 위해 고안됨. 특히 JSON 및 로그 데이터의 높은 토큰 오버헤드를 정확도 손실 없이 90% 이상 절감하는 기술</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM 입력 시 발생하는 불필요한 구조적 오버헤드를 제거하여 JSON 데이터 기준 최대 95%까지 토큰 사용량을 줄여줍니다. 라이브러리뿐만 아니라 프록시와 MCP 서버 형태로 제공되어 기존 워크플로우에 즉각 도입이 가능하며, 특히 코딩 에이전트의 반복적인 API 호출 비용을 실질적으로 낮춰줍니다. 실무에서는 대규모 RAG 시스템의 검색 결과 최적화나 실시간 로그 모니터링 시 비용 절감 수단으로 활용하기에 적합합니다. 오픈소스 포크 시에는 특정 산업군(금융, 법률) 전용 데이터 압축 알고리즘을 추가하거나, 민감 정보 필터링 기능을 결합한 보안 특화형 게이트웨이로 확장하는 아이디어가 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/withmarbleapp/os-taxonomy" target="_blank">withmarbleapp/os-taxonomy</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">JavaScript · ⭐ 6,128 · 🍴 1,002 · 오늘 +284 · 🧠 지능형 메모리 및 최적화</div>
+                <div class="orig">원문: 상세 설명이 제공되지 않은 프로젝트입니다.</div>
+                <div><span class="label">🎯 요약:</span> (원본) 상세 설명이 제공되지 않은 프로젝트입니다.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/Kruk2/jasna" target="_blank">Kruk2/jasna</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 2,896 · 🍴 211 · 오늘 +498 · 🎨 미디어 생성 및 복원</div>
+                <div class="orig">원문: Video restoration tool</div>
+                <div><span class="label">🎯 요약:</span> SOTA AI 기반 저해상도 노이즈 제거와 4K 업스케일링 및 안면 정밀 복원 기능을 제공하는 고성능 Python 비디오 복원 솔루션</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 복잡한 GAN 설정 없이 CLI로 영상 텍스처를 살린 업스케일링이 가능하며 파이프라인 최적화로 GPU 추론 효율과 영상 복원 속도를 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 SOTA급 딥러닝 모델을 결합하여 노이즈가 심하거나 해상도가 낮은 레거시 영상의 품질을 상업용 수준으로 개선합니다. 멀티 프로세싱과 GPU 가속 파이프라인을 통해 대용량 프레임 처리 속도를 높였으며, 특히 안면 복원(Face Restoration) 알고리즘을 내장해 인물 중심 영상에서 탁월한 성능을 보입니다. 실무에서는 미디어 아카이브 복원이나 고전 애니메이션의 4K 리마스터링 작업 등에 즉시 투입할 수 있습니다. 포크 시 특정 도메인에 특화된 파인튜닝 모델을 추가하거나, FFmpeg와 연동한 실시간 스트리밍 업스케일링 모듈로 확장해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/HKUDS/CLI-Anything" target="_blank">HKUDS/CLI-Anything</a> <span class="chg down">▼2</span> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">Python · ⭐ 55,241 · 🍴 4,986 · 오늘 +606 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: &quot;CLI-Anything: Making ALL Software Agent-Native&quot; -- CLI-Hub: https://clianything.cc/</div>
+                <div><span class="label">🎯 요약:</span> 모든 소프트웨어의 에이전트화를 목표로 CLI 환경에서 LLM이 UI를 직접 제어하고 업무를 자동화하는 오픈소스 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> API 부재한 GUI 소프트웨어를 LLM이 직접 조작하도록 변환하며 CLI-Hub 기반의 에이전트 생태계 및 워크플로우 공유 기능 제공</div>
+                <div class="detail"><span class="label">📖 상세</span><br>LLM이 기존 레거시 소프트웨어나 API가 없는 GUI 앱을 CLI 명령어로 추상화하여 정교하게 제어할 수 있는 오케스트레이션 레이어를 제공합니다. 사용자는 CLI-Hub에 등록된 사전 정의된 태스크를 활용해 복잡한 멀티 앱 워크플로우를 자연어로 실행하며, 시스템 전체를 하나의 에이전트 환경으로 통합할 수 있습니다. 실무에서는 반복적인 어드민 업무나 비표준 도구의 자동화에 즉시 투입 가능하며, 포크 시 특정 도메인 전용 AI 비서나 접근성 개선을 위한 자동 조작 엔진으로 확장하기 좋습니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
