@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-10-25)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> AI 에이전트의 안정적인 실행을 위한 보안 환경 구축과 전용 UI 및 개발 도구가 트렌드를 주도하고 있습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/cloudflare/security-audit-skill" target="_blank">cloudflare/security-audit-skill</a> <span class="meta">🔁 5일 연속</span></div>
+                <div class="meta">JavaScript · ⭐ 44,527 · 🍴 2,767 · 오늘 +2,264 · 🛡️ 보안 및 실행 환경</div>
+                <div class="orig">원문: A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings</div>
+                <div><span class="label">🎯 요약:</span> Cloudflare의 코딩 에이전트용 보안 감사 스킬로 다단계 분석과 독립 검증을 거친 기계 판독 가능(JSON 등) 보안 진단 결과 생성</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 보안 진단의 환각 문제를 해결하는 독립 검증 프로세스 도입 및 CI/CD 연동이 쉬운 정형화된 리포트 생성으로 취약점 점검 자동화 혁신함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 AI 코딩 에이전트가 보안 취약점을 식별할 때 발생하는 신뢰성 문제를 다단계 분석과 독립적인 검증 로직을 통해 해결합니다. 스캔 결과는 기계 판독이 가능한 정형 데이터로 출력되어 기존의 CI/CD 파이프라인이나 자동화된 보안 관제 시스템에 즉시 통합할 수 있습니다. 실무에서는 PR(Pull Request) 생성 시 자동으로 취약점을 점검하고 수정 제안까지 받는 워크플로우를 구축하는 데 활용 가능합니다. 이를 포크하여 특정 프로그래밍 언어에 특화된 정적 분석 도구(SAST)를 결합하거나, 사내 고유의 보안 규정(Compliance) 준수 여부를 자동 검사하는 커스텀 에이전트로 확장하기에 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/NVIDIA/OpenShell" target="_blank">NVIDIA/OpenShell</a> <span class="chg up">▲2</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Rust · ⭐ 19,470 · 🍴 1,930 · 오늘 +896 · 🛡️ 보안 및 실행 환경</div>
+                <div class="orig">원문: OpenShell is the safe, private runtime for autonomous AI agents.</div>
+                <div><span class="label">🎯 요약:</span> LLM 생성 코드를 격리된 환경에서 실행하는 Rust 기반 자율 AI 에이전트 전용 보안 런타임 및 샌드박스</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 에이전트의 임의 코드 실행 시 발생하는 보안 취약점을 Rust 기반 격리 기술로 해결하고 로컬 데이터 유출을 원천 차단함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 에이전트가 생성한 코드가 호스트 시스템의 파일이나 네트워크에 무단 접근하는 것을 방지하기 위해 Rust 기반의 고도로 격리된 실행 환경을 제공합니다. 개발자는 OpenShell을 통해 에이전트의 권한을 세밀하게 제어하고 민감한 기업 데이터의 외부 유출을 원천 차단하여 안전한 엔터프라이즈급 AI 워크플로우를 구축할 수 있습니다. 실무에서는 자동화된 데이터 분석이나 로컬 파일 처리 에이전트의 보안 백엔드로 활용하기 적합하며, 포크 시 특정 도커 이미지와 결합하거나 WASM 기반의 경량 보안 실행 레이어로 확장하는 아이디어가 유망합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/aws/agent-toolkit-for-aws" target="_blank">aws/agent-toolkit-for-aws</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 3,126 · 🍴 397 · 오늘 +13 · 🤖 AI 에이전트 및 프레임워크</div>
+                <div class="orig">원문: Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS</div>
+                <div><span class="label">🎯 요약:</span> AWS 공식 지원 MCP 서버 및 플러그인 제공으로 LLM 에이전트의 클라우드 인프라 제어와 서비스 연동을 돕는 파이썬 기반 오픈소스 툴킷</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Anthropic 주도 MCP 표준 채택 및 AWS 리소스 연동 자동화로 AI 에이전트의 클라우드 관리 장벽을 허물고 엔터프라이즈급 확장성 확보함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 AI 에이전트가 AWS 서비스와 직접 상호작용할 수 있도록 Anthropic의 MCP(Model Context Protocol) 기반 인터페이스를 제공합니다. 개발자는 복잡한 API 호출 코드 없이도 LLM이 S3 파일 관리, EC2 인스턴스 모니터링 등 클라우드 인프라 제어 태스크를 수행하도록 설계할 수 있습니다. 실무에서는 대화형 인프라 관리 도구나 자동화된 클라우드 보안 진단 에이전트 구축에 즉시 활용 가능합니다. 오픈소스를 포크하여 특정 산업군에 최적화된 비용 최적화 에이전트나 사내 거버넌스 정책 준수 전용 봇으로 확장해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/Nutlope/hallmark" target="_blank">Nutlope/hallmark</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">CSS · ⭐ 32,129 · 🍴 1,649 · 오늘 +455 · 🎨 AI 전용 디자인 및 UI</div>
+                <div class="orig">원문: Anti-AI-slop design skill for Claude Code, Cursor, and Codex.</div>
+                <div><span class="label">🎯 요약:</span> Claude, Cursor AI UI 단조로움 방지 및 독창적 디자인용 CSS 기반 Anti-AI-slop 스킬</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM의 천편일률적 UI 생성을 방지하고 MCP로 AI 디자인 스타일을 유지 및 강제하는 차별화된 CSS 제어 기법</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 코딩 도구가 흔히 생성하는 천편일률적인 Tailwind CSS 레이아웃 대신, MCP(Model Context Protocol)를 활용해 AI에게 고유한 디자인 미학을 주입하는 기술입니다. Claude Code나 Cursor에서 프로젝트 초기 UI 구성 시 이 가이드를 참조하게 하여 양산형 느낌의 &#x27;AI Slop&#x27;을 원천 차단하고 제품의 독창성을 확보합니다. 실무에서는 사내 디자인 시스템을 MCP로 변환하여 AI가 일관된 브랜드 정체성을 유지하며 코드를 작성하도록 강제하는 용도로 활용 가능합니다. 오픈소스 포크 시 Shadcn/UI에 최적화된 테마형 디자인 스킬 세트로 확장하거나 애니메이션 특화 AI 전용 스타일 라이브러리 구축 아이디어로 파생할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/luongnv89/claude-howto" target="_blank">luongnv89/claude-howto</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 44,554 · 🍴 5,492 · 오늘 +392 · 🤖 AI 에이전트 및 프레임워크</div>
+                <div class="orig">원문: A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.</div>
+                <div><span class="label">🎯 요약:</span> 앤스로픽 Claude Code CLI 활용법을 시각화 자료와 즉시 복사 가능한 코드 템플릿으로 정리한 실무형 AI 에이전트 구축 가이드.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 터미널 환경 Claude Code의 MCP 연동 및 쉘 제어 등 고급 기능을 예제 코드로 단순화하여 CLI 기반 개발 생산성 제고.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Anthropic의 새로운 CLI 도구인 Claude Code를 활용해 단순 채팅을 넘어 터미널 제어와 MCP(Model Context Protocol) 연동 기반의 자율 에이전트를 구축하는 실전 워크플로우를 제시합니다. 시각적 가이드와 함께 제공되는 템플릿을 통해 복잡한 프롬프트 엔지니어링이나 도구 호출 설정을 생략하고 즉시 프로젝트 분석 및 자동화에 투입할 수 있습니다. 실무에서는 CI/CD 파이프라인 내 버그 수정 자동화나 대규모 레거시 코드의 기술 부채 분석 도구로 활용도가 높습니다. 포크 시 특정 도메인에 특화된 전용 MCP 서버 커넥터를 추가하여 사내 인프라 맞춤형 AI 엔지니어로 확장하는 아이디어가 유효합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/pbakaus/impeccable" target="_blank">pbakaus/impeccable</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 86,392 · 🍴 5,154 · 오늘 +619 · 🎨 AI 전용 디자인 및 UI</div>
+                <div class="orig">원문: The design language that makes your AI harness better at design.</div>
+                <div><span class="label">🎯 요약:</span> LLM이 논리적이고 정교한 UI/UX를 설계하도록 가이드하는 Rust 기반의 AI 전용 디자인 언어 엔진</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM의 파편화된 디자인 출력을 엄격한 토큰 제약 기반 시스템으로 정형화해 상용 수준의 UI/UX 설계 일관성을 즉각 확보함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>LLM이 생성하는 파편화된 CSS/HTML의 품질 문제를 해결하기 위해, 디자인 토큰과 제약 조건을 엄격히 정의하는 Rust 기반 전용 언어를 제공합니다. AI 에이전트가 사용자의 추상적인 의도를 이해하고 이를 정교한 UI 컴포넌트로 변환할 수 있도록 설계된 구조화된 프레임워크입니다. 실무에서는 AI 웹 빌더나 자동 UI 생성 도구에 통합하여 디자인 가이드를 준수하는 일관된 산출물을 대량 생산하는 데 활용 가능합니다. 이 프로젝트를 포크하여 Flutter나 SwiftUI 같은 모바일 프레임워크 전용 토큰 변환기를 구현하거나, Figma API와 연동된 실시간 디자인 시스템 동기화 봇을 개발해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/pollen-robotics/microduck" target="_blank">pollen-robotics/microduck</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 10,982 · 🍴 1,407 · 오늘 +319 · 📦 하드웨어 및 지식 리소스</div>
+                <div class="orig">원문: A Tiny biped duck robot 🦆</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 초소형 2족 보행 오리 로봇 OSS. ESP32-S3 및 XL330 서보 기반의 저지연 임베디드 제어와 실시간 모션 구현을 지원함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 임베디드 Rust와 async/await로 로봇 제어 로직의 안전성 확보. 3D 프린팅 도면 및 전체 코드 공개로 저비용 AI 로봇의 빠른 프로토타이핑 환경 제공함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 ESP32-S3 칩셋에서 Rust 언어를 활용하여 메모리 효율적이고 안전한 로봇 펌웨어를 개발하는 실제 사례를 보여줍니다. 하드웨어 측면에서는 소형 다이내믹셀 XL330 서보를 이용한 2족 보행 메커니즘을 3D 프린팅 부품으로 구현하여 누구나 제작 가능한 워크플로우를 제시합니다. 실무에서는 소형 로봇의 보행 알고리즘 테스트나 임베디드 Rust 및 실시간 제어 교육용 플랫폼으로 활용하기 적합합니다. 프로젝트를 포크하여 ESP32의 AI 연산 기능을 연동한 비전 인식 기반 자율 주행이나, 여러 대의 로봇을 동기화하여 군집 동작을 수행하는 응용 시스템으로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/google-gemini/gemini-cli" target="_blank">google-gemini/gemini-cli</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 108,048 · 🍴 14,807 · 오늘 +44 · 🤖 AI 에이전트 및 프레임워크</div>
+                <div class="orig">원문: An open-source AI agent that brings the power of Gemini directly into your terminal.</div>
+                <div><span class="label">🎯 요약:</span> 구글 제미나이 LLM API 기반 터미널 전용 오픈소스 CLI 에이전트로 대화 및 코드 생성과 파일 분석 지원</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 브라우저 없이 터미널 내 워크플로우에 Gemini를 즉시 결합하고 스크립트 기반 자동화 및 로컬 코드 디버깅 생산성 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>웹 브라우저 이동에 따른 컨텍스트 스위칭 없이 터미널에서 즉시 Gemini LLM을 호출하여 셸 명령어 생성 및 에러 로그 분석 작업을 자동화합니다. TypeScript 기반의 가벼운 구조로 로컬 개발 환경의 파일 시스템과 연동해 코드 리뷰나 실시간 질의응답이 가능하며, 파이프라인(Pipe) 명령어를 통한 CLI 입출력 제어에 강점이 있습니다. 이 프로젝트를 포크하여 사내 보안 정책이 반영된 전용 봇을 구축하거나, 특정 인프라(K8s, AWS 등) 명령어를 학습시킨 운영 자동화 전용 에이전트로 확장 개발하기 좋습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/jbiaojerry/ebook-treasure-chest" target="_blank">jbiaojerry/ebook-treasure-chest</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 22,597 · 🍴 3,189 · 오늘 +227 · 📦 하드웨어 및 지식 리소스</div>
+                <div class="orig">원문: 欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。</div>
+                <div><span class="label">🎯 요약:</span> 欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 분석 중 오류가 발생했습니다.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 분석 중 오류가 발생했습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/makecindy/cindy" target="_blank">makecindy/cindy</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 4,090 · 🍴 584 · 오늘 +477 · 🤖 AI 에이전트 및 프레임워크</div>
+                <div class="orig">원문: Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。</div>
+                <div><span class="label">🎯 요약:</span> 브라우저 제어와 도구 실행으로 복잡한 업무를 즉시 완수하는 TypeScript 기반 오픈소스 AI 에이전트 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 복잡한 설정 없이 쓰는 OSS 기반 워크플로우 자동화 및 MCP 호환으로 확장성을 확보한 차세대 LLM 에이전트의 강력한 범용성</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Cindy는 LLM이 단순 텍스트 생성을 넘어 브라우저, 터미널, 파일 시스템을 직접 제어하여 기획부터 최종 실행까지의 전체 워크플로우를 자동화합니다. 내장된 도구 라이브러리를 통해 이메일 응대, 데이터 스크래핑, 코드 리팩토링 등 반복적인 실무 태스크를 API 연동만으로 즉각 처리할 수 있는 것이 강점입니다. 프로젝트 포크 시 특정 도메인 전용 툴셋을 결합하여 업종별 특화 자동화 솔루션이나 사내 보안망 내 폐쇄형 에이전트로 확장하기에 최적화된 구조를 갖추고 있습니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
