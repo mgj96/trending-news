@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-10-27)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> AI 에이전트의 실무 고도화를 위한 최적화 도구, 보안 프레임워크 및 디자인 가이드가 주류를 이루고 있습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/Nutlope/hallmark" target="_blank">Nutlope/hallmark</a> <span class="chg up">▲1</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">CSS · ⭐ 36,416 · 🍴 1,898 · 오늘 +2,244 · 🎨 AI 특화 UI 및 디자인</div>
+                <div class="orig">원문: Anti-AI-slop design skill for Claude Code, Cursor, and Codex.</div>
+                <div><span class="label">🎯 요약:</span> Claude Code, Cursor 등 CLI/IDE 기반 AI의 조잡한 UI 생성을 방지용 고품질 CSS 기반 Anti-AI-slop 디자인 가이드</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 특유의 뻔한 UI 탈피 및 Claude Code, Cursor 등에 최적 스타일 주입, 고수준 UX 구현용 CSS 스킬셋 기반 프롬프트 기법</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 코딩 어시스턴트가 생성하는 천편일률적인 &#x27;AI 슬롭&#x27; 디자인 문제를 해결하기 위해, Claude Code나 Cursor 등의 시스템 프롬프트 및 CSS 제약 사항으로 활용 가능한 고유 디자인 스킬셋을 제공합니다. 개발자는 이 자산을 `.cursorrules` 등에 통합하여 AI가 별도의 수정 없이도 현대적인 벤토 그리드(Bento Grid)나 세련된 타이포그래피가 적용된 UI를 출력하도록 강제할 수 있습니다. 실무에서는 MVP 개발 시 디자인 리소스를 최소화하면서도 기성 제품 수준의 완성도를 확보하는 데 유용하며, 이를 포크하여 사내 브랜드 가이드라인에 맞춘 전용 &#x27;AI 디자인 에이전트&#x27; 스킬로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/TauricResearch/TradingAgents" target="_blank">TauricResearch/TradingAgents</a> <span class="chg up">▲4</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Python · ⭐ 116,145 · 🍴 22,285 · 오늘 +1,395 · 🤖 AI 에이전트 및 워크스페이스</div>
+                <div class="orig">원문: TradingAgents: Multi-Agents LLM Financial Trading Framework</div>
+                <div><span class="label">🎯 요약:</span> LLM 멀티 에이전트 기반 금융 트레이딩 프레임워크로 분석·전략·매매 파이프라인 구축용 파이썬 도구</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 추론으로 뉴스·지표 통합 분석, 에이전트 분담을 통해 정적 알고리즘의 한계를 극복하며 정교한 전략 수립 및 실행을 자동화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 기술적 지표와 뉴스 센티먼트 등 비정형 데이터를 LLM 에이전트들이 분업하여 분석하고, 최적의 매수/매도 시점을 결정하는 워크플로우를 제공합니다. 각 에이전트는 분석가, 리스크 관리자, 트레이더 역할을 수행하며 상호 피드백을 통해 매매 전략의 신뢰도를 높이는 구조로 동작합니다. 실무에서는 정교한 백테스팅 환경을 구축하거나 실시간 시장 대응용 봇으로 활용 가능하며, 포크 시 암호화폐 API 연동이나 소셜 미디어 트렌드 추적 에이전트를 추가해 변동성이 큰 시장용으로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/JetBrains/thinkrail" target="_blank">JetBrains/thinkrail</a> <span class="chg up">▲5</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 2,939 · 🍴 156 · 오늘 +1,173 · 🎨 AI 특화 UI 및 디자인</div>
+                <div class="orig">원문: Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need</div>
+                <div><span class="label">🎯 요약:</span> JetBrains의 Vibe Coding용 경량 IDE로 LLM 연동을 통해 코딩 패턴 맞춤형 UI를 제공함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> JetBrains의 IDE 기술을 경량화해 Vibe Coding 및 LLM 밀착 UI로 자연어 중심 개발의 생산성을 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>JetBrains가 제안하는 ‘Vibe Coding’은 복잡한 문법 대신 자연어와 높은 수준의 의도를 통해 코드를 생성하는 새로운 패러다임을 지향합니다. Thinkrail은 이를 실현하기 위해 TypeScript 기반의 초경량 구조를 채택하여, 사용자의 작업 패턴에 맞춰 IDE UI와 인터렉션을 지능적으로 재구성합니다. 실무에서는 반복적인 보일러플레이트 작성이나 복잡한 API 연동 시 AI가 맥락을 선제적으로 파악하여 제안하는 방식으로 활용 가능합니다. 이 프로젝트를 포크한다면 특정 도메인(데이터 분석, 스마트 컨트랙트 등)에 특화된 ‘전용 AI IDE’를 구축하거나, 비개발 직군을 위한 사내 맞춤형 노코드/로우코드 툴로 확장할 수 있는 잠재력이 큽니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/makecindy/cindy" target="_blank">makecindy/cindy</a> <span class="chg down">▼3</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 6,516 · 🍴 796 · 오늘 +1,296 · 🤖 AI 에이전트 및 워크스페이스</div>
+                <div class="orig">원문: Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。</div>
+                <div><span class="label">🎯 요약:</span> 별도 설정 없이 즉시 구동되는 오픈소스 AI 에이전트로 태스크 계획, 도구 활용 및 실행 전 과정을 자동화하는 TypeScript 기반 솔루션</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 복잡한 프롬프트 엔지니어링 없이 LLM API 연동만으로 실무급 자동화 성능을 즉각 구현하는 높은 범용성과 TS 기반 확장성 때문임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 사용자의 목표를 분석하여 하위 작업을 스스로 생성하고, 브라우징이나 코드 실행 등 필요한 도구를 호출해 완결짓는 자율형 에이전트 구조를 가집니다. 특히 최신 MCP(Model Context Protocol) 표준을 준수하여 외부 데이터베이스나 API와의 연동이 매끄러우며, 복잡한 워크플로우를 최소한의 설정으로 배포할 수 있는 것이 장점입니다. 실무에서는 고객 문의 대응 자동화나 멀티 스텝 데이터 리서치에 활용할 수 있으며, 포크 시 사내 고유 도구(SDK)를 에이전트의 기능으로 추가하여 특화된 업무 자동화 봇으로 발전시키기 좋습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/affaan-m/ECC" target="_blank">affaan-m/ECC</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">JavaScript · ⭐ 289,870 · 🍴 42,952 · 오늘 +896 · 🤖 AI 에이전트 및 워크스페이스</div>
+                <div class="orig">원문: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</div>
+                <div><span class="label">🎯 요약:</span> Claude Code, Cursor 등 AI 에이전트 성능 최적화용 하네스 시스템. 스킬, 본능, 메모리, 보안 탑재 및 연구 중심 오픈소스 도구.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 코딩 에이전트의 응답 지연 및 컨텍스트 한계 해결용. 본능적 반응 및 메모리 최적화로 추론 효율을 극대화한 실무형 워크플로우 구성 강점.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Claude Code나 Cursor 같은 AI 코딩 에이전트가 겪는 응답 지연과 불명확한 컨텍스트 유지 문제를 해결하기 위한 고성능 최적화 프레임워크입니다. &#x27;본능&#x27;과 &#x27;스킬&#x27; 개념을 도입해 빈번한 작업의 토큰 소모를 줄이고, 강화된 보안 레이어를 통해 에이전트의 코드 실행 안전성을 확보합니다. 실무에서는 대규모 레거시 코드의 자동 리팩토링이나 복잡한 디버깅 워크플로우를 자동화하는 전용 에이전트 구축에 활용 가능합니다. 프로젝트를 포크하여 특정 산업군에 특화된 엔지니어링 에이전트를 만들거나, 사내 보안 규정을 준수하는 폐쇄형 코딩 어시스턴트로 확장하기에 적합합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/pbakaus/impeccable" target="_blank">pbakaus/impeccable</a> <span class="chg down">▼2</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Rust · ⭐ 89,247 · 🍴 5,313 · 오늘 +1,506 · 🎨 AI 특화 UI 및 디자인</div>
+                <div class="orig">원문: The design language that makes your AI harness better at design.</div>
+                <div><span class="label">🎯 요약:</span> LLM의 디자인 감각을 극대화해 고품질 UI/UX를 설계하는 Rust 기반 AI 전용 디자인 시스템 언어 및 최적화 도구임</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM의 저품질 UI 생성 한계를 극복함. Rust 기반 DSL로 레이아웃 제약 조건을 수치화해 AI가 디자인 시스템 및 토큰을 엄격히 준수하게 하는 신선한 방식임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 LLM은 시각적 일관성이나 수치적 제약 준수에 취약하지만, 이 프로젝트는 Rust 기반 DSL을 통해 디자인 의도를 정형화하여 AI가 정밀하게 해석하도록 돕습니다. 사용자는 레이아웃과 간격 등을 엄격한 토큰 체계로 정의함으로써 AI가 생성하는 UI 결과물을 실제 제품 수준의 품질로 끌어올릴 수 있습니다. 실무에서는 AI 기반 디자인 자동화 도구나 엔터프라이즈급 UI 컴포넌트 생성 엔진으로 활용하기 적합합니다. 프로젝트를 포크한다면 Tailwind CSS 코드로의 즉시 변환 모듈이나 Figma 데이터와 실시간 연동되는 디자인 동기화 도구로 파생 확장이 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/NVIDIA/SkillSpector" target="_blank">NVIDIA/SkillSpector</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 22,226 · 🍴 1,938 · 오늘 +214 · 🛡️ 데이터 및 보안 인프라</div>
+                <div class="orig">원문: Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.</div>
+                <div><span class="label">🎯 요약:</span> Claude Code, MCP 스킬 내 보안 취약점, 인젝션, 데이터 유출 및 공급망 위협을 설치 전 자동 탐색하는 파이썬 기반 전문 보안 도구임</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 에이전트 확산 속 MCP 스킬 보안 우려 해결. 외부 스킬 코드와 프롬프트 정적 분석으로 데이터 유출 및 공급망 공격 위협을 사전 차단하는 도구임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Claude Code나 Codex처럼 실시간 코드를 실행하는 AI 에이전트가 외부 &#x27;스킬&#x27;을 통해 공격자의 악성 스크립트나 데이터 유출 명령을 실행하는 보안 위협을 정면으로 해결합니다. MCP(Model Context Protocol) 정의 파일과 소스 코드를 정적 분석하여 하드코딩된 API 키, 프롬프트 인젝션 취약점, 비정상적인 네트워크 요청 패턴을 설치 전에 식별합니다. 엔터프라이즈 환경에서 검증되지 않은 서드파티 AI 도구를 도입할 때 필수적인 보안 게이트웨이로 활용 가능하며, 포크 시 특정 산업군의 컴플라이언스(GDPR 등) 준수 여부를 체크하는 자동화 툴로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/pollen-robotics/microduck" target="_blank">pollen-robotics/microduck</a> <span class="chg down">▼3</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Rust · ⭐ 12,433 · 🍴 1,551 · 오늘 +843 · 🦆 로보틱스 및 하드웨어</div>
+                <div class="orig">원문: A Tiny biped duck robot 🦆</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 초소형 2족 보행 오리 로봇으로 3D 프린팅 설계와 제어 SW 스택 일체를 오픈소스로 제공함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 로보틱스 내 Rust 적용 실례로 XL330 서보와 3D 프린팅을 활용해 HW 진입 장벽을 낮추고 제어 안정성을 확보함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 고가의 로봇 플랫폼 대신 3D 프린팅 부품과 Dynamixel XL330 서보를 활용해 2족 보행 알고리즘을 저비용으로 테스트할 수 있는 환경을 제공합니다. Rust 언어의 `esp-hal`을 기반으로 메모리 안전성을 보장하며, 복잡한 로봇 역학(Kinematics)을 임베디드 환경에서 구현하는 실전 코드를 학습하기에 적합합니다. 실무적으로는 소형 서비스 로봇의 프로토타이핑이나 교육용 키트로 활용할 수 있으며, 포크 시 카메라 모듈을 추가해 비전 기반 추적 기능을 구현하거나 LLM API를 연동한 음성 반응형 동반 로봇으로 확장하기 좋습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/nightly-labs/openbot" target="_blank">nightly-labs/openbot</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 1,496 · 🍴 187 · 오늘 +176 · 🤖 AI 에이전트 및 워크스페이스</div>
+                <div class="orig">원문: A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.</div>
+                <div><span class="label">🎯 요약:</span> Codex, Claude, Grok 연동 로컬 기반 워크스페이스로 태스크 큐 및 브라우저 제어 기능 및 에이전트 간 협업 기능을 제공하는 오픈소스 솔루션</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Local-first 보안과 에이전트 간 태스크 큐 협업 및 브라우저 제어 기능을 통한 복잡한 실무 자동화 워크플로우 구축과 지속적 LLM 팀원 운영 지원</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 클라우드 기반 AI의 데이터 프라이버시 문제를 Local-first 아키텍처로 해결하며, 파일 시스템 접근과 실시간 브라우저 자동화 도구를 결합해 단순 챗봇을 넘어선 &#x27;실행형 에이전트&#x27;를 제공합니다. 사용자는 Codex나 Claude 등의 API를 연결하여 다수의 AI 팀원이 태스크 큐를 공유하며 코드를 수정하거나 웹 리서치를 수행하는 고도화된 협업 파이프라인을 구축할 수 있습니다. 특히 오픈소스로 제공되므로 특정 도메인의 QA 테스트 자동화나 마케팅 데이터 수집 전용 에이전트 워크스페이스로 포크하여 실무 맞춤형 내부 도구로 확장하기에 매우 유리합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/Panniantong/Agent-Reach" target="_blank">Panniantong/Agent-Reach</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 103,636 · 🍴 9,189 · 오늘 +746 · 🛡️ 데이터 및 보안 인프라</div>
+                <div class="orig">원문: Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.</div>
+                <div><span class="label">🎯 요약:</span> 트위터·레딧·유튜브 등 주요 SNS 데이터를 API 비용 없이 CLI로 수집해 AI 에이전트에 실시간 연결하는 엔진</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 고비용 API 없이 SNS 데이터를 LLM에 공급하며, 트위터·유튜브 등 전세계 플랫폼 정보를 단일 CLI로 통합 수집 가능함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>고비용 API나 엄격한 접근 제한을 우회하여 트위터, 레딧, 샤오홍슈 등 글로벌 SNS의 실시간 데이터를 AI 에이전트가 직접 읽고 분석할 수 있게 돕습니다. 단일 CLI 환경에서 멀티 플랫폼 검색 및 데이터 추출을 지원하며, LLM이 즉시 처리할 수 있는 정제된 텍스트 형태로 정보를 반환합니다. 실무에서는 RAG 시스템의 최신 정보 소스로 활용하거나 특정 키워드에 대한 실시간 여론 분석 봇을 구축하기 좋으며, 국내 포크 시 네이버나 카카오 플랫폼 지원을 추가해 활용도를 높일 수 있습니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
