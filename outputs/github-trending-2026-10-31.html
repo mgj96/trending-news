@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-10-31)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> 실행 환경과 장기 기억을 갖춘 AI 에이전트 및 분야별 특화 솔루션이 트렌드의 핵심입니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/thedotmack/claude-mem" target="_blank">thedotmack/claude-mem</a> <span class="chg up">▲7</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 106,289 · 🍴 9,356 · 오늘 +1,140 · 🧠 지능형 메모리 및 협업</div>
+                <div class="orig">원문: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More</div>
+                <div><span class="label">🎯 요약:</span> AI 에이전트 세션 기록을 캡처 및 압축해 다음 세션 관련 컨텍스트를 주입하는 TS 기반 장기 기억 솔루션</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 세션 간 맥락 단절을 LLM 압축으로 해결하고 다양한 에이전트 환경서 장기 기억을 유지해 토큰 효율성과 작업 연속성을 확보함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>LLM 에이전트 사용 시 세션이 종료되면 이전 작업의 맥락이 유실되어 발생하는 중복 설명 문제를 해결합니다. 에이전트의 활동을 실시간 캡처해 핵심만 AI로 압축 저장하고, 다음 실행 시 관련 정보를 선별하여 프롬프트에 자동 주입하는 방식으로 동작합니다. Claude Code와 Gemini 등 다양한 에이전트에 즉시 적용 가능하며, 포크 시 특정 도메인 전용 기억 장치나 로컬 벡터 DB를 활용한 보안 강화 버전으로 확장하기 좋습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/milind-soni/OpenMausBot" target="_blank">milind-soni/OpenMausBot</a> <span class="chg up">▲3</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 8,678 · 🍴 1,202 · 오늘 +895 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Open-source Grok Bot alternative with a virtual machine that bots can use</div>
+                <div><span class="label">🎯 요약:</span> xAI Grok 대안의 OSS로 에이전트 전용 VM을 내장하여 LLM이 직접 코드를 실행하고 샌드박스 기반의 실시간 복합 업무를 수행함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 상용 Grok의 폐쇄성을 극복하고 봇에게 격리된 VM 자원을 할당해 보안 위협 없는 코드 실행 및 동적 API 상호작용 등 고도화된 에이전트 구현이 가능함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>LLM이 단순 텍스트 생성을 넘어 가상 머신(VM) 샌드박스 내에서 파이썬 코드를 직접 실행하며 실시간 데이터 처리와 복잡한 논리 연산을 수행하도록 설계되었습니다. TypeScript 기반의 경량 구조로 Grok의 실시간 상호작용을 오픈소스로 재현하며, 호스트 시스템과 분리된 환경을 제공해 에이전트의 자율적인 도구 사용 시 발생할 수 있는 보안 리스크를 원천 차단합니다. 실무에서는 자동화된 데이터 분석 보고서 생성이나 실시간 API 모니터링 봇 구축에 활용할 수 있으며, 포크 시 특정 산업군 전용 라이브러리를 VM에 사전 탑재한 전문 에이전트로 특화 개발하기에 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/pbakaus/impeccable" target="_blank">pbakaus/impeccable</a> <span class="meta">🔁 7일 연속</span></div>
+                <div class="meta">Rust · ⭐ 97,101 · 🍴 5,717 · 오늘 +2,300 · 🎯 도메인 특화 AI 및 유틸리티</div>
+                <div class="orig">원문: The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.</div>
+                <div><span class="label">🎯 요약:</span> 디자인 어휘로 AI Slop 정제 및 Critique·Audit 검수로 고도화된 UI/UX 완성도와 품질 보장함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 생성 코드 고질병인 AI Slop 방지용 디자인 감각 및 Audit 체계 이식과 산출물의 실무급 완성도 및 품질 보장함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 에이전트가 생성한 결과물이 기능적으로는 동작하나 미학적·구조적 완성도가 떨어지는 &#x27;AI Slop&#x27; 현상을 해결하기 위해 등장했습니다. Rust로 작성된 이 도구는 Critique(비판) 및 Audit(감사) 체계를 통해 LLM의 결과물을 반복적으로 검수하고 정제하는 고도화된 피드백 루프를 제공합니다. 실무에서는 Cursor나 Aider 같은 코딩 도구 파이프라인에 통합하여 UI 컴포넌트의 디자인 일관성을 유지하거나 API 설계의 정밀도를 높이는 데 활용할 수 있습니다. 프로젝트를 포크한다면 특정 프레임워크(예: Tailwind CSS) 전용 디자인 시스템 준수 엔진이나, 웹 접근성(WCAG) 표준 자동 검증용 에이전트 모듈로 확장하는 아이디어가 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/CopilotKit/OpenBot" target="_blank">CopilotKit/OpenBot</a> <span class="chg up">▲5</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 8,810 · 🍴 1,110 · 오늘 +706 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.</div>
+                <div><span class="label">🎯 요약:</span> 가상 브라우저·파일·도구 기반의 개별 PC 환경을 점유하며 모든 실행을 사전 계획 및 사후 기록하는 OSS AI 동료용 에이전트 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 에이전트별 독립 샌드박스 환경 제공으로 보안 이슈를 해결하며 브라우징·도구 활용의 전 과정을 기록해 AG-UI 개발 및 디버깅 가시성을 확보함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 에이전트가 실제 업무를 수행할 때 발생하는 권한 남용 및 불투명한 실행 과정을 해결하기 위해, 에이전트마다 독립된 가상 PC 환경(브라우저, 터미널, 로컬 파일)을 할당하고 모든 동작을 추적합니다. LLM이 도구 사용을 결정하기 전 계획을 수립하고 실행 후에는 전체 과정을 기록하여 개발자가 AG-UI(Agentic UI) 상에서 실시간 모니터링 및 제어가 가능하도록 지원합니다. 실무에서는 복잡한 웹 스크래핑, 대규모 코드베이스 분석, 자동화된 QA 테스트 등 자율성이 높고 정교한 도구 활용이 필요한 워크플로우 구축에 적합합니다. 프로젝트를 포크하여 특정 도메인 전용 도구가 사전 설치된 커스텀 에이전트 팩토리나, 기록된 로그를 기반으로 에이전트의 실수를 자동 교정하는 피드백 루프 시스템으로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/Renhuai123/ziwei-doushu" target="_blank">Renhuai123/ziwei-doushu</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 11,231 · 🍴 2,241 · 오늘 +1,126 · 🎯 도메인 특화 AI 및 유틸리티</div>
+                <div class="orig">원문: 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据</div>
+                <div><span class="label">🎯 요약:</span> 니해샤 천기 체계 자미두수 엔진으로 사화 및 격국 데이터 등 복잡한 역학 알고리즘을 TS로 구현한 오픈소스임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 역학 로직을 TS 모듈화해 API 없이 로컬 연산이 가능하며 고전 데이터셋 내장으로 명리 서비스 개발 효율을 극대화하는 엔진임.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 니해샤의 &#x27;천기&#x27; 체계를 정밀하게 코드화하여 수동 계산의 번거로움을 해결하고 자미두수 배반 로직을 표준화된 TypeScript API로 제공합니다. 사화 시스템과 격국 지식베이스를 내장해 웹이나 모바일 앱에서 별도의 서버 통신 없이도 즉각적인 운세 연산 기능을 구현할 수 있는 점이 강점입니다. 실무적으로는 운세 서비스의 백엔드 로직이나 하이브리드 앱의 핵심 엔진으로 활용 가능하며, LLM을 연동해 고전 원문을 현대적으로 해석해주는 AI 운세 상담 챗봇으로 확장하는 아이디어가 유망합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/expo/skills" target="_blank">expo/skills</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Shell · ⭐ 3,906 · 🍴 247 · 오늘 +38 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: A collection of AI agent skills for working with Expo projects and Expo Application Services</div>
+                <div><span class="label">🎯 요약:</span> Expo 프로젝트 및 EAS 최적화 AI 에이전트용 스킬셋으로 CLI 기반 빌드, 배포, 디버깅 자동화 및 개발 경험 향상 지원</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM이 MCP 기반으로 Expo CLI 및 EAS API를 직접 제어해 복잡한 앱 설정, 빌드, 배포 파이프라인을 대화형으로 자동화하는 혁신적 도구</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 Claude나 Cursor 같은 AI 에이전트가 Expo 환경을 깊이 이해하고 EAS(Expo Application Services) 기능을 직접 수행할 수 있도록 돕는 도구 모음입니다. 개발자가 자연어로 명령하면 에이전트가 CLI를 호출해 실시간 빌드 상태를 확인하거나, `app.json` 설정을 수정하고 OTA(Over-the-Air) 업데이트를 즉시 실행할 수 있습니다. 복잡한 모바일 앱 배포 워크플로우를 AI 대화형 인터페이스로 전환하여 수동 조작 실수를 방지하고 개발 생산성을 크게 높입니다. 이를 포크하여 기업 내부의 전용 CI/CD 인프라와 결합하거나, 특정 라이브러리 의존성 해결에 특화된 커스텀 MCP 서버로 확장하는 아이디어가 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/macro-inc/macro" target="_blank">macro-inc/macro</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 5,882 · 🍴 538 · 오늘 +57 · 🧠 지능형 메모리 및 협업</div>
+                <div class="orig">원문: Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 이메일·채팅·문서·CRM 통합 워크스페이스로 공유 AI 메모리와 @-링크 기반 팀 데이터 파편화를 방지하는 올인원 협업 도구</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 분산된 협업 맥락을 AI 메모리로 통합해 컨텍스트 스위칭 비용을 최소화하며 Rust 고성능 엔진과 LLM 에이전트 결합으로 워크플로우 자동화를 실현함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 이메일과 문서를 포함한 업무 도구 간의 데이터 단절을 해결하기 위해 &#x27;공유 AI 메모리&#x27;를 도입하여 모든 업무 맥락을 유기적으로 연결합니다. Rust로 설계되어 대규모 데이터 처리 시에도 빠른 응답성을 보장하며, 사용자가 @-링크만으로 간편하게 참조 데이터를 불러오거나 LLM 에이전트에게 복합적인 태스크를 할당할 수 있습니다. 특히 영업 관리부터 기술 지원까지 흩어진 고객 정보를 통합 관리하는 커스텀 CRM으로 활용하기에 적합하며, 오픈소스로 공개되어 있어 특정 도메인에 특화된 프라이빗 AI 협업 툴로 확장하기 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/mattpocock/skills" target="_blank">mattpocock/skills</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Shell · ⭐ 307,500 · 🍴 25,886 · 오늘 +876 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Skills for Real Engineers. Straight from my .agents directory.</div>
+                <div><span class="label">🎯 요약:</span> LLM 에이전트용 Shell 스크립트 모음으로 TS 에러 진단, 테스트 실행, 의존성 관리 등 워크플로우 자동화 지원함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Cursor, Windsurf 확산 속 LLM 호출용 CLI 도구 수요 반영 및 Matt Pocock의 실전 에이전트 워크플로우 이식함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 AI 에이전트가 코드를 단순히 작성하는 수준을 넘어, `get_ts_errors`나 `run_tests` 같은 구체적인 CLI 명령을 직접 실행해 런타임 결과값을 피드백으로 활용하게 돕습니다. LLM이 터미널 도구들과 상호작용하는 브릿지 역할을 수행하며, 복잡한 타입 에러 수정이나 패키지 업데이트 작업을 에이전트가 완결성 있게 처리하도록 지원합니다. 실무에서는 Cursor의 커스텀 &#x27;.cursorrules&#x27; 혹은 &#x27;MCP(Model Context Protocol)&#x27; 설정과 결합하여 고도로 자동화된 페어 프로그래밍 환경을 구축할 수 있습니다. 사용자는 이 레포지토리를 포크하여 본인의 기술 스택에 최적화된 유틸리티를 추가하거나, 사내 코드 품질 검사 스크립트를 통합해 전용 AI 개발 에이전트를 제작할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/pingdotgg/t3code" target="_blank">pingdotgg/t3code</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 32,758 · 🍴 8,660 · 오늘 +930 · 🎯 도메인 특화 AI 및 유틸리티</div>
+                <div class="orig">원문: 상세 설명이 제공되지 않은 프로젝트입니다.</div>
+                <div><span class="label">🎯 요약:</span> (원본) 상세 설명이 제공되지 않은 프로젝트입니다.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/HKUDS/DeepTutor" target="_blank">HKUDS/DeepTutor</a> <span class="chg down">▼9</span> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">Python · ⭐ 51,800 · 🍴 6,346 · 오늘 +2,282 · 🎯 도메인 특화 AI 및 유틸리티</div>
+                <div class="orig">원문: DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.</div>
+                <div><span class="label">🎯 요약:</span> 학습자의 성취도를 분석하여 개인별 맞춤 교육 과정을 설계하고 지식의 장기 유지를 돕는 Python 기반 평생 AI 튜터링 시스템</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM의 단기 기억 한계를 극복하고 장기 학습 데이터를 분석해 개인별 최적화 경로를 제시하는 RAG 기반 지능형 교육 시스템으로 실전성 확보</div>
+                <div class="detail"><span class="label">📖 상세</span><br>DeepTutor는 학습자의 지식 수준과 망각 곡선을 분석하여 실시간으로 교육 콘텐츠를 최적화하는 동적 메모리 메커니즘을 채택했습니다. 기존 LLM 교육 도구와 달리 사용자의 과거 학습 이력을 장기 보존하며, 개인화된 지식 그래프를 통해 학습 결손 부위를 정밀하게 추적하는 것이 특징입니다. 기업 내 직무 재교육이나 코딩 부트캠프에서 수강생별 진도 관리 및 맞춤형 피드백 도구로 즉시 활용할 수 있습니다. 프로젝트를 포크하여 특정 전문 분야(의학, 법률 등) 전용 튜터링 봇을 구축하거나, 기존 LMS와 API를 연동해 지능형 학습 보조 엔진으로 확장하는 아이디어를 제안합니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
