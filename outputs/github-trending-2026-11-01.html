@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-01)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> AI 에이전트의 자율적 업무 수행을 돕는 스킬셋 확장과 도메인별 특화 프레임워크가 트렌드를 주도하고 있습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/thedotmack/claude-mem" target="_blank">thedotmack/claude-mem</a> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 107,888 · 🍴 9,469 · 오늘 +1,723 · 🛠️ AI 에이전트 역량 강화</div>
+                <div class="orig">원문: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More</div>
+                <div><span class="label">🎯 요약:</span> AI 활동 기록 및 압축 기반 맥락 관리 도구로 Claude Code 세션 종료 후에도 이전 작업 내역 자동 주입 및 유지함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 세션 종료 시 맥락 소실 문제를 AI 기반 요약과 임베딩으로 해결하며 Claude Code, Gemini 등 도구 간 작업 흐름 연속성을 강화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 에이전트가 이전 세션에서 수행한 터미널 명령어나 코드 수정 이력을 휘발시키지 않고 핵심 맥락만 요약 저장한 뒤 다음 호출 시 자동 주입합니다. 로컬 SQLite나 벡터 DB와 연동하여 Claude Code뿐 아니라 Gemini, Copilot 등 다양한 인터페이스에서 동일한 작업 맥락을 공유할 수 있습니다. 실무에서는 복잡한 리팩토링이나 며칠이 소요되는 장기 프로젝트 진행 시 도구 간의 작업 단절을 막는 ‘공통 기억 저장소’로 활용하기 좋습니다. 포크 시 특정 도메인 데이터와 결합해 조직 전용 지식 베이스를 실시간 반영하는 지능형 메모리 모듈로 확장 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/mattpocock/skills" target="_blank">mattpocock/skills</a> <span class="chg up">▲6</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Shell · ⭐ 308,400 · 🍴 25,949 · 오늘 +883 · 🛠️ AI 에이전트 역량 강화</div>
+                <div class="orig">원문: Skills for Real Engineers. Straight from my .agents directory.</div>
+                <div><span class="label">🎯 요약:</span> LLM 에이전트가 로컬 CLI에서 즉시 실행 가능한 쉘 스크립트 도구 모음으로 개발 프로세스 가속화 및 복잡한 워크플로우 자동화함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 한계를 쉘 기반 커스텀 스킬로 보완해 파일 검색, 코드 분석 등 실무 작업을 자동화하려는 최근의 AI 에이전트 중심 개발 워크플로우 반영함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM 에이전트가 로컬 시스템에서 직접 호출할 수 있는 고성능 쉘 스크립트 세트를 제공하여 AI와 터미널 환경 간의 조작 간극을 해결합니다. `find_files`, `ripgrep` 등 강력한 CLI 도구들을 에이전트가 이해하기 쉬운 규격으로 래핑하여 대규모 코드베이스 분석이나 반복적인 테스트 수행 시 AI의 실행 정확도를 비약적으로 높여줍니다. 실무에서는 Aider나 Claude Engineer와 같은 도구에 이 스킬셋을 이식하여 수동 조작을 최소화한 자율형 개발 환경을 구축하는 데 활용됩니다. 프로젝트를 포크한다면 Kubernetes 클러스터 관리나 특정 DB 스키마 분석 등 도메인 특화된 전용 스킬을 추가하여 팀별 맞춤형 AI 엔지니어를 구현해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/Donchitos/Claude-Code-Game-Studios" target="_blank">Donchitos/Claude-Code-Game-Studios</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Shell · ⭐ 31,190 · 🍴 4,273 · 오늘 +742 · 🚀 산업별 특화 솔루션</div>
+                <div class="orig">원문: Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.</div>
+                <div><span class="label">🎯 요약:</span> 49개 AI 에이전트와 72개 워크플로우 스킬로 Claude Code를 실제 게임 스튜디오 조직 체계로 변환하는 CLI 기반의 게임 개발 자동화 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 단순 코드 생성을 넘어 기획자, 아트, 개발자 등 49개 직무별 AI 군단을 계층적으로 조율해 대규모 게임 프로젝트를 관리하는 에이전틱 워크플로우의 정점</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Claude Code를 단순 코딩 보조 도구에서 49개의 세분화된 에이전트가 협업하는 가상 스튜디오로 확장하여, 복잡한 게임 로직과 자산 관리의 오버헤드를 해결합니다. 사용자는 CLI 환경에서 기획, 아트, 프로그래밍 등 72개의 특화 스킬을 조합하여 실제 게임 개발사의 계층적 의사결정 프로세스를 그대로 시뮬레이션할 수 있습니다. 1인 개발자가 대규모 프로젝트의 PM 역할을 수행하거나 복잡한 상태 머신 설계를 자동화하는 실무에 특히 유용합니다. 이 프로젝트를 포크하여 게임뿐만 아니라 엔터프라이즈급 백엔드 아키텍처 설계나 다층적 보안 감사 시스템 등 대규모 협업이 필요한 타 도메인용 &#x27;에이전트 팩&#x27;으로 변형해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/pingdotgg/t3code" target="_blank">pingdotgg/t3code</a> <span class="chg up">▲5</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 35,617 · 🍴 8,787 · 오늘 +1,148 · ⚙️ 개발 최적화 및 인프라</div>
+                <div class="orig">원문: 상세 설명이 제공되지 않은 프로젝트입니다.</div>
+                <div><span class="label">🎯 요약:</span> (원본) 상세 설명이 제공되지 않은 프로젝트입니다.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/Renhuai123/ziwei-doushu" target="_blank">Renhuai123/ziwei-doushu</a> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 12,283 · 🍴 2,413 · 오늘 +1,092 · 🚀 산업별 특화 솔루션</div>
+                <div class="orig">원문: 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据</div>
+                <div><span class="label">🎯 요약:</span> 니하이샤 천기 체계 기반 자미두수 배반 엔진으로 TS 알고리즘, 사화 시스템, 격국 DB 및 고전 원문 데이터를 포함한 OSS임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 파편화된 점술 로직을 TS로 규격화하고 니하이샤 체계의 고전 데이터를 DB화하여 서비스 개발 효율을 극대화한 점이 개발자 사이에서 주목받음.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>복잡한 역학 계산과 방대한 고전 텍스트를 TypeScript 라이브러리 형태로 정제하여, 파편화되어 있던 동양 점술 로직의 표준화된 배반 기능을 제공합니다. 사화 시스템과 격국 지식베이스가 포함되어 있어, 개발자가 별도의 알고리즘 설계 없이도 즉시 운세 서비스나 사주 분석 백엔드 API에 통합할 수 있는 것이 강점입니다. 프로젝트를 포크한다면 정제된 격국 데이터를 LLM에 학습시켜 개인 맞춤형 AI 명리 상담 챗봇을 만들거나, React Native를 활용한 크로스 플랫폼 점술 대시보드 앱으로 확장하기에 매우 유리합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/milind-soni/OpenMausBot" target="_blank">milind-soni/OpenMausBot</a> <span class="chg down">▼4</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 9,636 · 🍴 1,338 · 오늘 +1,303 · 🛠️ AI 에이전트 역량 강화</div>
+                <div class="orig">원문: Open-source Grok Bot alternative with a virtual machine that bots can use</div>
+                <div><span class="label">🎯 요약:</span> 가상 머신 연동으로 코드 실행 및 웹 제어가 가능한 TypeScript 기반 Grok 대안 OSS로 LLM의 도구 활용 및 자율성 확보에 집중함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM이 샌드박스 VM서 실제 작업을 수행해 챗봇 한계를 넘고 Grok 기능을 OSS로 구현해 커스텀 에이전트 구축 시 높은 확장성과 제어권을 제공함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Grok의 실시간 정보 처리와 도구 활용 능력을 모방하며, 샌드박스 VM 환경을 통해 LLM이 직접 코드를 실행하거나 브라우징을 수행하는 자율성을 부여합니다. TypeScript 기반으로 설계되어 기존 웹 생태계와의 통합이 쉽고, 단순 텍스트 응답을 넘어 실질적인 태스크 수행이 가능한 에이전트 워크플로우를 구축할 수 있습니다. 실무에서는 데이터 분석 시 LLM이 직접 파이썬 코드를 짜서 실행 결과를 보여주거나 복잡한 웹 자동화 봇을 만드는 데 활용됩니다. 포크 시 특정 산업군에 맞춘 프리셋 VM이나 로컬 LLM을 결합하여 데이터 유출 걱정 없는 폐쇄형 업무 자동화 봇으로 고도화하기에 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/pbakaus/impeccable" target="_blank">pbakaus/impeccable</a> <span class="chg down">▼4</span> <span class="meta">🔁 8일 연속</span></div>
+                <div class="meta">Rust · ⭐ 98,294 · 🍴 5,795 · 오늘 +1,338 · ⚙️ 개발 최적화 및 인프라</div>
+                <div class="orig">원문: The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 AI 코딩 에이전트용 디자인 어휘 프레임워크로, 정교한 지시 및 감사를 통해 LLM의 저품질 코드(Slop) 생성을 사전에 차단함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 단순 프롬프트 엔지니어링의 한계를 극복하고 디자인 시스템 준수 및 비평 단계를 도입하여, 에이전트가 생성한 코드의 완성도를 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 에이전트가 생성하는 결과물이 실제 프로덕션 환경의 디자인 수준에 미치지 못하는 &#x27;AI Slop&#x27; 문제를 해결하기 위해 디자인 어휘 체계화와 감사(Audit) 프로세스를 제공합니다. Rust 기반의 엔진을 통해 에이전트가 코드를 작성할 때 시각적 완성도를 높이는 지시를 명확히 이해하게 하며, 비평과 수정을 거쳐 기술적 부채가 적은 결과물을 도출하도록 돕습니다. 실무에서는 UI 컴포넌트 자동 생성 파이프라인에 통합하여 사내 디자인 가이드를 강제하거나, PR 전 단계에서 코드 일관성을 검수하는 도구로 활용할 수 있습니다. 프로젝트 포크 시 특정 프레임워크 전용 제약 조건을 추가하거나, 웹 접근성(A11y) 및 보안 취약점을 자동으로 교정하는 특화형 에이전트 보조 도구로 확장하기에 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Shell · ⭐ 310,068 · 🍴 27,585 · 오늘 +665 · 🛠️ AI 에이전트 역량 강화</div>
+                <div class="orig">원문: An agentic skills framework &amp; software development methodology that works.</div>
+                <div><span class="label">🎯 요약:</span> LLM 에이전트용 스킬 프레임워크 및 실무 중심 소프트웨어 개발 방법론을 제안하는 오픈소스 기반 CLI 도구 모음임</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 기존 에이전트 한계를 넘어 LLM이 복잡한 코딩 태스크를 수행하도록 모듈화된 스킬과 검증된 실무 워크플로우를 제공해 개발 효율을 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM 에이전트가 단순 코드 생성을 넘어 실무 수준의 복잡한 개발 과업을 완수할 수 있도록 돕는 &#x27;스킬&#x27; 중심의 프레임워크입니다. 셸 스크립트 기반의 모듈화된 도구들을 통해 에이전트에게 파일 조작, 테스트 실행, 코드 분석 등의 구체적인 능력을 부여하고 이를 제어하는 방법론을 제시합니다. 실제 대규모 코드베이스에서의 리팩토링이나 반복적인 디버깅 자동화에 즉시 적용 가능하며, 사용자 정의 스킬을 추가해 고유한 개발 환경에 최적화할 수 있습니다. 이를 포크하여 특정 기술 스택이나 클라우드 인프라 운영에 특화된 전용 에이전트 스킬셋으로 확장해 보는 아이디어를 제안합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/lightpanda-io/browser" target="_blank">lightpanda-io/browser</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Zig · ⭐ 39,259 · 🍴 1,909 · 오늘 +929 · ⚙️ 개발 최적화 및 인프라</div>
+                <div class="orig">원문: Lightpanda: the headless browser designed for AI and automation</div>
+                <div><span class="label">🎯 요약:</span> Zig 언어 기반 AI·자동화 전용 초경량 헤드리스 브라우저. 기존 엔진 대비 리소스 최소화 및 고성능 실행 환경 구축용.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 비대한 크로미움 탈피 및 밀리초 단위 즉시 실행 지원. Zig 언어 최적화로 LLM 에이전트용 대규모 웹 스크래핑 병목 해결함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Lightpanda는 Chromium이나 Firefox 소스에 의존하지 않고 Zig 언어로 DOM 및 JavaScript 엔진을 처음부터 구현하여 극도의 경량화를 실현했습니다. 기존 헤드리스 브라우저 대비 메모리 점유율을 10배 이상 절감하고 실행 속도를 수 밀리초 단위로 단축하여, 수천 개의 브라우저 인스턴스를 동시에 운용해야 하는 LLM 에이전트 인프라에 최적화되어 있습니다. 실무에서는 대규모 데이터 스크래핑 비용 절감이나 고속 웹 자동화 테스트 환경 구축에 즉시 적용 가능합니다. 이 프로젝트를 포크한다면 특정 웹 사이트의 봇 탐지를 우회하는 맞춤형 브라우저 핑거프린팅 엔진을 구축하거나, 리소스가 제한된 IoT 기기용 초경량 웹 뷰어로 확장하는 아이디어를 시도해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/HKUDS/DeepTutor" target="_blank">HKUDS/DeepTutor</a> <span class="meta">🔁 5일 연속</span></div>
+                <div class="meta">Python · ⭐ 52,827 · 🍴 6,466 · 오늘 +1,034 · 🚀 산업별 특화 솔루션</div>
+                <div class="orig">원문: DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.</div>
+                <div><span class="label">🎯 요약:</span> LLM 기반 평생 맞춤형 튜터링 시스템으로 장기 기억 모델링과 인지 능력 추적을 통한 개인별 학습 최적화 교육 프레임워크 제공함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 일회성 문답을 넘어 장기 학습 이력과 인지 수준을 분석하여 맞춤형 커리큘럼을 동적 생성하는 LLM 기반 에듀테크 아키텍처가 혁신적임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>정적인 지식 전달에서 벗어나 학습자의 망각 곡선과 인지 상태를 추적하며 실시간으로 난이도를 조절하는 능동형 AI 교수법을 구현했습니다. LLM의 추론 능력에 장기 기억 저장소와 지식 그래프를 결합하여, 과거 학습 이력을 바탕으로 개인별 취약점을 보완하는 고도화된 맞춤형 피드백을 제공합니다. 실무에서는 기업용 온보딩 가이드나 언어 학습 서비스에 즉시 도입 가능하며, 특정 도메인 데이터를 파인튜닝하여 코딩이나 법률 등 전문 분야 특화 튜터로 확장하기에 용이합니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
