@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-02)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> AI 에이전트 고도화와 특정 산업 특화 모델, 이를 뒷받침하는 고성능 개발 인프라 중심의 프로젝트가 강세입니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/thedotmack/claude-mem" target="_blank">thedotmack/claude-mem</a> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 109,329 · 🍴 9,567 · 오늘 +1,526 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More</div>
+                <div><span class="label">🎯 요약:</span> 클로드 코드 등 에이전트 세션 기록을 AI로 압축해 다음 실행 시 관련 문맥을 자동 주입하는 영구 메모리 계층</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 세션 종료 시 휘발되는 컨텍스트를 AI로 요약·보존해 LLM 장기 기억력을 개선하고 반복적인 상황 설명 없는 연속적 개발 지원</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 에이전트가 수행한 모든 작업을 기록한 뒤 핵심 내용을 AI로 압축하며, 이후 세션에서 RAG(검색 증강 생성) 방식으로 필요한 정보만 선별해 재주입합니다. 클로드 코드나 코파일럿 사용 시 이전 세션의 디버깅 맥락이나 아키텍처 설계 의도를 매번 다시 설명할 필요가 없어 작업의 연속성을 획기적으로 높여줍니다. 단순 텍스트 저장을 넘어 AI가 의미론적 중요도를 판단해 압축하므로, 무분별한 로그 주입으로 인한 LLM의 토큰 낭비와 성능 저하 문제를 효율적으로 해결합니다. 이 프로젝트를 포크하여 로컬 벡터 DB(ChromaDB 등)를 연동한 프라이버시 강화 버전이나, 특정 프레임워크 전용 컨텍스트 추출 도구로 확장해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/lightpanda-io/browser" target="_blank">lightpanda-io/browser</a> <span class="chg up">▲7</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Zig · ⭐ 40,161 · 🍴 1,966 · 오늘 +825 · 🛠️ 개발 인프라 및 리소스</div>
+                <div class="orig">원문: Lightpanda: the headless browser designed for AI and automation</div>
+                <div><span class="label">🎯 요약:</span> Zig 기반 AI·자동화 최적화 경량 헤드리스 브라우저. Chromium 대비 저리소스 고속 실행 및 DOM 조작 기능을 제공하는 고성능 웹 스택 엔진</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 기존 Playwright의 무거운 리소스 점유 해결. Zig 기반 고속 엔진으로 수천 개 탭 동시 구동 및 LLM 에이전트 웹 스크래핑 비용과 지연 시간을 대폭 개선함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Lightpanda는 Chromium 기반의 무거운 헤드리스 브라우저 대신 Zig로 구현된 독자적인 브라우징 엔진을 사용하여 메모리 사용량을 10배 이상 절감합니다. 별도의 브라우저 설치 없이 단일 바이너리로 동작하며, 수천 개의 세션을 동시에 처리할 수 있어 대규모 데이터 크롤링이나 LLM 에이전트의 실시간 웹 검색 도구로 최적화되어 있습니다. 실무에서는 CI/CD 환경의 가벼운 E2E 테스트나 고성능 웹 스크래퍼 구축에 활용 가능하며, 포크 시 특정 웹 표준만 지원하는 초경량 보안 스캐너나 AI 전용 맞춤형 브라우저 인터페이스로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/shiyu-coder/Kronos" target="_blank">shiyu-coder/Kronos</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 45,411 · 🍴 7,504 · 오늘 +630 · 🧠 특화 AI 및 비전 프레임워크</div>
+                <div class="orig">원문: Kronos: A Foundation Model for the Language of Financial Markets</div>
+                <div><span class="label">🎯 요약:</span> 금융 시장 시계열 데이터를 언어 모델처럼 학습한 파운데이션 모델로 토큰화 기반 다중 자산 예측 및 리스크 관리용</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 전통 분석 한계 LLM 구조로 해결해 복잡한 시장 역학 학습 및 제로샷 전이 학습과 비선형적 자산 간 상관관계 포착 능력에 개발자들 주목함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Kronos는 금융 시계열의 노이즈와 비정상성을 해결하기 위해 가격 및 거래량 데이터를 토큰화하여 Transformer 기반으로 학습한 파운데이션 모델입니다. 개별 종목을 넘어 다중 자산 간의 복잡한 비선형 관계를 포착하며, 별도의 재학습 없이도 새로운 시장 환경에 적응하는 뛰어난 제로샷 예측 성능을 보여줍니다. 실무에서는 퀀트 트레이딩의 알파 시그널 추출이나 포트폴리오 리스크 헤지 전략 수립에 즉시 활용 가능합니다. 프로젝트를 포크한다면 암호화폐처럼 변동성 높은 특정 자산군에 특화된 미세 조정(Fine-tuning) 모델을 구축하거나, 뉴스 감성 분석 API를 결합한 하이브리드 예측 엔진으로 확장해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/pingdotgg/t3code" target="_blank">pingdotgg/t3code</a> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 38,073 · 🍴 8,922 · 오늘 +3,094 · 🛠️ 개발 인프라 및 리소스</div>
+                <div class="orig">원문: 상세 설명이 제공되지 않은 프로젝트입니다.</div>
+                <div><span class="label">🎯 요약:</span> (원본) 상세 설명이 제공되지 않은 프로젝트입니다.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/milind-soni/OpenMausBot" target="_blank">milind-soni/OpenMausBot</a> <span class="chg up">▲1</span> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 10,556 · 🍴 1,460 · 오늘 +922 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Open-source Grok Bot alternative with a virtual machine that bots can use</div>
+                <div><span class="label">🎯 요약:</span> VM 환경 내장으로 직접 코드 실행 가능한 Grok 대체용 TypeScript 기반 오픈소스 에이전트 및 자동화 봇 개발 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 폐쇄적인 Grok의 OSS 대안으로 샌드박스 VM 기반 LLM 코드 실행 및 실시간 데이터 처리 기능을 제공해 복잡한 워크플로우 구현이 가능한 점이 핵심임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM 에이전트가 단순히 텍스트를 생성하는 수준을 넘어, 격리된 가상 머신(VM) 환경에서 실제 코드를 실행하고 결과를 도출할 수 있도록 돕습니다. Grok의 실시간 정보 처리 능력을 오픈소스로 구현하고자 하며, 샌드박스 내부에서 API 호출이나 데이터 분석 작업을 안전하게 수행할 수 있는 구조를 제공합니다. 실무에서는 보안이 중요한 웹 데이터 자동 수집기나 인터랙티브한 코드 실행 봇으로 활용 가능합니다. 포크 시 특정 도메인 전용 라이브러리를 VM에 사전 설치하여 금융 분석이나 인프라 관리 특화 에이전트로 확장해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/public-apis/public-apis" target="_blank">public-apis/public-apis</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 494,637 · 🍴 55,207 · 오늘 +324 · 🛠️ 개발 인프라 및 리소스</div>
+                <div class="orig">원문: A collective list of free APIs</div>
+                <div><span class="label">🎯 요약:</span> 인증, HTTPS, CORS 등 메타데이터 포함 무료 API 목록. 사이드 프로젝트 및 기술 검증용 리소스로 즉시 활용 가능한 OSS 리소스임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 50개 이상 카테고리, 수천 개 API의 인증 및 보안 규격 한눈에 파악. 탐색 시간 단축 및 앱 MVP 구축 속도 극대화로 개발자 선호도 높음.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>전 세계에 흩어진 수천 개의 무료 API를 50여 개의 카테고리로 분류하여, 개발자가 데이터 소스를 찾는 데 소모하는 탐색 비용을 획기적으로 줄여줍니다. 각 항목마다 Auth(인증 여부), HTTPS 지원, CORS 정책을 명시해 기술적 적합성을 즉시 판단할 수 있으며, Python 기반 유효성 검증 스크립트로 리스트의 최신성을 유지합니다. 실무에서는 프로토타입 개발 시 외부 연동 테스트나 교육용 실습 예제 데이터로 활용되며, 이를 포크(Fork)하여 특정 도메인 전용 API 큐레이션 서비스나 API 상태 모니터링 대시보드를 구축하는 아이디어로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/cjpais/Handy" target="_blank">cjpais/Handy</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 36,580 · 🍴 3,454 · 오늘 +339 · 🧠 특화 AI 및 비전 프레임워크</div>
+                <div class="orig">원문: A free, open source, and extensible speech-to-text application that works completely offline.</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 고성능 오프라인 STT 엔진, 개인정보 유출 없는 텍스트 변환 및 플러그인 구조로 자유로운 기능 확장 지원</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 클라우드 API 의존 없는 로컬 GPU 가속 기반 보안 강화 및 Rust의 고성능 활용 실시간 음성 인식과 개발자 맞춤형 확장성 제공</div>
+                <div class="detail"><span class="label">📖 상세</span><br>클라우드 기반 STT 서비스의 비용 부담과 데이터 유출 우려를 해결하기 위해 로컬 환경에서 모든 연산을 수행하는 Rust 기반 오픈소스 솔루션입니다. 확장 가능한 아키텍처를 채택하여 단순 녹음본 변환을 넘어 실시간 스트리밍 처리나 특정 도메인 용어 최적화 등 다양한 파이프라인 구축이 가능합니다. 기업 내 보안 회의록 자동 작성이나 개인용 AI 비서의 음성 입력 모듈로 활용하기 좋으며, 포크 시 로컬 LLM과 연동하여 실시간 음성 질의응답(RAG) 시스템으로 확장하는 아이디어를 구현해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/Donchitos/Claude-Code-Game-Studios" target="_blank">Donchitos/Claude-Code-Game-Studios</a> <span class="chg down">▼5</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Shell · ⭐ 32,318 · 🍴 4,402 · 오늘 +967 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.</div>
+                <div><span class="label">🎯 요약:</span> Claude Code CLI 기반 49종 AI 에이전트와 72개 스킬 결합. 실제 게임 개발 스튜디오의 계층형 조직 구조를 구현한 자동화 시스템.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 단순 코드 생성을 넘어 기획부터 QA까지 49종 에이전트가 협업함. 실제 스튜디오 계층 구조를 모사해 복잡한 다단계 게임 개발 파이프라인 자동화.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Claude Code CLI 환경에서 기획, 개발, 아트, QA 등 49개의 세분화된 AI 에이전트가 실제 게임사 직급 체계에 맞춰 유기적으로 협동하며 프로젝트를 수행합니다. 단일 프롬프트의 한계를 넘어 72가지 전문 스킬셋을 조합해 복잡한 게임 로직 설계부터 리소스 관리까지 전 과정을 자동화하는 것이 핵심입니다. 인디 게임 개발자가 1인 스튜디오 규모를 확장하거나 대규모 게임의 프로토타입을 초고속으로 빌드할 때 매우 실용적입니다. 이 계층형 협업 아키텍처를 포크하여 웹 에이전시나 SaaS 운영 등 타 산업군 전용 AI 조직 관리 시스템으로 응용해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/kornia/kornia" target="_blank">kornia/kornia</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 11,804 · 🍴 1,467 · 오늘 +101 · 🧠 특화 AI 및 비전 프레임워크</div>
+                <div class="orig">원문: 🐍 Geometric Computer Vision Library for Spatial AI</div>
+                <div><span class="label">🎯 요약:</span> PyTorch 기반 미분 가능한 기하 컴퓨터 비전 라이브러리로 GPU 가속을 활용한 Spatial AI 및 3D 비전 처리용 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> OpenCV급 기능을 GPU 텐서로 최적화하고 딥러닝 역전파에 CV 로직을 직접 결합 가능한 미분 구조를 제공하여 고성능 Spatial AI 모델 구현에 유리함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Kornia는 기존 OpenCV와 달리 PyTorch 기반의 미분 가능한 구조를 채택하여, 기하학적 이미지 변환이나 필터링 연산을 딥러닝 모델의 학습 루프 내에 직접 포함시킬 수 있습니다. GPU 가속을 통해 대용량 텐서 연산을 실시간으로 처리하며, 카메라 캘리브레이션이나 3D 투영과 같은 복잡한 Spatial AI 연산을 API 형태로 간편하게 제공합니다. 자율주행 차량의 장애물 감지나 로봇 팔의 시각 제어 시스템처럼 정밀한 기하 연산이 필요한 실무 환경에서 높은 효율성을 발휘합니다. 이 프로젝트를 포크하여 특정 하드웨어에 최적화된 경량 SLAM 엔진을 구축하거나, 의료 영상 데이터의 해부학적 특성을 보존하는 미분 가능한 증강 도구로 확장해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/beenuar/AiSOC" target="_blank">beenuar/AiSOC</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 6,235 · 🍴 644 · 오늘 +446 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&amp;CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.</div>
+                <div><span class="label">🎯 요약:</span> MITRE ATT&amp;CK 기반 보안 경보 통합 및 LLM 에이전트 분석용 오픈소스 SOC 플랫폼. 로컬 모델 기반의 의사결정 이력 및 MCP 서버 지원</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 보안 데이터 유출 없는 로컬 LLM 보안 대응과 MCP 기반 Cursor 연동 편의성. MITRE ATT&amp;CK 프레임워크 기반 정밀 탐지 및 에이전트 추론 단계별 로깅</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AiSOC은 산재된 보안 경보를 MITRE ATT&amp;CK 프레임워크에 맞춰 통합하고, LLM 에이전트가 위협을 분석하는 오픈소스 보안 관제 플랫폼입니다. 로컬 LLM을 활용해 외부 API 노출 없이 민감한 보안 데이터를 분석하며, 에이전트의 모든 판단 근거를 리플레이 가능한 원장 형태로 남겨 AI의 오탐 여부를 명확히 검증할 수 있습니다. 특히 MCP(Model Context Protocol) 서버를 지원하여 Cursor나 Claude 데스크톱 앱에서 보안 위협 정보를 즉시 컨텍스트로 활용할 수 있는 점이 실무적입니다. 이 프로젝트를 포크하여 사내 보안 장비(EDR, SIEM) API와 연동하는 실시간 대응 파이프라인을 구축하거나, 특정 산업군에 특화된 보안 컴플라이언스 준수 여부 자동 검증 툴로 확장하기 좋습니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
