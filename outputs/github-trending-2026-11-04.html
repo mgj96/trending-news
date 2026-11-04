@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-04)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> AI 에이전트의 실행 환경 확장과 로컬 인프라 최적화 및 모델 제어 도구들이 오늘 GitHub 트렌드를 주도하고 있습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/thedotmack/claude-mem" target="_blank">thedotmack/claude-mem</a> <span class="chg up">▲1</span> <span class="meta">🔁 6일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 111,981 · 🍴 9,744 · 오늘 +1,139 · 🤖 AI 에이전트 및 워크플로우</div>
+                <div class="orig">원문: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More</div>
+                <div><span class="label">🎯 요약:</span> 세션 로그를 AI로 요약해 다음 대화에 핵심 문맥을 자동 주입하여 Claude Code 및 Gemini 에이전트에 영구적 기억을 부여하는 TypeScript 기반 도구</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 매번 초기화되는 CLI 에이전트의 컨텍스트를 AI 압축 기술로 보존하며 Claude Code 및 Copilot 등 멀티 환경에서 토큰 소모를 줄이고 연속 작업을 지원함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM 에이전트가 세션 종료 시 이전 작업 내역을 망각하는 고질적인 문제를 AI 기반의 동적 컨텍스트 압축 및 재주입 기술로 해결합니다. Claude Code나 Copilot 같은 도구의 실행 로그를 실시간으로 캡처하고 중요 정보만 추출해 저장함으로써, 다음 실행 시 관련성 높은 과거 정보를 프롬프트에 자동으로 결합합니다. 이를 통해 수일간 이어지는 대규모 코드 리팩토링이나 복잡한 프로젝트 분석 시 배경지식을 반복 설명할 필요가 없어 실무 생산성을 극대화합니다. 포크 시에는 로컬 LLM(Ollama) 연동 기능을 추가하거나, 특정 도메인 지식에 특화된 요약 로직을 구현하여 보안이 중요한 기업 내부용 맞춤형 메모리 에이전트로 확장하기 좋습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/vercel-labs/agent-desktop" target="_blank">vercel-labs/agent-desktop</a> <span class="chg down">▼1</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Rust · ⭐ 12,943 · 🍴 889 · 오늘 +3,791 · 🤖 AI 에이전트 및 워크플로우</div>
+                <div class="orig">원문: Computer use CLI for AI agents</div>
+                <div><span class="label">🎯 요약:</span> AI 에이전트의 데스크톱 제어를 지원하는 Rust 기반 CLI 도구로 Claude Computer Use를 터미널 및 로컬 환경에 연동함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Vercel의 고성능 Rust 엔진을 통해 로컬 OS의 스크린샷 및 마우스, 키보드 제어권을 LLM에 부여하여 워크플로우 자동화 장벽을 낮춤</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 Anthropic의 Computer Use 기능을 사용자가 자신의 로컬 OS나 VM 환경에서 Rust 특유의 성능으로 구동할 수 있게 지원합니다. LLM이 전송받은 화면 데이터를 분석해 좌표 기반으로 클릭, 타이핑 등 실제 인간의 입력을 모사하므로 API가 없는 레거시 소프트웨어 제어에 탁월합니다. 실무에서는 GUI 테스트 자동화나 복잡한 다단계 운영 업무 대행에 즉시 활용할 수 있습니다. 포크 시 특정 비즈니스 툴체인(예: ERP, 디자인 툴) 전용 명령셋을 내장한 맞춤형 워크스테이션 에이전트로 확장하기에 최적입니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/max-sixty/worktrunk" target="_blank">max-sixty/worktrunk</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 10,541 · 🍴 381 · 오늘 +438 · 🤖 AI 에이전트 및 워크플로우</div>
+                <div class="orig">원문: Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 Git worktree CLI. 병렬 AI 에이전트 워크플로우 전용 다중 브랜치 작업 환경 자동화 및 격리 관리 도구임</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 에이전트 코드 수정 시의 파일 충돌 방지를 위해 Git worktree를 자동화하고 병렬 개발 생산성을 극대화하는 신선한 접근임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 Git의 단일 디렉토리 방식은 여러 AI 에이전트가 동시 작업 시 파일 충돌이 발생하지만, 본 도구는 `git worktree`를 자동 생성해 각 에이전트에게 독립된 작업 공간을 배정합니다. Rust 기반의 빠른 속도로 수십 개의 에이전트가 각기 다른 브랜치에서 이슈를 동시 해결하도록 지원하며, 특히 대규모 코드 자동 리팩토링이나 멀티 태스킹 자동화 봇 구축에 최적화되어 있습니다. 프로젝트를 포크한다면 특정 AI 프레임워크(예: LangGraph, AutoGPT) 전용 커넥터를 구현하거나, 작업 완료 후 임시 환경을 자동 정리하는 가비지 컬렉션 기능을 추가해 고도화할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/JustVugg/colibri" target="_blank">JustVugg/colibri</a> <span class="chg up">▲6</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">C · ⭐ 47,280 · 🍴 5,470 · 오늘 +802 · ⚡ 로컬 AI 실행 및 모델 제어</div>
+                <div class="orig">원문: A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.</div>
+                <div><span class="label">🎯 요약:</span> GPU(VRAM), RAM, NVMe 계층 구조를 활용해 거대 MoE 모델을 로컬 환경에서 효율적으로 구동하는 C 기반 추론 엔진</div>
+                <div><span class="label">🔥 흥미 포인트:</span> VRAM 한계를 넘어 거대 MoE 모델을 NVMe 스트리밍 및 계층적 캐싱으로 구동하며 Vulkan 지원으로 하드웨어 범용성 확보</div>
+                <div class="detail"><span class="label">📖 상세</span><br>거대 MoE(Mixture of Experts) 모델 구동 시 발생하는 막대한 VRAM 요구량을 해결하기 위해 GPU, RAM, NVMe를 계층적으로 사용하는 추론 엔진입니다. 추론 시 활성화되는 특정 전문가(Expert) 파라미터만 선별하여 GPU로 로드하는 방식을 채택해, 저사양 하드웨어에서도 최신 프론티어 모델을 실행할 수 있습니다. C 언어로 작성되어 가볍고 빠르며, CUDA뿐만 아니라 Vulkan을 지원해 엔비디아 외의 다양한 그래픽 카드를 폭넓게 지원하는 것이 특징입니다. 이를 통해 개인용 PC에서 딥시크(DeepSeek)와 같은 수천억 파라미터 모델을 로컬로 서빙하거나, 저가형 하드웨어를 활용한 비용 효율적인 프라이빗 추론 서버를 구축하는 데 활용할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/mattpocock/skills" target="_blank">mattpocock/skills</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Shell · ⭐ 311,539 · 🍴 26,176 · 오늘 +1,164 · 🤖 AI 에이전트 및 워크플로우</div>
+                <div class="orig">원문: Skills for Real Engineers. Straight from my .agents directory.</div>
+                <div><span class="label">🎯 요약:</span> Matt Pocock의 실무용 AI 에이전트 CLI 스킬셋 모음이며, LLM이 터미널에서 직접 호출 및 실행 가능한 쉘 스크립트 도구임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 단순 프롬프트를 넘어 LLM에 실제 코드 수정 및 테스트 실행 권한을 부여하는 실무 밀착형 워크플로우를 구현하여 에이전트 자동화 성능을 극대화함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM이 단순 텍스트 생성을 넘어 터미널 환경에서 파일 검색, 테스트 실행, 코드 수정 등 실제 엔지니어링 액션을 수행하도록 돕는 쉘 스크립트 도구 모음입니다. AI 에이전트가 `run_test`나 `search_code` 같은 개별 스크립트를 도구(Tool)로 인식하고 호출함으로써, 복잡한 디버깅이나 대규모 리팩토링 작업을 자동화하는 실무 중심의 워크플로우를 제공합니다. 개발자는 이를 포크하여 프로젝트 특화된 DB 마이그레이션 스크립트나 사내 보안 검사 로직을 연동하는 커스텀 에이전트용 스킬셋으로 확장해 개발 생산성을 비약적으로 높일 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/p-e-w/heretic" target="_blank">p-e-w/heretic</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 38,846 · 🍴 4,387 · 오늘 +701 · ⚡ 로컬 AI 실행 및 모델 제어</div>
+                <div class="orig">원문: Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more</div>
+                <div><span class="label">🎯 요약:</span> 추가 학습 없이 LLM의 검열 제거, 슬롭 억제, 아첨 방지 등 모델 특성을 실시간 수정하는 Python 기반 오픈소스 도구</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 파인튜닝 없이 가중치 직교화 및 벡터 조작으로 LLM의 거부 반응과 아첨을 즉시 제어해 고비용 재학습 없이도 모델 성향을 커스터마이징함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>RLHF 과정에서 주입된 LLM의 과도한 거부 반응이나 아첨(Sycophancy), 상투적인 표현(Slop) 등을 가중치 직교화 기술을 통해 재학습 없이 중화합니다. 모델의 활성화 공간 내 특정 벡터를 조작하여 Llama-3 등 최신 모델의 검열을 해제하거나 지시 이행의 객관성을 확보할 수 있습니다. 고가의 GPU 없이도 수분 내에 모델 성격을 바꿀 수 있어 특정 도메인용 경량 모델 배포에 적합하며, 향후 GGUF 양자화 포맷 적용이나 VLM의 시각적 편향 제거 도구로 확장 및 포크하기에 유용합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/spotify/portal-ai-plugins" target="_blank">spotify/portal-ai-plugins</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 3,064 · 🍴 239 · 오늘 +91 · 🤖 AI 에이전트 및 워크플로우</div>
+                <div class="orig">원문: 상세 설명이 제공되지 않은 프로젝트입니다.</div>
+                <div><span class="label">🎯 요약:</span> (원본) 상세 설명이 제공되지 않은 프로젝트입니다.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 분석을 위한 API 키가 없거나 프로젝트 설명이 부족합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/floci-io/floci" target="_blank">floci-io/floci</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Java · ⭐ 28,864 · 🍴 3,212 · 오늘 +482 · 🛠️ 개발 인프라 및 자동화</div>
+                <div class="orig">원문: Light, fluffy, and always free - The AWS Local Emulator alternative</div>
+                <div><span class="label">🎯 요약:</span> AWS API 로컬 실행용 Java 에뮬레이터임. LocalStack 대비 낮은 리소스 점유 및 전 기능 무료 정책의 OSS 대체재</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 유료화된 LocalStack 대안으로 S3, SNS 등 핵심 AWS 서비스를 전면 무료 제공함. 낮은 리소스 점유로 CI/CD 및 개발 생산성 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 LocalStack의 무거운 리소스 점유와 유료화 정책에 부담을 느끼는 개발 환경을 위해 S3, SNS, DynamoDB 등 핵심 AWS 서비스를 가볍게 모의 실행하는 자바 기반 엔진입니다. 낮은 메모리 사용량으로 로컬 장비에서도 쾌적하게 구동되며, 인터넷 연결 없이 오프라인에서 AWS API 연동 테스트를 수행하여 불필요한 클라우드 과금을 방지합니다. 실무에서는 CI/CD 파이프라인의 통합 테스트 속도를 높이는 용도로 유용하며, 포크 시 특정 비즈니스 로직에 맞춘 Mocking 기능을 추가하거나 대시보드 UI를 결합한 관리 도구로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/Usagi-org/ai-goofish-monitor" target="_blank">Usagi-org/ai-goofish-monitor</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 16,510 · 🍴 2,854 · 오늘 +228 · 🛠️ 개발 인프라 및 자동화</div>
+                <div class="orig">원문: 基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。</div>
+                <div><span class="label">🎯 요약:</span> Playwright 및 AI 기반 闲鱼 모니터링 도구로 전용 UI를 통해 최적 매물을 자동 선별하는 Python 자동화 솔루션임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Playwright 기반 차단 우회 및 LLM 매물 분석과 전용 UI 대시보드 실시간 알림을 지원하는 완성도 높은 중고 거래 자동화 프로젝트임.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>중고 거래 플랫폼 &#x27;闲鱼(Xianyu)&#x27;의 데이터를 Playwright로 실시간 수집하고, LLM을 통해 상품 설명과 이미지를 분석하여 허위 매물을 지능적으로 필터링합니다. 단순히 키워드 알람을 보내는 수준을 넘어 AI가 매물의 실제 품질을 판단하며, 다중 모니터링 작업 설정과 상태 관리가 가능한 세련된 백엔드 UI를 제공하는 것이 특징입니다. 개인 리셀러나 수집가가 타겟 상품을 선점하기 위한 자동화 환경 구축에 즉시 활용 가능하며, 향후 국내 중고 거래 플랫폼용 스크래퍼로 커스터마이징하거나 가격 변동 추이 예측 모델을 결합하는 등의 파생 구현이 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/anomalyco/hex" target="_blank">anomalyco/hex</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 4,632 · 🍴 260 · 오늘 +410 · ⚡ 로컬 AI 실행 및 모델 제어</div>
+                <div class="orig">원문: Local voice dictation for mac, windows and linux</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 로컬 음성 받아쓰기 툴로 macOS, Win, Linux 지원 및 GPU 가속 활용 실시간 텍스트 변환함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 외부 API 연동 없는 Whisper 모델 로컬 구동으로 데이터 보안 강화 및 Rust 기반 저지연 처리와 전역 핫키 지원으로 작업 생산성 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 클라우드 기반 음성 인식의 프라이버시 문제와 응답 지연을 해결하기 위해 OpenAI의 Whisper 모델을 로컬 환경에서 구동하며, Rust를 통해 시스템 자원 소모를 최소화합니다. 사용자가 설정한 전역 핫키를 통해 모든 애플리케이션에서 즉각적인 음성 입력이 가능하며, 변환된 텍스트가 커서 위치에 직접 주입되어 별도의 복사 과정이 필요 없습니다. 인터넷 연결 없이도 높은 정확도의 STT 환경을 제공하므로 보안이 중요한 기업의 회의록 작성이나 복잡한 코드 주석 문서화 작업에 유용합니다. 포크 시에는 LLM API를 연동하여 변환된 텍스트의 오탈자를 실시간 교정하거나, 특정 프로그래밍 언어의 문법 규격에 맞게 형식을 변환해 주는 맞춤형 코딩 어시스턴트로 확장할 수 있습니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
