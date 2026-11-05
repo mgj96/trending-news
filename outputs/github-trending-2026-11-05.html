@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-05)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> AI 에이전트의 실행 환경과 자율성을 강화하는 도구들이 주류를 이루며 개발 자동화가 가속화되고 있습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/NVIDIA/auto-ontology" target="_blank">NVIDIA/auto-ontology</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 5,239 · 🍴 411 · 오늘 +2,050 · 🧠 지능형 데이터 및 개발 분석</div>
+                <div class="orig">원문: Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.</div>
+                <div><span class="label">🎯 요약:</span> 데이터 위 시맨틱 그래프 추론층 구축으로 LLM의 결정론적 쿼리 생성 및 설명 가능성 확보용 파이썬 프레임워크.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> RAG 환각을 지능적 추론으로 해결하며, 정밀한 데이터 검색과 투명한 의사결정 경로를 제공해 LLM 에이전트 신뢰도를 실무 수준으로 높임.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>LLM이 단순한 벡터 유사성 검색에 의존할 때 발생하는 할루시네이션과 일관성 부족 문제를 지식 그래프(Knowledge Graph) 기반의 의미론적 추론 계층을 통해 해결합니다. 데이터 간의 관계를 온톨로지로 정의함으로써 에이전트가 데이터 구조를 명확히 이해하고, 확률적인 답변 대신 결정론적이고 논리적인 쿼리를 생성하도록 유도합니다. 금융, 법률, 의료 등 정밀한 데이터 검증과 의사결정 경로의 설명 가능성이 필수적인 엔터프라이즈 환경에서 복합적인 RAG 파이프라인을 구축할 때 유용합니다. 이 프로젝트를 포크하여 특정 산업군에 특화된 스키마와 추론 규칙을 사전 정의한 &#x27;섹터별 지능형 에이전트 프레임워크&#x27;로 확장해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/max-sixty/worktrunk" target="_blank">max-sixty/worktrunk</a> <span class="chg up">▲1</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Rust · ⭐ 11,082 · 🍴 415 · 오늘 +531 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 Git worktree 관리 CLI로 다수 AI 에이전트의 병렬 작업 환경 자동 구축 및 워크플로우 최적화 지원함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 에이전트의 브랜치 전환 시 상태 충돌 방지 및 개별 Worktree 할당을 통한 독립적 병렬 코드 생성 및 테스트 자동화 환경 제공함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>단일 디렉토리 내 Git 브랜치 전환 시 발생하는 파일 잠금 및 상태 오염 문제를 각 AI 에이전트에게 독립된 Git worktree를 자동 할당하여 해결합니다. Rust의 고성능을 바탕으로 수십 개의 작업을 병렬 처리할 때의 오버헤드를 최소화하며, 에이전트가 생성한 코드의 빌드 및 테스트 환경을 즉각 격리하여 안정성을 높입니다. 실무에서는 다수의 LLM이 백로그 이슈를 동시에 해결하는 자동화 파이프라인에 적용 가능하며, 포크 시 특정 에이전트 프레임워크와 연동해 작업 완료 후 worktree를 자동 정리(Cleanup)하는 스케줄러 기능을 추가해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/mattpocock/skills" target="_blank">mattpocock/skills</a> <span class="chg up">▲2</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Shell · ⭐ 313,423 · 🍴 26,290 · 오늘 +1,379 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Skills for Real Engineers. Straight from my .agents directory.</div>
+                <div><span class="label">🎯 요약:</span> LLM 에이전트가 CLI 환경에서 직접 실행하여 코드를 수정하고 시스템을 제어하는 실무형 쉘 스크립트 도구 모음집임</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM의 환각을 방지하고 실제 파일 수정 및 시스템 제어를 수행케 하며 Matt Pocock의 검증된 에이전트용 자동화 워크플로우를 제공함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>LLM 에이전트가 bash를 통해 로컬 파일 시스템을 탐색하고, 코드 분석 및 리팩토링 작업을 직접 수행할 수 있도록 설계된 도구 세트입니다. Cursor, Windsurf와 같은 AI IDE나 커스텀 에이전트의 도구(Tools)로 연결하여 자연어 명령만으로 복잡한 디렉토리 구조 변경이나 종속성 업데이트를 안전하게 처리할 수 있습니다. 프로젝트를 포크하여 특정 클라우드 인프라(AWS, GCP) 관리나 팀 내 보안 가이드라인 준수 여부를 진단하는 에이전트 전용 워크플로우로 확장하기에 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/floci-io/floci" target="_blank">floci-io/floci</a> <span class="chg up">▲4</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Java · ⭐ 29,674 · 🍴 3,282 · 오늘 +1,090 · 🛠️ 개발 인프라 및 설계 표준화</div>
+                <div class="orig">원문: Light, fluffy, and always free - The AWS Local Emulator alternative</div>
+                <div><span class="label">🎯 요약:</span> LocalStack 대체용 Java 기반 경량 AWS 에뮬레이터. S3, SQS 등 필수 API를 완전 무료 OSS로 제공해 클라우드 비용 없는 개발 환경 구축용.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 유료화된 LocalStack의 무거운 리소스 점유 해결용 Java OSS. CI/CD 및 저사양 PC에서 S3, SQS 등 핵심 AWS API를 가볍고 빠르게 에뮬레이션해 개발 생산성 높임.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>LocalStack의 유료화와 높은 리소스 요구량에 부담을 느끼는 개발자를 위한 가볍고 완전한 무료 Java 기반 AWS 에뮬레이터입니다. S3, SQS, DynamoDB 등 빈번히 쓰이는 핵심 AWS API를 로컬 환경에서 지연 시간 없이 모킹하여 개발 및 테스트 루프를 가속화합니다. 특히 CI/CD 파이프라인에서 무거운 컨테이너 대신 경량 바이너리로 구동하여 빌드 시간을 단축하고 인프라 비용을 절감하는 실무 시나리오에 적합합니다. 포크 시 특정 도메인에 특화된 테스트 데이터 셋을 사전 로드하는 기능을 구현하거나, 로컬 리소스 현황을 시각화하는 대시보드 UI를 추가하는 방향으로 확장이 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/thedotmack/claude-mem" target="_blank">thedotmack/claude-mem</a> <span class="chg down">▼4</span> <span class="meta">🔁 7일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 112,922 · 🍴 9,806 · 오늘 +1,172 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More</div>
+                <div><span class="label">🎯 요약:</span> 에이전트 세션 기록을 AI로 요약 보관 후 차기 대화에 핵심 문맥을 자동 주입해 작업 연속성을 확보하는 TS 기반의 범용 영구 메모리 계층임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 세션 종료 시 휘발되는 기억을 보존해 과거의 의사결정과 코드 수정을 차기 세션에 자동 반영하며 다수 에이전트 CLI와 연동되는 RAG 기반 접근 방식임.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 LLM 에이전트들이 세션 종료 시 이전 맥락을 잊어버려 매번 배경 설명을 반복해야 하는 페인 포인트를 AI 요약과 벡터 검색 기술로 해결합니다. 에이전트의 모든 활동을 캡처하여 저장한 뒤, 새 세션 실행 시 현재 작업과 연관된 과거 기록만을 선별해 프롬프트 컨텍스트로 주입하는 방식으로 동작합니다. Claude Code나 Copilot 등 CLI 도구 사용 시 어제 수행한 디버깅 논리나 설계 결정을 에이전트가 기억하게 하여 개발 흐름의 단절을 최소화합니다. 프로젝트를 포크한다면 팀 단위의 공유 메모리 서버로 확장하거나, 특정 도메인의 코딩 컨벤션을 학습시켜 코드 리뷰 자동화 도구로 파생시킬 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/vercel-labs/agent-desktop" target="_blank">vercel-labs/agent-desktop</a> <span class="chg down">▼4</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Rust · ⭐ 15,285 · 🍴 1,064 · 오늘 +2,470 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Computer use CLI for AI agents</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 AI 에이전트 전용 데스크톱 제어 CLI로, LLM이 마우스·키보드를 조작해 OS 수준 업무를 자동화함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Anthropic Computer Use 역량을 Rust로 구현해 GUI 업무를 코드형 제어함. CLI 기반 AI 에이전트 운영 표준화 및 로컬 제어 환경 제공에 따른 높은 관심 반영됨.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 LLM의 텍스트 생성을 넘어 Anthropic의 &#x27;Computer Use&#x27; 기능을 활용해 브라우징, 앱 실행, 파일 편집 등 실제 PC 조작을 수행하는 에이전트 환경을 구축합니다. 고성능 Rust 언어를 사용해 시스템 리소스 소모를 최소화하며, 복잡한 GUI 기반의 E2E 테스트 자동화나 반복적인 워크플로우를 CLI 명령만으로 처리할 수 있게 돕습니다. 이 프로젝트를 포크한다면 특정 소프트웨어(SaaS) 전용 매크로 최적화나, 다수의 에이전트가 화면 정보를 공유하며 협업하는 복합 사무 자동화 시스템으로 확장하기에 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/github/spec-kit" target="_blank">github/spec-kit</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 147,363 · 🍴 13,224 · 오늘 +808 · 🛠️ 개발 인프라 및 설계 표준화</div>
+                <div class="orig">원문: 💫 Toolkit to help you get started with SDD or any other process!</div>
+                <div><span class="label">🎯 요약:</span> 시스템 설계 문서 작성을 돕는 툴킷으로 파이썬 기반 CLI와 템플릿을 제공하여 복잡한 아키텍처 정의 및 문서화 과정을 표준화함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 아키텍처 결정 기록인 ADR과 SDD 작성을 자동화하고 파편화된 기술 문서를 깃허브 워크플로우 내에서 체계적으로 관리하려는 개발자 니즈를 충족함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 시스템 설계 문서(SDD)와 아키텍처 결정 기록(ADR) 생성을 자동화하여 복잡한 대규모 프로젝트의 문서화 표준을 확립합니다. 파이썬 CLI 기반으로 팀 내 문서 서식을 통일하며, GitHub Actions와 연동해 PR 단계에서 문서 누락이나 형식 오류를 사전에 검증할 수 있습니다. 실무에서는 신규 마이크로서비스 도입 시 설계 의도를 투명하게 공유하고 변경 이력을 추적하는 용도로 활용하기 좋습니다. 프로젝트를 포크하여 LLM 기반의 PR 자동 요약 기능을 추가하거나, 입력된 명세에서 Mermaid 아키텍처 다이어그램을 자동 생성하는 도구로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/The-PR-Agent/pr-agent" target="_blank">The-PR-Agent/pr-agent</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 14,801 · 🍴 2,098 · 오늘 +280 · 🧠 지능형 데이터 및 개발 분석</div>
+                <div class="orig">원문: 🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.</div>
+                <div><span class="label">🎯 요약:</span> LLM 기반 오픈소스 PR 리뷰어로 코드 분석, 요약 및 보안 점검 자동화, VCS 플랫폼 연동 기능 지원함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> PR 요약 및 제안 자동화로 리뷰 시간을 단축하며 보안 취약점 사전 탐지 및 LLM 대화 기반의 인터랙티브한 수정 요청 기능을 제공함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>개발자가 PR을 생성하면 LLM이 코드 변경 사항을 분석하여 요약, 체크리스트, 보안 경고를 자동 생성해 리뷰 병목을 해소합니다. 단순한 텍스트 피드백을 넘어 실무 환경에 즉시 반영 가능한 코드 스니펫을 제안하며, 깃허브 액션이나 CLI 등 다양한 워크플로우에 통합할 수 있습니다. 기업 전용 컨벤션이나 도메인 지식을 프롬프트에 주입하여 커스텀 리뷰 규칙을 가진 사내용 AI 리뷰 시스템으로 확장하기에 매우 유리합니다. GPT-4 외에도 Claude, Llama 3 등 다채로운 모델을 지원하므로 조직의 보안 정책이나 비용 효율에 맞춘 최적의 자동화 파이프라인 구축이 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank">harry0703/MoneyPrinterTurbo</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 139,066 · 🍴 22,187 · 오늘 +617 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: 利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.</div>
+                <div><span class="label">🎯 요약:</span> 주제 입력 시 LLM과 자동화 워크플로우를 결합해 고화질 숏폼 영상을 원클릭으로 제작하는 파이썬 기반 AI 영상 생성기</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 기반 시나리오, TTS 음성, Pexels API 영상 매칭 및 자막 합성을 단일 파이프라인으로 구축해 콘텐츠 제작 생산성을 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 GPT 등 LLM을 사용하여 스크립트를 작성하고, Edge-TTS로 음성을 변환한 뒤 Pexels API를 통해 내용에 적합한 배경 영상을 자동 매칭하여 결합합니다. 복잡한 영상 편집 기술 없이도 키워드 하나로 고해상도 숏폼 콘텐츠를 대량 생산할 수 있어 마케팅 자동화나 유튜브 쇼츠 채널 운영 효율화에 즉시 활용 가능합니다. 프로젝트를 포크한다면 Stable Diffusion 같은 이미지 생성 AI를 연결해 독창적인 비주얼을 생성하거나, 다국어 번역 API를 연동하여 전 세계 언어로 대응하는 글로벌 콘텐츠 자동 생성 플랫폼으로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/garrytan/gstack" target="_blank">garrytan/gstack</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 139,383 · 🍴 20,636 · 오늘 +290 · 🤖 AI 에이전트 및 자동화</div>
+                <div class="orig">원문: Use Garry Tan&#x27;s exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA</div>
+                <div><span class="label">🎯 요약:</span> YC 대표 Garry Tan의 Claude Code용 23개 MCP 도구 셋업. CEO·설계·QA 등 전 공정 자동화용 TypeScript 기반 환경 구성.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 실무 검증된 23종 MCP 도구로 Claude Code의 에이전트 역량 극대화. 복잡한 개발 워크플로우를 CLI 환경서 즉시 해결하는 고밀도 생산성 셋업.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Anthropic의 Claude Code CLI에 최적화된 23개의 MCP(Model Context Protocol) 서버를 제공하여, AI가 단순 코딩을 넘어 제품 기획부터 QA까지 전 과정을 수행하게 합니다. Garry Tan의 실무 철학이 투영된 각 도구가 CEO, 릴리스 매니저 등의 페르소나를 수행하며 프로젝트 컨텍스트를 정밀하게 관리하고 의사결정을 보조하는 것이 특징입니다. 1인 개발자나 소규모 팀이 복잡한 배포 및 문서화 프로세스를 자동화하는 데 즉시 활용 가능하며, 특정 도메인 전용 도구를 추가해 사내 표준 에이전트 워크플로우로 확장하는 아이디어가 가능합니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
