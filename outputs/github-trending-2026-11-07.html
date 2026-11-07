@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-07)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> 고성능 시스템 언어 및 웹 프레임워크의 성숙과 더불어 실무형 AI 에이전트 도구들의 확장이 두드러집니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/zed-industries/zed" target="_blank">zed-industries/zed</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 93,660 · 🍴 11,501 · 오늘 +306 · ⚙️ 시스템 및 성능 최적화</div>
+                <div class="orig">원문: Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.</div>
+                <div><span class="label">🎯 요약:</span> Atom 개발진이 Rust로 구축한 GPU 가속 기반 고성능 코드 에디터로 실시간 협업 멀티플레이어 편집 기능과 내장 AI 코딩 보조 도구 제공함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Electron 한계 극복용 Rust 및 GPU 렌더링 기반 초저지연 응답성 구현과 내장 LLM 연동 및 멀티플레이어 편집 기능 등 팀 단위 생산성 극대화 요소로 주목받음.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Zed는 Electron 기반 에디터의 고질적인 메모리 점유 및 지연 시간 문제를 해결하기 위해 GPU 가속 렌더링 프레임워크인 GPUI를 직접 설계하여 네이티브 수준의 성능을 달성했습니다. 하드웨어의 성능을 극한으로 끌어올려 대규모 코드베이스에서도 끊김 없는 탐색이 가능하며, CRDT 기술을 적용해 여러 개발자가 동일한 버퍼에서 실시간으로 소스코드를 편집할 수 있는 환경을 제공합니다. 실무에서는 내장된 LLM 기능을 활용한 빠른 코드 생성과 지연 없는 원격 페어 프로그래밍 도구로 활용도가 높습니다. 이 프로젝트를 포크한다면 특정 도메인에 특화된 초경량 IDE나 저사양 하드웨어에서도 구동되는 고성능 로그 분석 툴 등으로 파생할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/NVIDIA/auto-ontology" target="_blank">NVIDIA/auto-ontology</a> <span class="chg down">▼1</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Python · ⭐ 9,088 · 🍴 730 · 오늘 +2,015 · 🤖 AI 및 자동화</div>
+                <div class="orig">원문: Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.</div>
+                <div><span class="label">🎯 요약:</span> 시맨틱 그래프 추론층 구축으로 LLM의 결정론적 쿼리 생성 및 맥락 검색 고도화와 설명 가능한 AI 지원</div>
+                <div><span class="label">🔥 흥미 포인트:</span> RAG 할루시네이션 해결 및 지식 그래프 기반 투명한 추론으로 LLM 에이전트의 신뢰도를 극대화하는 NVIDIA의 신규 도구임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 RAG의 확률론적 벡터 검색이 유발하는 할루시네이션을 해결하기 위해, 비정형 데이터를 시맨틱 그래프 형태의 지식 체계(Ontology)로 구조화하여 LLM이 논리적이고 결정론적인 쿼리를 생성하도록 돕습니다. 사용자는 추론 엔진을 통해 LLM의 의사결정 경로를 명확히 추적할 수 있어, 금융 감사나 의료 진단처럼 높은 신뢰도와 설명 가능성이 요구되는 엔터프라이즈 환경에서 강력한 에이전트 워크플로우를 구축할 수 있습니다. 이 프로젝트를 포크한다면 특정 산업에 특화된 지식 추출 파이프라인을 구축하거나, Neo4j와 같은 그래프 DB와의 실시간 동기화 플러그인을 개발하여 복잡한 데이터 관계를 실시간으로 추론하는 고도화된 RAG 시스템으로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/rails/rails" target="_blank">rails/rails</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Ruby · ⭐ 59,032 · 🍴 23,832 · 오늘 +142 · 🌐 웹 및 앱 프레임워크</div>
+                <div class="orig">원문: Ruby on Rails</div>
+                <div><span class="label">🎯 요약:</span> 설정보다 관례를 중시한 루비 기반 풀스택 프레임워크로 SQLite 기반 큐 및 캐시 기능과 Kamal 배포 도구 기본 지원함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 8.0 업데이트로 Redis 의존성 제거, SQLite 기반 큐·캐시 구현, Kamal 2 배포 및 PWA 기본 지원 등 1인 개발용 인프라 구조 혁신</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Rails 8은 &#x27;1인 개발 프레임워크&#x27; 철학을 강화하여, Redis 같은 별도 인프라 없이 SQLite만으로 백그라운드 작업(Solid Queue)과 캐시(Solid Cache)를 처리하도록 설계되었습니다. 전용 배포 도구인 Kamal을 통해 클라우드 종속성 없이 모든 VPS에 Docker 기반 무중단 배포가 가능하며, 빌드 과정이 없는 Importmaps 방식을 표준으로 채택해 프론트엔드 복잡도를 획기적으로 낮췄습니다. 초기 스타트업의 MVP 개발이나 관리 리소스가 부족한 소규모 프로젝트의 서버 비용 절감 및 운영 단순화에 최적화된 성능을 발휘합니다. 해당 프로젝트를 포크하여 특정 도메인(예: LLM 오케스트레이션)에 특화된 경량 워크플로우 엔진이나, 로컬 환경에서 즉시 구동 가능한 온프레미스용 관리 도구로 파생 개발할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/mpv-player/mpv" target="_blank">mpv-player/mpv</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">C · ⭐ 37,886 · 🍴 3,632 · 오늘 +37 · ⚙️ 시스템 및 성능 최적화</div>
+                <div class="orig">원문: 🎥 Command line media player</div>
+                <div><span class="label">🎯 요약:</span> FFmpeg 기반 CLI 미디어 플레이어로 OpenGL, Vulkan, D3D11 GPU 가속 및 출력 지원</div>
+                <div><span class="label">🔥 흥미 포인트:</span> libmpv API 활용 타 앱 임베딩 및 Lua/JS 스크립팅 기반 고수준 커스터마이징 및 C 기반 최적화 지원 함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 MPlayer를 계승하여 불필요한 GUI 대신 FFmpeg 라이브러리 연동과 고품질 비디오 렌더링에 집중한 고성능 CLI 플레이어입니다. libmpv API를 통해 IINA나 Plex 같은 상용 미디어 앱의 재생 엔진으로 임베딩되어 실무에서 검증된 안정성을 자랑하며, Lua 및 JS 스크립팅으로 사용자만의 단축키나 UI 구성을 자유롭게 구현할 수 있습니다. 포크 시 특정 스트리밍 프로토콜 전용의 초경량 클라이언트를 구축하거나, 실시간 AI 영상 분석 엔진을 결합한 지능형 보안 모니터링 시스템의 시각화 도구로 활용하기에 최적입니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/rust-lang/rust" target="_blank">rust-lang/rust</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 121,464 · 🍴 17,365 · 오늘 +192 · ⚙️ 시스템 및 성능 최적화</div>
+                <div class="orig">원문: Empowering everyone to build reliable and efficient software.</div>
+                <div><span class="label">🎯 요약:</span> 메모리 안전성과 고성능을 동시 구현하며 C/C++을 대체하는 시스템 언어 Rust의 핵심 컴파일러 및 표준 라이브러리 소스</div>
+                <div><span class="label">🔥 흥미 포인트:</span> GC 없는 소유권 모델로 메모리 오류 원천 차단, WASM 및 리눅스 커널 도입 등 시스템 언어 세대교체 주도 및 생태계 확장</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Rust는 소유권(Ownership)과 빌림(Borrowing) 시스템을 통해 가비지 컬렉터 없이도 런타임 메모리 오류를 방지하며 C++ 수준의 최상위 성능을 보장합니다. 최근 리눅스 커널 메인라인 도입 및 클라우드 인프라, 고성능 CLI 도구, WebAssembly(WASM) 기반 프론트엔드 최적화 등 실무 전반에서 표준으로 자리 잡고 있습니다. 해당 저장소는 rustc 컴파일러와 표준 라이브러리를 포함하며, 포크 시 특정 임베디드 아키텍처용 커스텀 백엔드 구현이나 도메인 특화 정적 분석기(Linter) 개발에 활용할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/react/react" target="_blank">react/react</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">JavaScript · ⭐ 252,263 · 🍴 51,812 · 오늘 +248 · 🌐 웹 및 앱 프레임워크</div>
+                <div class="orig">원문: The library for web and native user interfaces.</div>
+                <div><span class="label">🎯 요약:</span> 웹/네이티브 UI 구축용 JS 라이브러리로 선언적 컴포넌트 기반 아키텍처 및 VDOM 기술 기반 고성능 렌더링과 생태계 제공함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 리액트 19 컴파일러 도입으로 메모이제이션 자동화 및 RSC 지원 강화, 액션 API 기반 클라이언트-서버 데이터 연동 및 폼 처리 로직 단순화함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>React 19는 개발자가 수동으로 관리하던 useMemo와 useCallback을 React Compiler가 자동으로 최적화하여 런타임 성능을 극대화합니다. 서버 컴포넌트(RSC)를 통해 클라이언트 번들 크기를 획기적으로 줄이고 SEO와 초기 로딩 속도를 동시에 개선하는 풀스택 UI 아키텍처를 실현합니다. 실무에서는 대규모 SaaS 대시보드나 복잡한 상태 관리가 필요한 이커머스 서비스의 표준 스택으로 활용됩니다. 프로젝트를 포크한다면 특정 임베디드 기기용 커스텀 렌더러를 제작하거나, 로우코드(Low-code) UI 에디터의 코어 엔진으로 파생시키는 아이디어가 유망합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/angular/angular" target="_blank">angular/angular</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 101,372 · 🍴 28,912 · 오늘 +135 · 🌐 웹 및 앱 프레임워크</div>
+                <div class="orig">원문: Deliver web apps with confidence 🚀</div>
+                <div><span class="label">🎯 요약:</span> TS 기반 Signals 상태 관리, SSR 하이드레이션 최적화, DI 및 CLI 중심 엔터프라이즈 웹 앱 구축용 솔루션임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Zoneless 아키텍처와 Signals 도입을 통한 성능 최적화, SSR 하이드레이션 개선 기반의 LCP 지표 향상 및 엔터프라이즈 개발 생산성 혁신함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Angular는 구글이 주도하는 프레임워크로, 최근 Signals API를 도입하여 RxJS 의존도를 낮추고 직관적인 상태 추적 기능을 제공하며 런타임 성능을 개선했습니다. 특히 하이드레이션 성능 최적화와 Zoneless 아키텍처를 통해 불필요한 변경 감지 루프를 줄여 대규모 엔터프라이즈 앱에서도 높은 Core Web Vitals 점수를 기록할 수 있습니다. CLI를 통한 일관된 프로젝트 구조와 강력한 의존성 주입(DI) 시스템 덕분에 금융권이나 복잡한 대시보드 형태의 SaaS 개발 실무에서 선호됩니다. 이 프로젝트를 포크한다면 최신 Signals 기반의 초경량 UI 컴포넌트 라이브러리를 구축하거나, 특정 도메인에 특화된 엔터프라이즈용 보일러플레이트 제작에 활용할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/symfony/symfony" target="_blank">symfony/symfony</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">PHP · ⭐ 31,438 · 🍴 9,948 · 오늘 +128 · 🌐 웹 및 앱 프레임워크</div>
+                <div class="orig">원문: The Symfony PHP framework</div>
+                <div><span class="label">🎯 요약:</span> 재사용성 PHP 컴포넌트 기반 고성능 프레임워크로 유연한 아키텍처와 CLI 및 엔터프라이즈 API 개발 지원</div>
+                <div><span class="label">🔥 흥미 포인트:</span> PHP 8.3+ 속도 최적화와 Node.js 없이 JS/CSS를 관리하는 AssetMapper 도입 및 복잡한 워크플로우 제어용 Scheduler 기능을 통한 생산성 증대</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Symfony는 HTTPKernel을 중심으로 수많은 독립형 컴포넌트를 조합해 대규모 엔터프라이즈 시스템의 복잡성을 해결하며, Laravel이나 Drupal 같은 유명 프로젝트의 기반이 될 만큼 검증된 안정성을 갖추고 있습니다. 최근 버전에서는 Node.js 의존성을 제거한 AssetMapper와 강력한 비동기 Scheduler 기능을 추가하여 PHP 생태계 내에서 자바스크립트 빌드 도구 없이도 현대적인 프론트엔드 워크플로우를 구현할 수 있게 돕습니다. 실무에서는 대규모 트래픽 처리가 필요한 금융 서비스나 복잡한 비즈니스 로직이 포함된 E-커머스 플랫폼의 백엔드 구축에 주로 활용됩니다. 이 프로젝트를 포크한다면 특정 산업군에 최적화된 마이크로서비스용 경량 스켈레톤이나, Symfony Messenger를 활용한 고성능 이벤트 기반 비동기 메시징 전용 프레임워크를 개발해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/prometheus/prometheus" target="_blank">prometheus/prometheus</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Go · ⭐ 67,194 · 🍴 10,988 · 오늘 +148 · ⚙️ 시스템 및 성능 최적화</div>
+                <div class="orig">원문: The Prometheus monitoring system and time series database.</div>
+                <div><span class="label">🎯 요약:</span> Go 기반 시계열 DB 통합 OSS 모니터링 시스템. PromQL과 서비스 검색 기반 다차원 메트릭 수집 및 실시간 시계열 분석 제공</div>
+                <div><span class="label">🔥 흥미 포인트:</span> K8s 환경 표준 모니터링 스택으로 HTTP Pull 기반 간편한 메트릭 수집과 강력한 PromQL 및 유연한 Alert 관리 에코시스템을 구축함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Prometheus는 클라우드 네이티브 환경에서 동적으로 변화하는 마이크로서비스의 상태를 추적하기 위해 HTTP Pull 방식으로 메트릭을 수집하고 전용 TSDB에 저장합니다. 다차원 레이블 구조와 PromQL을 통해 복잡한 시계열 데이터를 유연하게 쿼리할 수 있으며, Grafana와 연동해 시각화 및 정교한 알람 시스템을 구축하는 데 널리 쓰입니다. 실무에서는 주로 Kubernetes 클러스터의 리소스 사용량 모니터링 및 애플리케이션 성능 지표(APM) 분석을 위한 핵심 인프라로 활용됩니다. 해당 프로젝트를 포크한다면 특정 산업군에 최적화된 경량화 TSDB 엔진을 설계하거나, 수집된 지표를 기반으로 LLM을 활용한 이상 징후 자동 탐지 및 근본 원인 분석(RCA) 기능을 구현해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/google/skills" target="_blank">google/skills</a> <span class="chg down">▼2</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Python · ⭐ 22,852 · 🍴 1,922 · 오늘 +534 · 🤖 AI 및 자동화</div>
+                <div class="orig">원문: Agent Skills for Google products and technologies</div>
+                <div><span class="label">🎯 요약:</span> 구글 검색, 지도, 메일 API를 LLM 에이전트 도구로 즉시 연동해 복합 업무 자동화를 구현하는 파이썬 기반의 구글 제품 전용 스킬 개발 라이브러리</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 구글 API 인증과 함수 호출 설정을 추상화해 Gemini 등 LLM이 실시간 검색, 지도, 캘린더 데이터를 활용한 자율 업무를 수행하게 돕는 강력한 편의성</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 Gemini와 같은 LLM이 구글의 방대한 서비스 생태계를 직접 조작할 수 있도록 함수 호출(Function Calling) 구조를 표준화한 라이브러리입니다. 복잡한 OAuth 인증이나 API 파싱 과정 없이 구글 검색, 지도, 지메일, 캘린더 기능을 에이전트의 &#x27;스킬&#x27;로 즉시 등록하여 사용자 요청에 따른 복합 워크플로우를 자동화합니다. 실무에서는 고객 이메일을 분석해 미팅 일정을 잡고 지도에서 최적의 장소를 추천하는 엔드투엔드 비서 시스템 구축에 활용할 수 있습니다. 프로젝트를 포크한다면 슬랙(Slack)이나 노션(Notion) 같은 외부 협업 툴용 스킬을 추가해 전사적 업무 자동화 허브로 확장하거나, 특정 산업군에 특화된 커스텀 검색 에이전트를 구현하는 아이디어가 가능합니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
