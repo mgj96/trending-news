@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-08)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> LLM 에이전트의 실무 능력을 강화하는 전용 도구와 스킬셋 프로젝트들이 오늘 트렌드의 주류를 형성했습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/vercel-labs/agent-browser" target="_blank">vercel-labs/agent-browser</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 46,843 · 🍴 3,211 · 오늘 +190 · 🤖 AI 에이전트 및 스킬셋</div>
+                <div class="orig">원문: Browser automation CLI for AI agents</div>
+                <div><span class="label">🎯 요약:</span> LLM이 웹을 탐색하며 복잡한 액션을 직접 실행하도록 돕는 Rust 기반 AI 에이전트 전용 브라우저 자동화 CLI 도구임</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 에이전트용 Rust 기반 CLI로 자연어 지시를 웹 액션으로 변환하며 기존 도구 대비 빠른 속도와 낮은 리소스 점유로 고효율 제어 지원함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM 기반 에이전트가 브라우저를 인간처럼 조작할 수 있도록 돕는 Rust 구현체로, 웹 페이지의 DOM 구조를 분석하고 클릭, 입력 등의 액션을 실행합니다. 기존 Python 기반 자동화 도구보다 가볍고 빠르며, Vercel 인프라와의 연동을 염두에 둔 CLI 환경을 제공하여 서버리스 환경에서도 AI 에이전트 배포를 용이하게 합니다. 실무에서는 자동화된 웹 리서치나 복잡한 UI 테스트에 활용 가능하며, 포크 시 멀티모달 모델과 결합해 시각적 요소 기반의 동적 웹 제어 도구로 고도화할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/cloudflare/security-audit-skill" target="_blank">cloudflare/security-audit-skill</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">JavaScript · ⭐ 65,764 · 🍴 4,272 · 오늘 +2,085 · 🤖 AI 에이전트 및 스킬셋</div>
+                <div class="orig">원문: A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings</div>
+                <div><span class="label">🎯 요약:</span> LLM 코딩 에이전트 기반의 멀티 페이즈 보안 감사 수행 및 머신 리더블한 독립 검증 리포트 자동 생성 기능을 제공하는 도구</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 할루시네이션 방지용 다단계 검증 워크플로우와 CI/CD 연동 가능한 JSON 결과물 생성 기능으로 보안 자동화 파이프라인 혁신 지원</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 단순한 코드 리뷰를 넘어 취약점 탐지, 분석, 독립적 검증의 다단계 프로세스를 통해 LLM 보안 감사의 신뢰도를 높입니다. 모든 결과물을 기계 판독이 가능한 JSON 데이터로 출력하여 GitHub Actions 등 기존 CI/CD 파이프라인에 즉시 통합하여 보안 검사를 자동화할 수 있습니다. 실무에서는 대규모 코드베이스의 취약점을 사전 필터링하여 보안 팀의 수동 검수 시간을 획기적으로 단축하는 용도로 활용하기 좋습니다. 이를 포크하여 특정 프레임워크 전용 보안 규칙을 주입하거나, 취약점 발견 시 자동으로 패치 PR까지 생성하는 자가 치유형 에이전트로 확장하는 아이디어를 제안합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/google/skills" target="_blank">google/skills</a> <span class="chg up">▲7</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Python · ⭐ 23,420 · 🍴 1,956 · 오늘 +443 · 🤖 AI 에이전트 및 스킬셋</div>
+                <div class="orig">원문: Agent Skills for Google products and technologies</div>
+                <div><span class="label">🎯 요약:</span> 구글 API를 LLM 에이전트가 호출하는 파이썬 도구 모음. 표준 스킬셋으로 연동 없이 에이전트 기능을 즉시 강화함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 구글 공식 스킬셋으로 API 연동을 단순화해 LLM Action을 강화함. 로직 통합으로 에이전트 워크플로우를 즉각 완성하는 실용적 도구임.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>LLM이 구글 워크스페이스(Gmail, 캘린더 등)를 제어하기 위해 거쳐야 하는 복잡한 API 인증과 데이터 파싱 과정을 &#x27;스킬&#x27; 단위로 캡슐화하여 제공합니다. 개발자는 별도의 로직 설계 없이 사전 정의된 함수 호출만으로 에이전트가 이메일을 요약하거나 일정을 조정하는 등의 액션을 수행하게 할 수 있습니다. 특히 LangChain이나 CrewAI 같은 프레임워크와 결합할 때, 구글의 검증된 스킬 구현체를 활용해 에이전트의 신뢰성과 생산성을 획기적으로 높입니다. 이 프로젝트를 포크하여 사내 ERP나 독자적인 데이터 소스를 동일한 스킬 인터페이스로 구현한다면, 구글 서비스와 밀접하게 연동된 맞춤형 업무 자동화 에이전트를 신속히 구축할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/mattpocock/skills" target="_blank">mattpocock/skills</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Shell · ⭐ 317,739 · 🍴 26,582 · 오늘 +1,100 · 🤖 AI 에이전트 및 스킬셋</div>
+                <div class="orig">원문: Skills for Real Engineers. Straight from my .agents directory.</div>
+                <div><span class="label">🎯 요약:</span> LLM 에이전트용 쉘 기반 스킬 셋으로 로컬 검색 및 수정을 자동화하여 에이전트의 도구 실행 역량을 실무 수준으로 강화함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 로컬 파일 제어 및 검색을 수행하는 에이전틱 워크플로우를 구현하며, 실무형 AI 에이전트용 도구 확장 및 활용 가이드를 집약해 제공함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM 에이전트가 로컬 파일 시스템에서 `search-replace`, `grep`, `find` 등 복잡한 작업을 수행할 수 있도록 최적화된 쉘 스크립트 기반의 &#x27;스킬&#x27; 모음입니다. 단순 CLI 명령을 넘어 Claude Desktop 같은 에이전틱 프레임워크가 즉시 호출 가능한 구조를 제공하여, AI가 수백 개의 파일에 걸친 코드 리팩토링을 자율적으로 수행하게 돕습니다. 실무에서는 대규모 모노레포의 특정 패턴 일괄 수정이나 복잡한 로그 데이터의 필터링 및 요약 자동화에 유용합니다. 포크 시에는 AWS CLI를 결합한 클라우드 인프라 관리 스킬을 추가하거나, CI/CD 파이프라인 내에서 실패한 빌드를 자동 수정하는 에이전트로 확장하는 아이디어가 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/anthropics/skills" target="_blank">anthropics/skills</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 188,809 · 🍴 22,255 · 오늘 +390 · 🤖 AI 에이전트 및 스킬셋</div>
+                <div class="orig">원문: Public repository for Agent Skills</div>
+                <div><span class="label">🎯 요약:</span> Claude AI 에이전트용 실무 도구 모음. 브라우징, 셸 명령, 파일 편집용 API 및 실행 가이드.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM의 OS 제어 및 도구 호출 표준 제시. Anthropic 공식 로직 기반 커스텀 에이전트 및 MCP 도구 구축 가속화.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 Anthropic의 LLM이 실제로 컴퓨터 운영체제와 상호작용하기 위해 사용하는 &#x27;도구(Skill)&#x27;들의 파이썬 구현체와 명세를 담고 있습니다. Claude의 &#x27;Computer Use&#x27; 기능을 뒷받침하는 핵심 기술로, 에이전트가 화면을 캡처하고 셸 명령어를 실행하며 파일을 수정하는 등의 구체적인 동작 원리를 파악할 수 있습니다. 실무에서는 반복적인 UI 테스트 자동화나 복잡한 로컬 개발 환경 설정을 자동 수행하는 에이전트 구축에 즉시 활용 가능합니다. 해당 저장소를 포크하여 특정 산업용 소프트웨어(ERP, CAD 등) 전용 제어 스킬을 추가함으로써, 도메인 특화형 AI 비서를 개발하는 아이디어로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/meta/astryx" target="_blank">meta/astryx</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 14,549 · 🍴 1,191 · 오늘 +96 · 🤖 AI 에이전트 및 스킬셋</div>
+                <div class="orig">원문: An open source design system that&#x27;s fully customizable and agent ready</div>
+                <div><span class="label">🎯 요약:</span> 에이전트 환경에 최적화된 메타의 오픈소스 디자인 시스템으로 자유로운 커스터마이징과 타입스크립트 기반 구성 지원함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 기반 에이전트가 UI를 자동 생성 및 제어하기 쉬운 전용 아키텍처로 복잡한 AI 앱 인터페이스 구축 생산성 극대화함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Astryx는 디자인 시스템의 정의를 넘어 LLM 에이전트가 UI 구성 요소를 기계적으로 인식하고 제어할 수 있는 &#x27;Agent-ready&#x27; 환경을 제공합니다. 모든 컴포넌트가 정교한 타입 시스템과 기계 판독이 가능한 메타데이터를 포함하고 있어, 사용자의 복잡한 자연어 명령을 기반으로 에이전트가 최적의 인터페이스를 실시간으로 생성하거나 조작하기에 매우 유리합니다. 실무적으로는 지능형 고객 대응 서비스의 동적 위젯 생성이나 데이터 분석 에이전트용 대시보드 구축에 즉시 투입 가능하며, 특정 산업군(의료, 금융 등)에 특화된 전용 에이전트 UI 라이브러리로 포크하여 확장하는 시나리오를 고려해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/prometheus/prometheus" target="_blank">prometheus/prometheus</a> <span class="chg up">▲2</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Go · ⭐ 67,449 · 🍴 11,004 · 오늘 +322 · 🛠️ 개발 생산성 및 보안</div>
+                <div class="orig">원문: The Prometheus monitoring system and time series database.</div>
+                <div><span class="label">🎯 요약:</span> Go 기반 시계열 DB 겸 모니터링 시스템으로 CNCF 졸업 프로젝트이며 클라우드 네이티브 환경의 다차원 지표 수집 및 알림 지원함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> K8s 표준 모니터링 스택이며 PromQL 기반의 정교한 쿼리 처리와 HTTP Pull 모델의 운영 편의성 및 Grafana 연동성으로 각광받음</div>
+                <div class="detail"><span class="label">📖 상세</span><br>다차원 라벨 데이터 모델을 활용해 수만 개의 마이크로서비스 지표를 효율적으로 관리하는 오픈소스 시계열 데이터베이스입니다. 타겟 서버에서 지표를 직접 가져오는 Pull 방식을 채택해 서비스 디스커버리에 최적화되어 있으며, 강력한 PromQL로 실시간 가시성을 확보합니다. 실무에서는 주로 쿠버네티스(K8s) 클러스터의 자원 사용량 모니터링과 임계치 기반의 자동 알림 시스템 구축에 필수적으로 사용됩니다. 프로젝트를 포크한다면 특정 프로토콜 전용 Exporter를 개발하거나, 수집된 시계열 데이터를 LLM과 연계해 이상 징후를 자동 요약하는 지능형 관측 플랫폼으로 확장해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/sherlock-project/sherlock" target="_blank">sherlock-project/sherlock</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 100,514 · 🍴 11,874 · 오늘 +1,766 · 🛠️ 개발 생산성 및 보안</div>
+                <div class="orig">원문: Hunt down social media accounts by username across social networks</div>
+                <div><span class="label">🎯 요약:</span> 단일 ID로 400개 이상의 글로벌 소셜 네트워크 서비스(SNS) 및 웹사이트 계정 소유 여부를 CLI 기반으로 일괄 자동 검색하는 Python 도구임</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 수작업 검색의 번거로움을 OSINT 기반 자동화로 해결하고, 400개 이상의 사이트 매핑 정보와 Tor 프록시 지원을 통한 익명 스캔 기능이 강점임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>특정 사용자 아이디가 등록된 수백 개의 웹사이트를 비동기 HTTP 요청으로 스캔하여 존재 여부를 판별하고 결과를 TXT나 CSV 파일로 저장합니다. 보안 전문가의 정보 수집(OSINT)이나 기업의 브랜드 사칭 계정 탐지 등 실무적인 디지털 포렌식 및 정보 보호 작업에 즉시 투입 가능한 수준의 완성도를 갖췄습니다. 만약 프로젝트를 포크한다면, 특정 국가나 전문 도메인(예: 개발자 커뮤니티)에 특화된 사이트 목록을 확장하거나 검색 결과를 실시간으로 모니터링하는 Slack/Discord 알림 봇으로 고도화할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/milind-soni/OpenMausBot" target="_blank">milind-soni/OpenMausBot</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 17,010 · 🍴 2,410 · 오늘 +1,955 · 🤖 AI 에이전트 및 스킬셋</div>
+                <div class="orig">원문: Open-source Grok Bot alternative with a virtual machine that bots can use</div>
+                <div><span class="label">🎯 요약:</span> 그록(Grok)의 오픈소스 대안으로 VM 환경 내 코드 실행과 브라우징을 지원하는 TypeScript 기반 자동화 봇 구축 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 폐쇄형 Grok의 한계를 넘어 샌드박스 VM 연동으로 AI의 시스템 조작 및 실시간 명령 수행이 가능하며 TS 기반의 높은 확장성과 커스터마이징을 지원함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>단순 텍스트 응답을 넘어 샌드박스화된 가상 머신(VM) 위에서 AI가 직접 코드를 실행하고 웹 브라우징을 수행하는 실천적 에이전트 환경을 제공합니다. 개발자는 별도의 복잡한 설정 없이도 봇이 격리된 환경에서 안전하게 워크플로우를 자동화하도록 제어할 수 있어 활용도가 높습니다. 실무에서는 자동화된 QA 테스트나 실시간 웹 데이터 추출에 활용 가능하며, 포크 시 특정 도메인 전용 로컬 LLM이나 독자적인 OS 런타임을 결합한 전문 자동화 툴로 확장하기 좋습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/astral-sh/ruff" target="_blank">astral-sh/ruff</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 50,980 · 🍴 2,632 · 오늘 +350 · 🛠️ 개발 생산성 및 보안</div>
+                <div class="orig">원문: An extremely fast Python linter and code formatter, written in Rust.</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 초고속 파이썬 린터. Flake8, Black 통합 CLI로 수만 줄 코드 밀리초 단위 처리함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Flake8, Black 대비 100배 빠른 성능. 파편화된 도구를 단일 CLI로 통합해 프로젝트 CI/CD 병목 해결함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>파이썬의 표준 도구인 Flake8, Black, isort 등은 실행 속도가 느려 대규모 코드베이스에서 CI/CD 병목을 초래합니다. Ruff는 Rust로 작성된 고성능 파서를 통해 수만 줄의 코드를 밀리초 단위로 처리하며, 기존 도구들의 기능을 단일 바이너리로 통합해 설정 복잡성을 제거합니다. 실무에서는 pre-commit 훅에 도입하여 빌드 시간을 80% 이상 단축하고 일관된 코드 품질을 유지하는 데 활용됩니다. 포크 시 특정 보안 취약점(SAST)을 자동 탐지 및 수정하는 맞춤형 보안 린터나 타 언어 규칙을 이식하는 분석 도구로 확장 가능합니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
