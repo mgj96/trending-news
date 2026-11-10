@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-10)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> AI 에이전트의 실무 수행을 돕는 도구와 지능형 자동화 및 시뮬레이션 기술이 트렌드를 주도하고 있습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/anthropics/skills" target="_blank">anthropics/skills</a> <span class="chg up">▲6</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Python · ⭐ 191,223 · 🍴 22,463 · 오늘 +1,038 · 🤖 AI 에이전트 및 개발 프레임워크</div>
+                <div class="orig">원문: Public repository for Agent Skills</div>
+                <div><span class="label">🎯 요약:</span> 에이전트가 브라우징, 파일 편집 등 실무 기능을 수행하게 돕는 Anthropic 공식 Python 기반 도구 정의 라이브러리</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Claude의 Tool Use 성능을 극대화하는 표준화된 기술 셋을 제공하며 복잡한 에이전트 워크플로우 구축 시간을 획기적으로 단축함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM 에이전트가 파일 시스템 조작, 웹 브라우징, 터미널 실행 등 실제 환경과 상호작용하기 위한 표준 인터페이스를 제공합니다. Anthropic의 Model Context Protocol(MCP)과 연동하여 보안이 검증된 샌드박스 내에서 에이전트가 안전하게 도구를 호출하고 작업을 완수하도록 설계되었습니다. 실무에서는 자동화된 코드 리팩토링이나 실시간 데이터 수집 봇 개발에 즉시 투입 가능하며, 포크 시 사내 인프라 연동 기능을 추가해 맞춤형 AI 사원을 구현하는 파생 프로젝트로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/meta/astryx" target="_blank">meta/astryx</a> <span class="chg up">▲4</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 20,527 · 🍴 1,553 · 오늘 +3,278 · 🤖 AI 에이전트 및 개발 프레임워크</div>
+                <div class="orig">원문: An open source design system that&#x27;s fully customizable and agent ready</div>
+                <div><span class="label">🎯 요약:</span> AI 에이전트 연동 전제의 고커스텀 TypeScript 기반 OSS 디자인 시스템. 유연한 컴포넌트 제어 및 LLM 친화적 UI 구성 요소를 통합 지원함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 기존 UI 프레임워크와 달리 LLM 에이전트가 컴포넌트를 직접 해석하고 생성하기 최적화된 구조. 정형화된 메타데이터 기반의 UI 자동화 및 높은 확장성 제공.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 디자인 시스템이 인간의 가독성에 치중했다면, Astryx는 LLM이 컴포넌트를 정확히 인지하고 조작할 수 있도록 정교한 메타데이터와 시맨틱 구조를 제공합니다. TypeScript 환경에서 테일윈드 스타일링과 완벽하게 호환되며, 에이전트가 실시간으로 UI를 조립하거나 커스터마이징할 때 발생하는 코드 충돌을 최소화합니다. 실무에서는 AI 챗봇이 대화 맥락에 따라 최적의 대시보드나 입력 폼을 즉석에서 생성하는 &#x27;자율형 UI 개발&#x27; 도구로 활용할 수 있습니다. 프로젝트를 포크한다면 특정 산업군에 특화된 AI 전용 디자인 키트를 구축하거나, 자연어 프롬프트를 React 컴포넌트 코드로 즉시 변환하는 전용 CLI 도구 제작 아이디어가 유망합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/sherlock-project/sherlock" target="_blank">sherlock-project/sherlock</a> <span class="chg down">▼2</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Python · ⭐ 107,458 · 🍴 12,433 · 오늘 +4,267 · 🔍 데이터 분석 및 정보 검색</div>
+                <div class="orig">원문: Hunt down social media accounts by username across social networks</div>
+                <div><span class="label">🎯 요약:</span> 파이썬 기반 CLI 도구로 특정 ID를 입력하여 전 세계 400여 개 소셜 미디어 플랫폼 내 계정 존재 여부를 실시간으로 추적 및 검색함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 400개 이상 사이트 지원 및 멀티스레딩 기반 빠른 속도와 OSINT 분석, 사이버 보안 전문가의 계정 도용 조사 및 평판 관리용 높은 활용성</div>
+                <div class="detail"><span class="label">📖 상세</span><br>셜록은 공개된 출처 정보(OSINT)를 활용해 특정 사용자 이름이 등록된 모든 소셜 네트워크 계정을 단일 명령어로 찾아내는 강력한 파이썬 CLI 도구입니다. 비동기 HTTP 요청 처리를 통해 400개 이상의 웹사이트를 병렬로 검색하므로 대규모 조사가 필요한 디지털 포렌식이나 화이트 해커의 침투 테스트 시 초기 정보 수집 단계에서 매우 효율적입니다. 실무에서는 기업 브랜드 도용 여부 모니터링이나 채용 프로세스에서의 평판 조회 도구로 활용 가능하며, 포크 시 검색 결과를 시각화하는 웹 대시보드를 구축하거나 특정 키워드에 대한 자동 알림 봇으로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/google-deepmind/mujoco" target="_blank">google-deepmind/mujoco</a> <span class="chg up">▲4</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">C++ · ⭐ 17,000 · 🍴 2,000 · 오늘 +574 · ⚙️ 물리 시뮬레이션 및 센싱</div>
+                <div class="orig">원문: Multi-Joint dynamics with Contact. A general purpose physics simulator.</div>
+                <div><span class="label">🎯 요약:</span> 딥마인드의 고성능 다관절 접촉 물리 엔진으로 로봇공학 및 생체 역학 연구용 C++ 기반 초고속 시뮬레이션 환경과 API를 제공함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 유료였던 업계 표준 엔진의 OSS 전환 후 RL 연구 시 GPU 가속 기반 수만 개 환경 병렬 시뮬레이션이 가능한 압도적 성능 및 생태계 확장성 덕분임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>MuJoCo는 복잡한 접촉 상황에서도 안정적인 수치 계산이 가능한 볼록 최적화(Convex Optimization) 알고리즘을 사용하여 로봇 팔의 파지나 보행 로봇의 지면 접촉을 정밀하게 재현합니다. 최근 MuJoCo XLA(MJX)를 통해 JAX 기반 GPU 가속을 지원하면서 수천 개의 시뮬레이션 환경을 동시에 구동해야 하는 대규모 강화학습(RL) 연구의 필수 도구로 자리 잡았습니다. 실무에서는 로봇 제어 알고리즘 검증이나 근골격계 시뮬레이션에 활용되며, 포크 시 특정 하드웨어 전용 물리 커널 최적화나 LLM 기반의 로봇 동작 제어 코드 생성 프레임워크로 확장하기에 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/anthropics/claude-quickstarts" target="_blank">anthropics/claude-quickstarts</a> <span class="chg down">▼1</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Python · ⭐ 20,104 · 🍴 3,320 · 오늘 +551 · 🤖 AI 에이전트 및 개발 프레임워크</div>
+                <div class="orig">원문: A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API</div>
+                <div><span class="label">🎯 요약:</span> Claude API 기반의 즉시 배포 가능한 실전 앱 빌드용 Python 프로젝트 템플릿 및 상세 가이드라인 공식 저장소</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 복잡한 LLM 아키텍처 설계 없이 Claude API를 실무에 즉시 적용 및 배포 가능한 고품질 레퍼런스 코드와 가이드 제공함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 Claude API를 연동한 애플리케이션 개발 시 발생하는 초기 설정의 번거로움을 해결하며, 즉시 배포 가능한 수준의 Python 코드를 제공합니다. 단순한 API 호출 예제를 넘어 실무에서 즉각 활용할 수 있는 프롬프트 엔지니어링과 아키텍처 모범 사례를 포함하고 있는 것이 특징입니다. 이를 통해 개발자는 고객 지원 자동화, 데이터 요약, 창의적 글쓰기 도구 등의 PoC(개념 증명) 단계를 획기적으로 단축할 수 있습니다. 저장소를 포크하여 특정 도메인에 특화된 RAG(검색 증강 생성) 시스템을 구축하거나, Streamlit과 결합하여 인터랙티브한 AI 대시보드로 확장하기에 적합합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/garrytan/gbrain" target="_blank">garrytan/gbrain</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 32,248 · 🍴 4,774 · 오늘 +216 · 🤖 AI 에이전트 및 개발 프레임워크</div>
+                <div class="orig">원문: Garry&#x27;s Opinionated OpenClaw/Hermes Agent Brain</div>
+                <div><span class="label">🎯 요약:</span> YC CEO 게리 탄의 TypeScript 기반 OpenClaw 및 Hermes LLM 에이전트 의사결정 및 추론 제어용 핵심 브레인 엔진</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 에이전트 비결정성 해결을 위한 YC CEO 실전 로직 및 TypeScript 기반 OpenClaw/Hermes 아키텍처 구현체와 설계 모범 사례 제공함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>LLM 기반 자율 에이전트가 복잡한 태스크를 수행할 때 발생하는 비결정적인 추론 과정을 안정적으로 제어하기 위한 TypeScript 기반의 핵심 아키텍처입니다. OpenClaw와 Hermes 프레임워크의 강점을 결합하여 에이전트의 사고 흐름을 구체적인 코드로 구조화하고 실무적인 도구 호출 및 상태 관리 기능을 지원합니다. 복잡한 SaaS 자동화 워크플로우나 고객 대응 봇 구축에 즉시 활용 가능하며, 포크 시 특정 도메인 데이터셋을 반영한 로컬 LLM 최적화나 산업 특화형 수직적 에이전트로 확장하여 자신만의 맞춤형 &#x27;AI 두뇌&#x27;를 설계할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/vercel-labs/agent-browser" target="_blank">vercel-labs/agent-browser</a> <span class="chg down">▼2</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Rust · ⭐ 48,613 · 🍴 3,309 · 오늘 +916 · 🤖 AI 에이전트 및 개발 프레임워크</div>
+                <div class="orig">원문: Browser automation CLI for AI agents</div>
+                <div><span class="label">🎯 요약:</span> LLM 에이전트용 Rust 기반 브라우저 제어 CLI로 웹 탐색 및 데이터 추출 등 복잡한 워크플로우 자동화 지원</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Selenium 대비 고속·경량 실행과 LLM이 웹 요소를 직접 파악 및 조작하는 도구 호출 인터페이스 제공으로 복잡성 해결함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존의 무거운 헤드리스 브라우저 라이브러리와 달리, Rust의 고성능을 활용해 AI 에이전트가 최소한의 리소스로 웹을 탐색하고 상호작용할 수 있도록 설계되었습니다. LLM이 웹 페이지 구조를 효율적으로 이해하고 버튼 클릭이나 텍스트 입력 등의 액션을 정확히 실행하도록 최적화된 CLI 인터페이스를 제공합니다. 실무에서는 API가 없는 웹 서비스의 자동화 작업이나 실시간 가격 비교, 멀티스텝 리서치 에이전트 구축 등에 즉시 활용 가능합니다. 프로젝트를 포크하여 특정 보안 환경을 우회하는 스텔스 기능을 추가하거나, Wasm 기반의 엣지 컴퓨팅 환경에서 구동되는 초경량 에이전트 런타임으로 확장해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/ruvnet/RuView" target="_blank">ruvnet/RuView</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 103,569 · 🍴 13,417 · 오늘 +172 · ⚙️ 물리 시뮬레이션 및 센싱</div>
+                <div class="orig">원문: π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.</div>
+                <div><span class="label">🎯 요약:</span> 상용 WiFi 신호로 카메라 없이 실시간 공간 지능, 생체 신호 및 재실 감지 기능을 제공하는 고성능 Rust 기반 OSS 솔루션.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> WiFi CSI 기반으로 카메라 없이 심박·호흡 등 정밀 생체 정보와 위치를 감지해 사생활 침해 방지 및 저비용 보안·헬스케어 구축이 가능함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>RuView는 상용 WiFi 칩셋에서 발생하는 채널 상태 정보(CSI)를 분석하여 별도의 센서 부착 없이도 인간의 움직임과 미세한 호흡까지 실시간으로 감지합니다. 비디오 데이터를 전혀 사용하지 않아 사생활 침해 문제를 원천적으로 해결하며, 기존 WiFi 인프라를 활용해 저비용으로 고정밀 공간 지능 시스템을 구현할 수 있다는 점이 핵심입니다. 독거노인의 이상 징후 모니터링이나 스마트 빌딩의 에너지 절감을 위한 실시간 재실 감지 등 보안과 헬스케어 실무에 즉시 도입 가능합니다. 해당 프로젝트를 포크한다면 Edge AI 모델을 결합해 특정 행동 패턴 인식 기능을 추가하거나, 초소형 임베디드 장치에 최적화된 Rust 기반의 독립형 모니터링 펌웨어를 개발해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank">ZhuLinsen/daily_stock_analysis</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 69,085 · 🍴 56,443 · 오늘 +506 · 🔍 데이터 분석 및 정보 검색</div>
+                <div class="orig">원문: LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.</div>
+                <div><span class="label">🎯 요약:</span> LLM 기반 다국적 주식 분석기로 실시간 시세·뉴스 수집, 결정 보드 시각화 및 자동 알림 기능을 갖춘 무비용 예약 실행 가능 파이썬 OSS임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> GitHub Actions 기반 제로 비용 운영 및 다중 소스 데이터 연동 LLM 추론으로 개인화된 투자 인사이트를 자동화하여 알림 및 대시보드로 제공함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 파편화된 다국적 시장의 시세와 뉴스를 LLM이 요약 및 분석하여 투자 결정을 돕는 자동화 파이프라인을 구축합니다. GitHub Actions를 활용해 별도의 서버 유지 비용 없이 정기적으로 데이터를 처리하고 텔레그램이나 메일로 분석 리포트를 전송하는 구조가 특징입니다. 개인 투자자를 위한 맞춤형 퀀트 분석 도구부터 기업용 마켓 모니터링 시스템까지 실무에 즉시 적용 가능합니다. 프로젝트를 포크하여 암호화폐 시장 데이터 소스를 연동하거나, 특정 섹터의 전문 지식을 학습시킨 RAG 기반의 심층 분석 봇으로 확장하는 아이디어를 추천합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/homeassistant-ai/ha-mcp" target="_blank">homeassistant-ai/ha-mcp</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 6,090 · 🍴 297 · 오늘 +31 · 🤖 AI 에이전트 및 개발 프레임워크</div>
+                <div class="orig">원문: Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.</div>
+                <div><span class="label">🎯 요약:</span> Claude, ChatGPT 등 LLM이 Home Assistant 기기를 직접 제어 및 자동화하도록 연결하는 MCP 기반 오픈소스 파이썬 프로젝트</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Anthropic MCP 표준 활용 및 복잡한 YAML 설정 없이 자연어만으로 기기 상태 확인, 가전 제어 및 고도화된 자동화 시나리오 구성 가능함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 Anthropic의 MCP(Model Context Protocol)를 통해 Home Assistant의 엔티티와 서비스를 LLM 도구로 노출하여 AI 에이전트가 직접 스마트홈을 관리하게 합니다. 사용자는 복잡한 코딩 대신 &quot;거실 온도가 26도 이상이면 에어컨을 켜고 조명을 낮춰줘&quot;와 같은 자연어 명령으로 실시간 기기 제어 및 자동화 로직을 즉시 실행할 수 있습니다. 실무적으로는 Claude 데스크톱 앱과 연동하여 통합 홈 제어 인터페이스로 활용 가능하며, 포크 시 로컬 LLM(Ollama) 기반의 프라이버시 강화형 스마트홈 비서나 에너지 최적화 전용 AI 에이전트로 확장하기 좋습니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
