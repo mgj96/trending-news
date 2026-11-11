@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-11)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> AI 에이전트의 실무 역량 강화와 배포를 돕는 기술 생태계 중심의 프로젝트들이 트렌드를 주도하고 있습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/meta/astryx" target="_blank">meta/astryx</a> <span class="chg up">▲1</span> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 22,981 · 🍴 1,829 · 오늘 +3,108 · 🤖 AI 에이전트 및 도구</div>
+                <div class="orig">원문: An open source design system that&#x27;s fully customizable and agent ready</div>
+                <div><span class="label">🎯 요약:</span> LLM 에이전트 상호작용에 최적화된 컴포넌트와 고수준 커스터마이징을 제공하는 TS 기반 차세대 디자인 시스템</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 기존 UI 한계를 넘어 AI 에이전트의 직접 제어 및 동적 생성에 최적화된 설계로 지능형 인터페이스 구축의 높은 기술 장벽과 복잡성 해결</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Astryx는 정적인 디자인 시스템을 넘어 AI 에이전트가 UI 요소를 쉽게 이해하고 조작할 수 있는 &#x27;에이전트 네이티브&#x27; 구조를 제공하여 지능형 서비스 개발을 가속화합니다. TypeScript 기반의 강력한 커스터마이징 기능을 통해 에이전트가 사용자 의도에 맞춰 UI를 실시간으로 재구성하거나 필요한 도구를 즉시 호출하는 연동 시스템 구축이 가능합니다. 실무에서는 자율형 AI 비서의 대시보드나 복잡한 워크플로우 관리 도구 제작에 즉시 활용 가능하며, 프로젝트 포크 시 특정 산업군에 특화된 AI 전용 인터페이스나 멀티모달 제어 프레임워크로 확장해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/anthropics/skills" target="_blank">anthropics/skills</a> <span class="chg down">▼1</span> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">Python · ⭐ 192,381 · 🍴 22,650 · 오늘 +1,679 · 🤖 AI 에이전트 및 도구</div>
+                <div class="orig">원문: Public repository for Agent Skills</div>
+                <div><span class="label">🎯 요약:</span> 클로드 에이전트의 도구 사용 기능을 확장하는 앤스로픽 공식 저장소로 컴퓨터 제어 및 복잡한 업무 자동화를 지원하는 파이썬 기반 스킬 모음임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 클로드 Computer Use 기능을 실무에 즉시 적용 가능한 표준 스킬셋으로 제공해 에이전트 개발 시 도구 구현 리소스를 절감하고 기능 확장성을 보장하는 오픈소스임.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 클로드(Claude)와 같은 LLM이 웹 브라우징, 터미널 명령 실행, 파일 시스템 조작 등 실제 컴퓨터 환경과 상호작용하기 위해 필요한 &#x27;스킬&#x27;을 표준화된 Python 코드로 제공합니다. 개발자는 복잡한 저수준 API 호출 로직을 직접 작성할 필요 없이 앤스로픽이 검증한 고수준 인터페이스를 호출하여 에이전트에 강력한 실행 능력을 부여할 수 있습니다. 실무에서는 자동화된 UI 테스트, 코드 생성 및 실행, 데이터 분석 워크플로우 구축에 즉시 활용 가능합니다. 이 프로젝트를 포크하여 특정 SaaS API나 사내 내부 시스템에 특화된 독자적인 스킬셋 라이브러리로 확장한다면 각 산업군에 최적화된 수직적 에이전트(Vertical Agent)를 빠르게 개발할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/addyosmani/agent-skills" target="_blank">addyosmani/agent-skills</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">JavaScript · ⭐ 115,206 · 🍴 12,096 · 오늘 +465 · 🤖 AI 에이전트 및 도구</div>
+                <div class="orig">원문: Production-grade engineering skills for AI coding agents.</div>
+                <div><span class="label">🎯 요약:</span> 파일 탐색, 편집, 쉘 실행 등 AI 에이전트 실무 기능을 표준 API로 구현한 JS 기반 프로덕션급 스킬셋</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM Agent의 코드 분석 및 수정 시 할루시네이션 억제와 프로덕션 내 도구 실행 안정성을 확보하려는 강력한 개발자 니즈 반영</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 에이전트가 단순히 코드를 생성하는 단계를 넘어, 파일 시스템 접근과 쉘 명령 실행 등 실제 개발 환경과 상호작용하는 데 필요한 원자적 기능들을 표준 API로 제공합니다. `grep` 기반의 정밀 검색과 디렉터리 트리 파악, 줄 단위 코드 편집 등 정교한 기술을 담고 있어 고성능 코딩 어시스턴트나 CI/CD 자동화 봇 구축에 즉시 투입할 수 있습니다. 이 오픈소스를 포크하여 특정 프레임워크용 AST 분석 스킬을 추가하거나, 보안 샌드박스 내부의 실행 로직을 강화하는 방식으로 독자적인 Agentic 도구를 파생시키기 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/anthropics/claude-quickstarts" target="_blank">anthropics/claude-quickstarts</a> <span class="chg up">▲1</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Python · ⭐ 20,522 · 🍴 3,470 · 오늘 +531 · 🤖 AI 에이전트 및 도구</div>
+                <div class="orig">원문: A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API</div>
+                <div><span class="label">🎯 요약:</span> 클로드 API 기반 배포용 공식 파이썬 템플릿 모음. 스트림릿 프레임워크 연동 및 실전 비즈니스 로직 구현 샘플 제공함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Claude 3.5 Sonnet 최적화 레퍼런스 및 API, UI, 배포 파이프라인 패키징으로 LLM 앱 초기 구축 리소스 대폭 절감함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 클로드 API 호출부터 UI 렌더링, 서버 배포까지의 전 과정을 모듈화된 파이썬 코드로 제공하여 LLM 서비스 상용화 문턱을 낮춥니다. 단순히 API 가이드를 넘어 PDF 문서 분석, 웹 검색 연동 등 실무에서 즉시 활용 가능한 레퍼런스 아키텍처를 포함하는 것이 특징입니다. 이를 통해 사내 지식 베이스 검색기나 고객 상담 자동화 툴을 빠르게 프로토타이핑하고 Vercel 또는 AWS 환경에 즉각 배포할 수 있습니다. 포크 시 특정 산업군에 특화된 RAG(검색 증강 생성) 시스템으로 확장하거나 멀티모달 기능을 결합한 구독형 SaaS MVP 모델로 발전시키기 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/google-deepmind/mujoco" target="_blank">google-deepmind/mujoco</a> <span class="chg down">▼1</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">C++ · ⭐ 17,388 · 🍴 2,148 · 오늘 +456 · ⚙️ 고성능 엔진 및 프레임워크</div>
+                <div class="orig">원문: Multi-Joint dynamics with Contact. A general purpose physics simulator.</div>
+                <div><span class="label">🎯 요약:</span> 구글 딥마인드 기반 고성능 로봇 제어 및 생체 역학 시뮬레이션용 C++ 기반 다관절 접촉 물리 엔진 OSS임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> OSS 전환 후 RL·로봇 연구 필수 도구 등극. MJCF 모델 기반 정밀한 접촉 물리 해석 최적화 및 병렬 GPU 가속 지원.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>MuJoCo는 볼록 최적화(Convex Optimization) 알고리즘을 활용해 다관절 객체의 접촉 마찰을 정밀하게 계산하며, 강화학습(RL) 에이전트의 학습 속도를 비약적으로 향상시킵니다. 실무에서는 휴머노이드 로봇의 제어 모델 검증, 의료용 수술 로봇의 정밀 조작 훈련, 공장 자동화 라인의 물리적 디지털 트윈 구축 등에 핵심 시뮬레이션 엔진으로 사용됩니다. 해당 프로젝트를 포크하여 WebAssembly 기반의 브라우저 로봇 시뮬레이터를 구현하거나, 특정 NPU 하드웨어 가속을 위한 맞춤형 물리 연산 커널을 추가하는 등의 파생 개발이 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/we-promise/sure" target="_blank">we-promise/sure</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Ruby · ⭐ 12,008 · 🍴 892 · 오늘 +159 · 🕵️ 유틸리티 및 라이프스타일</div>
+                <div class="orig">원문: The personal finance app for everyone (by everyone)</div>
+                <div><span class="label">🎯 요약:</span> Ruby 기반 OSS 개인 자산 관리 앱으로 데이터 주권 확보 및 사용자 참여형 기능을 제공하는 전방위적 금융 가계부 관리 솔루션</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 클라우드 종속성 탈피 및 로컬 데이터 제어와 Ruby 기반 빠른 커스터마이징이 가능해 협업 중심의 오픈 금융 생태계를 제안한 점이 주목받음</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 금융 SaaS의 데이터 폐쇄성과 구독료 문제를 해결하기 위해 루비 온 레일즈 기반의 강력한 자체 호스팅 환경을 제공하며 사용자 중심의 금융 주권을 실현합니다. 모듈화된 아키텍처를 통해 다양한 국가의 화폐와 은행 API 연동이 용이하며, 개인의 소비 패턴을 분석하는 가계부 자동화 기능을 자유롭게 커스터마이징할 수 있습니다. 실무에서는 가족 단위의 자산 관리 서버 구축이나 중소 규모 사업자의 지출 증빙 관리 시스템으로 즉시 활용 가능합니다. 해당 프로젝트를 포크하여 LLM 기반의 지능형 지출 분석 챗봇을 결합하거나, 실시간 암호화폐 시세 API를 연동한 통합 투자 포트폴리오 대시보드로 확장하기에 매우 적합한 구조입니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/homeassistant-ai/ha-mcp" target="_blank">homeassistant-ai/ha-mcp</a> <span class="chg up">▲3</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Python · ⭐ 6,699 · 🍴 432 · 오늘 +790 · 🤖 AI 에이전트 및 도구</div>
+                <div class="orig">원문: Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.</div>
+                <div><span class="label">🎯 요약:</span> MCP 기반 Claude·ChatGPT 연동형 홈어시스턴트 제어 도구. LLM 활용 기기 상태 조회 및 복합 자동화 시나리오 구성 지원 환경.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Anthropic MCP 표준 채용으로 파편화된 스마트홈 API 제어 한계 극복. YAML 없이 LLM 자연어만으로 기기 통합 및 지능형 자동화 구현 가능한 높은 확장성.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 Anthropic이 공개한 Model Context Protocol(MCP)을 Home Assistant에 적용하여, Claude Desktop 등 MCP 클라이언트에서 스마트홈 기기를 직접 제어하게 합니다. 사용자는 &quot;거실 온도가 26도 이상이면 에어컨을 켜고 조명을 낮춰줘&quot;와 같은 복합 자연어 명령으로 Python 기반 하드웨어 로직을 실시간 실행할 수 있습니다. 기존의 복잡한 YAML 설정 대신 LLM의 추론 능력을 스마트홈 도메인에 결합해 사용자 맥락에 맞는 동적인 기기 관리가 가능해집니다. 포크 시 Ollama 등 로컬 LLM 서버 전용 MCP 브리지로 확장하여 보안을 강화한 폐쇄형 지능형 홈 서버 구축 시스템으로 발전시킬 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/vercel-labs/agent-browser" target="_blank">vercel-labs/agent-browser</a> <span class="chg down">▼1</span> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">Rust · ⭐ 49,254 · 🍴 3,451 · 오늘 +780 · 🤖 AI 에이전트 및 도구</div>
+                <div class="orig">원문: Browser automation CLI for AI agents</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 LLM 에이전트 전용 브라우저 자동화 CLI로 웹 서핑 및 데이터 추출 태스크를 자율적으로 수행하는 도구</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Rust의 고성능 제어로 LLM이 복잡한 웹 UI를 분석 및 조작하는 워크플로우를 CLI 하나로 통합해 에이전트 개발 복잡도를 낮춤</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM이 복잡한 웹 요소를 정확히 인식하고 상호작용할 수 있도록 최적화된 런타임을 제공하여 에이전트의 웹 제어 생산성을 극대화합니다. Rust 기반의 설계로 기존 Node.js 라이브러리 대비 리소스 효율이 뛰어나며, AI가 DOM 구조를 파싱하고 실제 액션까지 실행하는 과정을 표준화된 CLI 환경으로 간소화했습니다. 실무에서는 자동 결제 시스템이나 실시간 시장 가격 비교 에이전트 구축에 즉시 투입 가능하며, 이를 포크하여 특정 보안 환경이나 인트라넷 전용 &#x27;자율형 사무 자동화 에이전트&#x27;로 고도화하는 아이디어를 구현해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/sherlock-project/sherlock" target="_blank">sherlock-project/sherlock</a> <span class="chg down">▼6</span> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">Python · ⭐ 109,051 · 🍴 12,665 · 오늘 +2,393 · 🕵️ 유틸리티 및 라이프스타일</div>
+                <div class="orig">원문: Hunt down social media accounts by username across social networks</div>
+                <div><span class="label">🎯 요약:</span> 사용자명 하나로 전 세계 400개 이상 소셜 네트워크 가입 여부를 실시간 탐색하는 파이썬 기반 OSINT 및 계정 통합 관리용 CLI 도구</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 단일 CLI 명령으로 브랜드 사칭 대응 및 OSINT 수사를 자동화하며, 별도 API 키 없이 HTTP 응답 기반으로 400개 이상 사이트를 고속 전수 조사하는 편의성</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 도구는 특정 핸들(ID)이 어떤 웹 서비스에 등록되어 있는지 전수 조사하는 과정을 자동화하여 디지털 포렌식 및 정보 수집 시간을 획기적으로 단축합니다. Python의 requests 라이브러리를 활용해 각 사이트의 URL 패턴에 사용자명을 대입하고, HTTP 상태 코드나 커스텀 에러 메시지를 감지하여 계정 존재 여부를 판별합니다. 보안 전문가는 브랜드 사칭 계정 탐지나 레드팀 작전 시 정찰용으로 활용 가능하며, 마케터는 브랜드명 선점 가능 여부를 체크하는 용도로 실무에 적용할 수 있습니다. 프로젝트를 포크한다면 특정 국가의 로컬 커뮤니티 사이트 목록을 추가하거나, 검색 결과 시각화 대시보드 및 알림 봇 연동 기능을 구현하여 모니터링 툴로 고도화할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/tokio-rs/topcoat" target="_blank">tokio-rs/topcoat</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 6,847 · 🍴 302 · 오늘 +192 · ⚙️ 고성능 엔진 및 프레임워크</div>
+                <div class="orig">원문: A batteries-included framework for building web apps</div>
+                <div><span class="label">🎯 요약:</span> Tokio 팀이 만든 Axum 기반 풀스택 Rust 웹 프레임워크로 DB 연동부터 인증까지 통합해 개발 생산성을 극대화함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 파편화된 Rust 웹 라이브러리를 Django처럼 일원화해 설정 복잡도를 낮추고 Tokio 생태계 표준 기술 기반의 높은 안정성 및 성능 보장함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Rust 웹 개발 시 Axum, SQLx, Tower 등을 직접 조합해야 했던 번거로움을 해결하기 위해 Tokio 메인테이너들이 제안하는 표준화된 아키텍처입니다. 내장된 CLI를 통해 DB 마이그레이션, 환경 변수 관리, API 인증 등의 상용구 코드를 자동 생성하며 고성능 비동기 런타임의 이점을 그대로 유지합니다. 높은 안정성이 필요한 금융 시스템이나 실시간 데이터 대시보드 구축에 최적이며, 기존 파편화된 라이브러리 간의 의존성 충돌 문제를 원천적으로 방지합니다. 이 프로젝트를 포크하여 특정 클라우드 네이티브 환경에 최적화된 배포 템플릿이나 LLM 추론 엔진 서빙 전용 경량 백엔드 프레임워크로 확장해 활용하기 좋습니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
