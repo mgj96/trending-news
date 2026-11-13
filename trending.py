@@ -326,10 +326,11 @@ def make_html_string(data, overview, themes, quiz):
     <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            body {{ font-family: 'Malgun Gothic', sans-serif; line-height: 1.6; padding: 20px; color: #333; background-color: #f9f9f9; }}
-            .container {{ max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }}
-            h1 {{ color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }}
+            body {{ font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', Roboto, sans-serif; line-height: 1.6; padding: 10px; margin: 0; color: #333; background-color: #f9f9f9; word-break: keep-all; }}
+            .container {{ max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 18px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }}
+            h1 {{ color: #24292e; font-size: 1.4em; border-bottom: 2px solid #eaecef; padding-bottom: 8px; margin: 0; }}
             h2 {{ color: #24292e; font-size: 1.15em; margin: 28px 0 10px; }}
             h3 {{ color: #24292e; font-size: 1.05em; margin: 22px 0 4px; padding-bottom: 4px; border-bottom: 2px solid #eaecef; }}
             a {{ color: #0366d6; text-decoration: none; }}
@@ -340,8 +341,11 @@ def make_html_string(data, overview, themes, quiz):
             .chg.up {{ color: #1a7f37; }}
             .chg.down {{ color: #cf222e; }}
             .chg.same {{ color: #888; font-weight: normal; }}
-            .row {{ padding: 8px 0; border-bottom: 1px solid #eaecef; font-size: 0.95em; }}
-            .why {{ color: #57606a; font-size: 0.88em; }}
+            .row {{ padding: 10px 0; border-bottom: 1px solid #eaecef; font-size: 0.95em; }}
+            .name {{ font-size: 1.02em; overflow-wrap: anywhere; }}
+            .sum {{ color: #24292e; margin-top: 2px; }}
+            .why {{ color: #57606a; font-size: 0.88em; margin-top: 2px; }}
+            .quiz-q {{ font-weight: bold; font-size: 1.05em; color: #24292e; margin: 4px 0; }}
             .quiz {{ background: #fff8c5; border-left: 4px solid #d4a72c; padding: 12px 16px; margin: 16px 0; font-size: 0.95em; }}
             .quiz-a {{ background: #f6f8fa; border-left: 4px solid #1a7f37; padding: 12px 16px; margin-top: 8px; font-size: 0.93em; color: #333; }}
             details summary {{ cursor: pointer; font-weight: bold; color: #1a7f37; }}
@@ -353,8 +357,8 @@ def make_html_string(data, overview, themes, quiz):
             <p style="margin: 6px 0;">마광님, 오늘의 GitHub 트렌딩입니다. <span class="meta">📎 전체 내용은 첨부파일에서 볼 수 있어요.</span></p>
 
             <div class="quiz">
-                <strong>🧠 오늘의 CS 질문</strong><br>
-                {esc(quiz['q'])}<br>
+                <strong>🧠 오늘의 CS 질문</strong>
+                <div class="quiz-q">{esc(quiz['q'])}</div>
                 <span class="meta">생각해 본 뒤 답은 맨 아래에서 확인하세요 ⬇</span>
             </div>
     """
@@ -372,14 +376,14 @@ def make_html_string(data, overview, themes, quiz):
             cls, label = change_label(item)
             badges = ""
             if label and cls != "same":
-                badges += f' <span class="chg {cls}">{esc(label)}</span>'
+                badges += f'<span class="chg {cls}">{esc(label)}</span> · '
             if streak_label(item):
-                badges += f' <span class="meta">{esc(streak_label(item))}</span>'
+                badges += f'{esc(streak_label(item))} · '
             html_content += f"""
             <div class="row">
-                <span class="meta">#{item['rank']}</span> <a href="{esc(item['link'])}" target="_blank"><strong>{esc(item['name'])}</strong></a>{badges}
-                <span class="meta">· 오늘 {esc(today_num(item['today_stars']))}</span><br>
-                {esc(short(item['summary_kr'], 75))}
+                <div class="name"><span class="meta">#{item['rank']}</span> <a href="{esc(item['link'])}" target="_blank"><strong>{esc(item['name'])}</strong></a></div>
+                <div class="meta">{badges}⭐ 오늘 {esc(today_num(item['today_stars']))}</div>
+                <div class="sum">{esc(short(item['summary_kr'], 75))}</div>
                 <div class="why">🔥 {esc(short(item['why_trending'], 90))}</div>
             </div>
             """
@@ -387,7 +391,7 @@ def make_html_string(data, overview, themes, quiz):
     # 정답: 맨 아래에 둔다. <details>를 지원하는 클라이언트에서는 접혀 있고, Gmail 등에서는 펼쳐 보인다.
     answer_html = esc(quiz['a']).replace("\n", "<br>")
     html_content += f"""
-            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+            <p style="text-align: center; color: #6e7781; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
 
             <div style="margin-top: 60px;">
                 <details>
