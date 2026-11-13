@@ -349,7 +349,7 @@ def make_html_string(data, overview, themes, quiz):
     </head>
     <body>
         <div class="container">
-            <h1>🚀 GitHub Trending AI Report ({today})</h1>
+            <h1>🚀 트렌딩 {today[5:]}</h1>
             <p style="margin: 6px 0;">마광님, 오늘의 GitHub 트렌딩입니다. <span class="meta">📎 전체 내용은 첨부파일에서 볼 수 있어요.</span></p>
 
             <div class="quiz">
@@ -471,7 +471,7 @@ def make_detail_html(data, overview, themes):
 def make_text_string(data, overview, themes, quiz):
     """HTML을 못 보는 환경(알림 미리보기 등)용 텍스트 버전."""
     today = datetime.now().strftime("%Y-%m-%d")
-    lines = [f"GitHub Trending AI Report ({today})", "(📎 전체 내용은 첨부파일에서 볼 수 있어요)", ""]
+    lines = [f"트렌딩 {today[5:]}", "(📎 전체 내용은 첨부파일에서 볼 수 있어요)", ""]
     lines += ["[오늘의 CS 질문]", quiz['q'], "(정답은 맨 아래에 있어요)", ""]
 
     if overview:
@@ -519,7 +519,7 @@ def send_email(html_content, text_content, attachment_html, attachment_name):
     msg = MIMEMultipart('mixed')
     msg['From'] = email_user
     msg['To'] = email_user
-    msg['Subject'] = f"🚀 [GitHub Trending AI] {datetime.now().strftime('%Y-%m-%d')} 리포트"
+    msg['Subject'] = f"🚀 트렌딩 {datetime.now().strftime('%m-%d')}"
 
     body = MIMEMultipart('alternative')
     body.attach(MIMEText(text_content, 'plain', 'utf-8'))
