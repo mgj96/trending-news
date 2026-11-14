@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-14)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> LLM 기반의 지능형 개발 보조 및 보안 도구와 더불어 실무적인 금융 분석 및 인프라 관리 솔루션이 강세를 보입니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/alibaba/open-code-review" target="_blank">alibaba/open-code-review</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Go · ⭐ 50,676 · 🍴 3,773 · 오늘 +215 · 🤖 AI 기반 개발 및 보안</div>
+                <div class="orig">원문: Secure, fast, efficient, battle-tested at Alibaba&#x27;s scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI &amp; Anthropic compatible.</div>
+                <div><span class="label">🎯 요약:</span> 알리바바 검증 Go 코드 리뷰 툴, 확정적 파이프라인과 LLM 결합 기반 NPE·보안 규칙 정밀 분석 지원</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 환각 방지용 확정적 파이프라인 결합, 알리바바 검증 NPE·SQLi 정밀 라인 리뷰 및 보안 강화 기반의 분석 자동화</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 LLM 기반 코드 리뷰의 고질적 문제인 환각(Hallucination)과 높은 비용 문제를 확정적 정적 분석 파이프라인과의 하이브리드 결합으로 해결했습니다. 알리바바의 대규모 환경에서 검증된 NPE, 스레드 안전성, SQL 인젝션 등 정밀한 다국어 규칙셋을 활용해 코드 라인 단위로 정확한 코멘트를 생성하며 OpenAI 및 Anthropic API와 호환됩니다. CI/CD 환경에 통합하여 대규모 소스 코드의 품질과 보안을 자동 관리하는 데 최적화된 실무형 도구입니다. 프로젝트를 포크한다면 vLLM이나 Ollama를 연동해 보안이 중요한 폐쇄형 망을 위한 온프레미스 리뷰 시스템을 구축하거나, 특정 산업군(금융, 의료) 전용 보안 규칙셋을 커스텀 확장하는 아이디어가 유망합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/GoogleChrome/modern-web-guidance-src" target="_blank">GoogleChrome/modern-web-guidance-src</a> <span class="chg down">▼1</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 4,925 · 🍴 272 · 오늘 +1,925 · 🤖 AI 기반 개발 및 보안</div>
+                <div class="orig">원문: Keep your coding agent up to date with the latest web best practices</div>
+                <div><span class="label">🎯 요약:</span> LLM 코딩 에이전트용 최신 웹 표준 및 구글 크롬 권장 베스트 프랙티스 데이터셋 제공용 오픈소스 가이드라인</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 학습 데이터 편향에 따른 AI의 구식 코드 생성 방지 및 .cursorrules 주입 가능한 최신 Web API 기반 가이드임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 코딩 에이전트가 최신 Web API 대신 Deprecated된 기술을 제안하는 문제를 해결하기 위해 구글이 직접 관리하는 기술 문서 소스입니다. TypeScript 기반의 최신 프레임워크 활용법과 성능 최적화 기법을 .md 파일 형태로 제공하여 Cursor, GitHub Copilot 등 다양한 도구의 컨텍스트로 활용 가능합니다. 실무에서는 프로젝트 루트의 .cursorrules 설정에 이 가이드를 연동해 코드 리뷰 시간을 단축하고 최신 스펙 준수율을 높일 수 있습니다. 이를 포크하여 사내 라이브러리의 코딩 컨벤션이나 특정 보안 가이드라인을 결합한 기업 맞춤형 에이전트 학습 소스로 확장하는 아이디어가 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/openai/codex-security" target="_blank">openai/codex-security</a> <span class="chg down">▼1</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 13,167 · 🍴 1,024 · 오늘 +751 · 🤖 AI 기반 개발 및 보안</div>
+                <div class="orig">원문: OpenAI&#x27;s Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security</div>
+                <div><span class="label">🎯 요약:</span> OpenAI Codex API 활용 보안 취약점 탐지, 검증 및 자동 수정을 지원하는 TypeScript 기반 CLI와 SDK 도구임</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 정적 분석의 오탐을 LLM 추론으로 필터링하고 취약점 수정 코드 생성 및 유효성 검증까지 CI/CD 내 자동화 가능한 고도화된 기능</div>
+                <div class="detail"><span class="label">📖 상세</span><br>단순 탐지를 넘어 LLM이 코드 맥락을 분석해 실제 보안 위협인지 판별하고 즉시 적용 가능한 패치 코드를 생성합니다. CLI를 활용해 GitHub Actions 환경에서 취약점 발생 시 자동으로 PR(Pull Request)을 생성하는 보안 봇을 구축할 수 있습니다. 대규모 코드베이스에서 SQL 인젝션이나 XSS 등 고위험군 취약점을 전수 조사하고 유효성을 검증하는 실무 공정에 매우 유용합니다. 이를 포크하여 특정 프레임워크나 기업 내부 보안 규정에 특화된 맞춤형 SAST(정적 분석) 도구로 확장하거나 자가 치유형 인프라 코드를 구현하는 아이디어로 발전시킬 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank">ZhuLinsen/daily_stock_analysis</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 71,671 · 🍴 57,313 · 오늘 +256 · 📈 금융 분석 및 자산 관리</div>
+                <div class="orig">원문: LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.</div>
+                <div><span class="label">🎯 요약:</span> LLM 기반 다국가 주식 시황 및 실시간 뉴스 통합 분석 시스템으로 대시보드 시각화와 알림을 지원하며 GitHub Actions로 무료 가동함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 분산된 글로벌 마켓 데이터와 뉴스를 LLM이 요약해 투자 인사이트를 도출하며 GitHub Actions 기반 인프라 비용 제로 자동화가 매력적임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>방대한 글로벌 시장의 다국어 뉴스 및 지표를 LLM이 실시간 요약·분석하여 투자 결정에 필요한 직관적인 대시보드와 알림을 생성합니다. 별도의 서버 유지비 없이 GitHub Actions 스케줄러를 통해 정기 리포트를 생성하고 텔레그램 등으로 전송할 수 있는 비용 효율적인 아키텍처가 특징입니다. 실무적으로는 개인 포트폴리오의 일간 브리핑 자동화나 사내 금융 데이터 파이프라인 구축을 위한 레퍼런스로 활용하기 적합합니다. 프로젝트를 포크하여 암호화폐 데이터 소스를 통합하거나, LLM의 뉴스 감성 분석 수치를 주가 차트와 결합해 상관관계를 추적하는 특화 도구로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/we-promise/sure" target="_blank">we-promise/sure</a> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">Ruby · ⭐ 14,784 · 🍴 1,123 · 오늘 +925 · 📈 금융 분석 및 자산 관리</div>
+                <div class="orig">원문: The personal finance app for everyone (by everyone)</div>
+                <div><span class="label">🎯 요약:</span> 루비 기반의 오픈소스 개인 금융 관리 앱으로 복식부기 원칙 적용 및 전 세계 커뮤니티가 함께 개발하는 투명한 자산 관리용 도구임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 데이터 주권 확보를 위한 Self-hosting 기반 OSS로 상용 앱의 구독료 부담 해결 및 복식부기 기반의 엄밀한 회계 처리와 API 확장성 지원함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>상용 금융 서비스의 데이터 프라이버시 문제와 구독료 부담을 해결하기 위해 루비 온 레일즈 기반으로 복식부기 원칙을 준수하는 자산 관리 솔루션입니다. 개인의 지출 및 자산을 계정별로 정밀하게 추적하며, 커뮤니티 주도의 다국어 지원과 멀티 커런시 기능을 통해 전 세계 어디서나 유연하게 활용할 수 있습니다. 실무적으로는 개인용 가계부를 넘어 소규모 사업자의 간편 장부로 활용하기에 적합하며, 셀프 호스팅 방식을 통해 완벽한 데이터 주권을 보장하는 것이 특징입니다. 프로젝트를 포크하여 국내 은행 API 연동 기능을 추가하거나, LLM을 활용해 소비 패턴을 분석하고 지출 카테고리를 자동 분류하는 지능형 재무 비서 서비스로 확장해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/backnotprop/plannotator" target="_blank">backnotprop/plannotator</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 10,492 · 🍴 788 · 오늘 +108 · 🤖 AI 기반 개발 및 보안</div>
+                <div class="orig">원문: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.</div>
+                <div><span class="label">🎯 요약:</span> AI 에이전트 계획 수립, 코드 리뷰, 팀 공유 및 원클릭 피드백용 TypeScript 기반 워크스페이스</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI 에이전트 사고 과정과 결과물을 가시화하고 팀 코드 리뷰 및 원클릭 피드백 루프로 LLM 제어력과 신뢰성을 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 에이전트가 생성한 코드나 계획을 단순 수용하지 않고, 인간이 중간 단계에서 검토 및 수정하는 휴먼 인 더 루프(HITL) 환경을 구축합니다. TypeScript 기반의 직관적인 UI를 통해 에이전트의 추론 과정을 시각화하며, 팀원들이 실시간으로 소통하고 원클릭으로 에이전트에게 피드백을 즉시 전송할 수 있습니다. 실무에서는 대규모 레거시 코드 마이그레이션이나 복잡한 인프라 설계 시 에이전트의 할루시네이션을 방지하고 작업 일관성을 유지하는 용도로 활용 가능합니다. 이 프로젝트를 포크하여 사내 보안 규정을 준수하는 전용 코드 리뷰 봇이나 특정 도메인에 특화된 에이전트 제어 대시보드로 확장하는 아이디어가 유효합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/louislam/uptime-kuma" target="_blank">louislam/uptime-kuma</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">JavaScript · ⭐ 93,886 · 🍴 8,724 · 오늘 +71 · 🌐 인프라 및 네트워크 도구</div>
+                <div class="orig">원문: A fancy self-hosted monitoring tool</div>
+                <div><span class="label">🎯 요약:</span> HTTP/TCP/Docker 기반 미려한 UI의 자가 호스팅용 상태 모니터링 대시보드 및 90종 이상 API 연동 알림 자동화 OSS</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 유료 SaaS 대체용 고가시성 대시보드, 쉬운 Docker 배포와 Telegram/Slack 등 90+ 채널 알림 연동으로 인프라 장애 대응 생산성 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Uptime Kuma는 유료 모니터링 SaaS의 비용 부담과 내부 데이터 보안 문제를 동시에 해결하는 Node.js 기반 자가 호스팅 도구입니다. HTTP(S), TCP, Docker 컨테이너 상태를 실시간 체크하며, 장애 발생 시 Discord나 Slack 등 90개 이상의 채널로 즉각적인 웹훅 알림을 전송합니다. 개인 홈서버부터 소규모 인프라까지 대시보드 하나로 통합 관리가 가능하며, 공개 상태 페이지 기능을 통해 사용자에게 가동률을 투명하게 공유할 수 있습니다. 프로젝트를 포크한다면 특정 클라우드 벤더의 리소스 모니터링 API를 결합하거나, CI/CD 파이프라인과 연동해 서비스 배포 즉시 모니터링 대상을 자동 등록하는 도구로 확장이 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/block/buzz" target="_blank">block/buzz</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 37,312 · 🍴 4,942 · 오늘 +97 · 🌐 인프라 및 네트워크 도구</div>
+                <div class="orig">원문: A hive mind communication platform</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 하이브 마인드 통신 플랫폼으로 대규모 노드 간 실시간 메시징 및 동기화를 지원하는 고성능 분산 네트워크 아키텍처</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 중앙 서버 없는 P2P 구조로 단일 장애점 제거 및 분산 LLM 에이전트 간 협업과 대규모 마이크로서비스 간 저지연 데이터 전송 아키텍처를 구현함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Buzz는 중앙 집중식 브로커 없이 수만 개의 노드가 유기적으로 연결되어 데이터를 주고받는 &#x27;하이브 마인드&#x27; 방식의 메시징 시스템을 구축합니다. Rust 언어의 안전성과 성능을 극대화하여 대규모 분산 시스템에서 발생하는 지연 시간 문제를 해결하고 고가용성 데이터 전송을 보장합니다. 실무에서는 실시간으로 컨텍스트를 공유해야 하는 멀티 에이전트 LLM 서비스나 엣지 컴퓨팅 기반의 IoT 기기 제어망 구축에 활용할 수 있습니다. 이 프로젝트를 포크하여 특정 도메인에 최적화된 경량 P2P 합의 알고리즘을 추가하거나, 보안이 강화된 기업 전용 프라이빗 스웜 통신망으로 확장하는 아이디어를 제안합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/tradermonty/claude-trading-skills" target="_blank">tradermonty/claude-trading-skills</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 4,205 · 🍴 871 · 오늘 +69 · 📈 금융 분석 및 자산 관리</div>
+                <div class="orig">원문: Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.</div>
+                <div><span class="label">🎯 요약:</span> Claude Code CLI 기반 주식 투자용 도구로 실시간 시장 분석, 기술적 차트 생성, 경제 일정 관리 및 전략 개발 기능을 제공함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Claude CLI에 금융 API를 연동해 자연어 기반 전략 백테스팅과 실시간 종목 스크리닝이 가능하며 LLM을 매매 터미널로 확장한 실무형 접근이 돋보임.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 Anthropic의 Claude Code와 외부 금융 API(Yahoo Finance 등)를 결합하여 개발자가 터미널 환경을 벗어나지 않고도 고도화된 시장 분석을 수행하게 돕습니다. 자연어로 특정 종목의 RSI나 이동평균선이 포함된 차트 생성을 명령하거나, 실시간 경제 지표 알림 및 조건별 종목 스크리닝을 즉시 실행할 수 있는 점이 특징입니다. 실무에서는 복잡한 퀀트 전략의 프로토타입을 빠르게 제작하고 검증하는 용도로 활용하기에 매우 적합합니다. 이를 포크하여 업비트나 바이낸스 같은 거래소 API를 연동한 암호화폐 자동 매매 봇으로 확장하거나, RAG(검색 증강 생성)를 추가해 기업 공시 리포트 분석 기능을 강화하는 방향으로 발전시킬 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/tailscale/tailcat" target="_blank">tailscale/tailcat</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Go · ⭐ 9,489 · 🍴 432 · 오늘 +256 · 🌐 인프라 및 네트워크 도구</div>
+                <div class="orig">원문: like netcat, but over Tailscale&#x27;s data plane, without Tailscale&#x27;s control plane</div>
+                <div><span class="label">🎯 요약:</span> Tailscale 컨트롤 플레인 없이 데이터 플레인만 활용해 보안 P2P 통신을 구현한 Go 기반의 Netcat 호환 초경량 CLI 유틸리티.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 중앙 관리 서버 없이 WireGuard 기반 암호화 및 NAT Traversal을 지원해 폐쇄망 내 보안성 및 이식성을 극대화한 혁신적 통신 방식임.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 netcat의 보안 및 NAT 환경 취약점을 Tailscale의 WireGuard 데이터 플레인 기술로 해결하여 별도의 서버 등록 없이 노드 간 즉각적인 보안 터널을 생성합니다. 실무에서는 외부망 노출 없이 프라이빗 네트워크 간 파일을 안전하게 전송하거나 마이크로서비스 간 임시 디버깅 채널을 구축할 때 유용합니다. 해당 코드를 포크하여 자사 서비스 내부에 임베디드 보안 전송 모듈로 커스텀하거나, 멀티 홉 릴레이 기능을 추가한 고성능 P2P 메싱 라이브러리로 확장하는 아이디어가 가능합니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
