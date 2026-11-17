@@ -18,7 +18,7 @@ on:
         description: '설치할 pip 패키지 (공백 구분)'
         type: string
         required: false
-        default: 'requests beautifulsoup4 google-generativeai'
+        default: 'requests beautifulsoup4 google-generativeai notebooklm-py'
       commit-message:
         description: '결과를 커밋할 때 쓸 메시지'
         type: string
@@ -31,6 +31,8 @@ on:
         required: true
       EMAIL_PASSWORD:
         required: true
+      NOTEBOOKLM_AUTH_JSON: # 없으면 오디오 생성만 건너뜀
+        required: false
 
 # 재사용 워크플로우도 자기 권한을 선언한다. 단, caller의 권한을 넘어설 수는 없다.
 permissions:
@@ -60,6 +62,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
         run: python ${{ inputs.script-name }}
 
       # 메일 발송이 실패해 위 단계가 실패해도, 이미 저장된 리포트는 아카이빙한다.
