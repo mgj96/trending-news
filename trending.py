@@ -511,6 +511,41 @@ def save_as_html(html_report):
     print(f"파일 저장 완료: {filename}")
     return filename
 
+def request_audio_overview(detail_html):
+    """NotebookLM에 오늘 리포트로 노트북을 만들고 한국어 오디오 개요 생성을 요청한다 (청취는 NotebookLM 앱에서).
+    비공식 라이브러리라 언제든 깨질 수 있으므로, 실패해도 리포트/메일에는 영향을 주지 않는다."""
+    token_json = os.environ.get("NOTEBOOKLM_MASTER_TOKEN")
+    if not token_json:
+        print("NOTEBOOKLM_MASTER_TOKEN 미설정: 오디오 생성을 건너뜁니다.")
+        return
+    try:
+        import asyncio
+        from notebooklm import NotebookLMClient
+        from notebooklm.auth import bootstrap_missing_storage_from_master_token
+        from notebooklm.paths import get_master_token_path, get_storage_path
+
+        # 쿠키는 금방 만료되므로, 매 실행마다 마스터 토큰으로 새 쿠키를 발급받는다
+        token_path = get_master_token_path()
+        token_path.parent.mkdir(parents=True, exist_ok=True)
+        token_path.write_text(token_json, encoding="utf-8")
+        token_path.chmod(0o600)
+
+        title = f"GitHub 트렌딩 {datetime.now().strftime('%Y-%m-%d')}"
+        text = BeautifulSoup(detail_html, "html.parser").get_text("\n", strip=True)
+
+        async def run():
+            await bootstrap_missing_storage_from_master_token(get_storage_path())
+            async with NotebookLMClient.from_storage() as client:
+                nb = await client.notebooks.create(title)
+                await client.sources.add_text(nb.id, title, text, wait=True)
+                # 생성은 구글 서버에서 몇 분 걸리므로 기다리지 않고 요청만 한다
+                await client.artifacts.generate_audio(nb.id, language="ko")
+
+        asyncio.run(run())
+        print(f"🎧 오디오 생성 요청 완료: NotebookLM '{title}' 노트북에서 들을 수 있어요.")
+    except Exception as e:
+        print(f"⚠️ 오디오 생성 실패 (리포트에는 영향 없음): {e}")
+
 def send_email(html_content, text_content, attachment_html, attachment_name):
     email_user = os.environ.get('EMAIL_USER')
     email_password = os.environ.get('EMAIL_PASSWORD')
@@ -563,6 +598,7 @@ if __name__ == "__main__":
         text_report = make_text_string(trending_data, overview, themes, quiz)
         detail_report = make_detail_html(trending_data, overview, themes)
         saved_path = save_as_html(detail_report)
+        request_audio_overview(detail_report)
         # 리포트 저장은 이미 끝난 상태. 메일 실패는 워크플로우를 실패로 만들어 알림이 가게 한다.
         if not send_email(html_report, text_report, detail_report, os.path.basename(saved_path)):
             sys.exit(1)

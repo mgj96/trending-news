@@ -39,6 +39,14 @@ GitHub Actions가 `outputs` 폴더에 HTML 파일을 생성하고 커밋할 수 
    * `EMAIL_USER` : 본인의 Gmail 주소 (예: example@gmail.com)
    * `EMAIL_PASSWORD` : 발급받은 16자리 앱 비밀번호 (띄어쓰기 없이 입력)
 
+### 3. (선택) NotebookLM 오디오 설정
+매일 리포트로 NotebookLM 노트북을 만들고 한국어 오디오 개요를 생성해 둡니다 (NotebookLM 앱에서 청취).
+비공식 라이브러리([notebooklm-py](https://github.com/teng-lin/notebooklm-py))를 쓰며, 실패해도 리포트/메일에는 영향이 없습니다.
+1. PC에 `pip install "notebooklm-py[browser,headless]"` 와 [GitHub CLI](https://cli.github.com/) 설치 후 `gh auth login`
+2. 이 레포를 clone한 폴더에서 `python scripts/setup_notebooklm_token.py 본인메일@gmail.com` 실행
+   → 브라우저로 구글 로그인 → `NOTEBOOKLM_MASTER_TOKEN` Secret 자동 등록 → PC의 토큰 파일 삭제
+* 마스터 토큰은 구글 계정 전체 권한이므로 레포 쓰기 권한을 다른 사람에게 주지 마세요. 비밀번호를 바꾸면 2번을 다시 실행합니다.
+
 ---
 
 ## 🚀 실행 방법 (Usage)

@@ -25,3 +25,4 @@ jobs:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       EMAIL_USER: ${{ secrets.EMAIL_USER }}
       EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+      NOTEBOOKLM_MASTER_TOKEN: ${{ secrets.NOTEBOOKLM_MASTER_TOKEN }}
