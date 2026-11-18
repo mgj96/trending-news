@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-18)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> AI 에이전트의 개발 역량 강화를 위한 스킬 확장 및 워크플로우 자동화 도구들이 강세를 보이고 있습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank">elementalsouls/Claude-BugHunter</a> <span class="chg up">▲4</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Python · ⭐ 9,568 · 🍴 1,381 · 오늘 +1,005 · 🤖 AI 에이전트 및 스킬 프레임워크</div>
+                <div class="orig">원문: A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.</div>
+                <div><span class="label">🎯 요약:</span> 82개 스킬과 681개 실제 취약점 패턴을 내장해 Claude Code 기반 레드팀 활동 및 보안 취약점 점검을 고도화하는 도구</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 24종 취약점 클래스 및 기업 인프라 공격 매트릭스를 CLI에 결합해 고도화된 모의 해킹과 자동화된 보안 취약점 분석 워크플로우를 제공함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Claude Code의 확장 기능을 활용해 681개의 검증된 보안 리포트 패턴을 기반으로 정적·동적 분석 및 취약점 탐지 자동화를 구현했습니다. 82개의 전문 스킬과 15종의 슬래시 커맨드를 제공하며, 특히 기업용 ID 시스템과 인프라 공격 매트릭스까지 포함해 실제 레드팀의 모의 해킹 실무 효율을 극대화합니다. 사내 고유의 보안 가이드라인을 추가 학습시켜 맞춤형 보안 감사 툴로 포크하거나, CI/CD 파이프라인에 통합하여 실시간 취약점 스캐너로 확장 개발하기에 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/mvanhorn/last30days-skill" target="_blank">mvanhorn/last30days-skill</a> <span class="chg up">▲7</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Python · ⭐ 69,217 · 🍴 6,156 · 오늘 +696 · 🤖 AI 에이전트 및 스킬 프레임워크</div>
+                <div class="orig">원문: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary</div>
+                <div><span class="label">🎯 요약:</span> X, Reddit, YT, HN 정보를 취합해 최근 30일간의 특정 주제를 요약하고 근거를 생성하는 LLM 에이전트용 Python 기반 검색 및 분석 스킬</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Search, Scrape, Synth logic을 통합해 단순 검색을 넘어 예측 시장 및 소셜 미디어 기반의 고신뢰도 데이터를 확보하는 RAG 워크플로우를 제공함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 일반 검색 엔진이 놓치기 쉬운 X(트위터), Reddit, Polymarket의 실시간 여론과 예측 데이터를 LLM과 결합해 정보의 시의성을 극대화합니다. Perplexity API와 맞춤형 스크래퍼를 사용해 데이터를 수집하며, 단순 요약을 넘어 출처(Citation) 기반의 근거를 제시함으로써 할루시네이션 문제를 해결합니다. 시장 트렌드 조사나 투자 인사이트 도출 등 실무에 즉시 투입 가능한 구조이며, 포크(Fork) 시 국내 커뮤니티 API를 추가 연동하거나 Slack/Discord 봇과 결합해 특정 키워드에 대한 &#x27;데일리 자동 브리핑 시스템&#x27;으로 확장하기에 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/alibaba/open-code-review" target="_blank">alibaba/open-code-review</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Go · ⭐ 53,841 · 🍴 4,436 · 오늘 +763 · 🛠 AI 협업 및 개발 자동화</div>
+                <div class="orig">원문: Secure, fast, efficient, battle-tested at Alibaba&#x27;s scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI &amp; Anthropic compatible.</div>
+                <div><span class="label">🎯 요약:</span> 알리바바 검증 Go 기반 하이브리드 리뷰 툴로 정적 분석과 LLM 에이전트 결합 및 라인 단위 보안·버그 정밀 피드백 제공함.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 환각 억제용 결정론적 파이프라인 결합 및 NPE, SQL injection 등 실질적 보안 규칙과 OpenAI·Anthropic 모델 호환성 지원함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>알리바바의 대규모 인프라에서 검증된 고성능 Go 엔진을 사용하여 결정론적 정적 분석과 LLM 에이전트를 하이브리드 방식으로 운영해 리뷰 정확도를 극대화했습니다. 단순한 코드 요약을 넘어 NPE(Null Pointer Exception), 스레드 안전성, SQL 인젝션 등 구체적인 보안 취약점을 라인 단위로 정밀하게 지적하며 OpenAI와 Anthropic API를 유연하게 연동할 수 있습니다. 사내 CI/CD 파이프라인에 통합해 자동화된 품질 게이트로 즉시 활용 가능하며, 특정 도메인 전용 코딩 컨벤션이나 사내 표준 라이브러리 검증 규칙을 추가한 커스텀 리뷰 에이전트로 확장하기 좋습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/Tencent/LoopForge" target="_blank">Tencent/LoopForge</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Go · ⭐ 3,372 · 🍴 456 · 오늘 +591 · 🛠 AI 협업 및 개발 자동화</div>
+                <div class="orig">원문: Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.</div>
+                <div><span class="label">🎯 요약:</span> CodeBuddy, Claude Code 등 코딩 에이전트를 스크립트 및 승인 게이트로 관리하는 Go 기반 셀프 호스팅 워크플로우 플랫폼임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI의 코드 생성에 휴먼 승인 단계를 도입해 안정성을 높이며, 로컬 및 클라우드 에이전트를 스크립트로 연동하는 오케스트레이션 방식임.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 AI 코딩 에이전트의 결과물을 무조건 수용하는 대신, 사용자가 직접 정의한 스크립트와 &#x27;휴먼 인 더 루프&#x27; 승인 절차를 통해 안정적인 개발 워크플로우를 구축하도록 돕습니다. Codex나 Claude Code 등 다양한 외부 API를 로컬 환경과 유기적으로 연결하여, 자동화된 PR 생성이나 리팩토링 과정을 전사적 보안 규정에 맞춰 통제할 수 있습니다. 실무에서는 CI/CD 파이프라인 내에서 AI가 제안한 패치를 엔지니어가 최종 검토 후 배포하는 자동화 모듈로 활용하기에 적합합니다. 포크 시에는 사내 보안 스캔 도구와 결합하거나, 여러 LLM 에이전트가 서로의 코드를 교차 검증하는 멀티 에이전트 시스템으로 확장해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/dream-num/univer" target="_blank">dream-num/univer</a> <span class="chg down">▼2</span> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 28,982 · 🍴 2,622 · 오늘 +1,774 · 📦 인프라 및 UI 솔루션</div>
+                <div class="orig">원문: Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.</div>
+                <div><span class="label">🎯 요약:</span> 문서, 시트, 슬라이드를 앱 내 구축하는 오피스 SDK. LLM 에이전트 연동 및 실시간 데이터 협업용 확장형 오픈소스 코어.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> SaaS 내 엑셀급 시트·문서 구현 비용 절감, LLM용 데이터 API 지원. 에이전트 친화적 설계로 AI 오피스 개발 최적화.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Univer는 고성능 캔버스 렌더링과 엑셀 호환 수식 엔진을 통해 수만 개의 셀 데이터를 웹에서 지연 없이 처리하며 실시간 공동 편집 기능을 제공합니다. 단순 뷰어를 넘어 LLM 에이전트가 API로 문서를 직접 읽고 데이터 시트를 수정할 수 있는 구조를 갖춰 AI 기반 업무 자동화 솔루션 구축에 매우 유리합니다. 실무에서는 사내 ERP 시스템에 복잡한 정산용 시트를 내장하거나, 프롬프트 입력만으로 데이터를 가공해 리포트를 생성하는 도구를 만들 때 활용하기 좋습니다. 프로젝트를 포크한다면 특정 도메인 전용 특화 함수(예: 생물정보학, 금융) 라이브러리를 추가하거나 서버리스 환경에서 작동하는 헤드리스 연산 엔진으로 변형해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/getarcaneapp/arcane" target="_blank">getarcaneapp/arcane</a> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">Go · ⭐ 9,399 · 🍴 516 · 오늘 +618 · 📦 인프라 및 UI 솔루션</div>
+                <div class="orig">원문: Modern Docker Management, Designed for Everyone</div>
+                <div><span class="label">🎯 요약:</span> Go 기반 Docker UI로 컨테이너, 볼륨, 네트워크를 단일 UI에서 직관적으로 통합 제어 및 모니터링함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> CLI의 불편함과 기존 GUI의 무거움을 Go 기반 경량 바이너리로 해결하고, 직관적 UX를 통해 Docker Compose 스택 관리의 편의성을 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>복잡한 Docker CLI 명령어나 Portainer 같은 무거운 도구 대신, 단일 Go 바이너리로 실행되는 경량 웹 인터페이스를 통해 컨테이너 생태계를 효율적으로 관리합니다. 실시간 로그 스트리밍, 리소스 사용량 통계, Docker Compose 스택 시각화 기능을 제공하여 소규모 서버나 홈랩 운영 시 가시성을 크게 높여줍니다. 이 프로젝트를 포크한다면 원격 서버 관리를 위한 SSH 에이전트 연동이나 LLM을 활용한 로그 분석 및 장애 자동 진단 기능을 추가해 지능형 Ops 도구로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/google-labs-code/stitch-skills" target="_blank">google-labs-code/stitch-skills</a> <span class="chg up">▲1</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 10,157 · 🍴 1,335 · 오늘 +350 · 🤖 AI 에이전트 및 스킬 프레임워크</div>
+                <div class="orig">원문: A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.</div>
+                <div><span class="label">🎯 요약:</span> Stitch MCP 기반 TS 에이전트 스킬 라이브러리. Gemini, Cursor, Claude Code 등 주요 코딩 AI 에이전트와 호환되는 오픈 표준 기능임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> MCP 기반 AI 에이전트 도구 통합 라이브러리. Google Labs 주도로 Cursor, Claude 등 이기종 상호운용성 확보가 핵심임.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 에이전트마다 제각각이었던 확장 기능을 MCP(Model Context Protocol) 오픈 표준으로 통합하여, 하나의 스킬을 Cursor, Claude Code, Gemini CLI 등에서 공통으로 사용하게 합니다. TypeScript 기반의 이 라이브러리는 파일 조작, API 연동 등 구체적인 실행 로직을 정의하며, Stitch MCP 서버를 통해 다양한 LLM 도구에 해당 기능을 주입하는 방식으로 작동합니다. 실무에서는 반복적인 인프라 설정이나 사내 개발 가이드 준수 여부 확인 등의 복잡한 워크플로우를 자동화하는 데 즉시 투입 가능합니다. 프로젝트를 포크하여 특정 산업군에 특화된 &#x27;보안 진단 스킬셋&#x27;이나 &#x27;클라우드 인프라 최적화 에이전트&#x27;용 MCP 서버 기능을 구축하는 비즈니스 아이디어로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/cursor/plugins" target="_blank">cursor/plugins</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">TypeScript · ⭐ 16,940 · 🍴 1,833 · 오늘 +201 · 🛠 AI 협업 및 개발 자동화</div>
+                <div class="orig">원문: Cursor plugin specification and official plugins</div>
+                <div><span class="label">🎯 요약:</span> AI IDE 커서 전용 플러그인 규격 및 공식 도구 모음으로 TS 기반 기능 확장과 LLM 워크플로우 고도화를 위한 인터페이스 제공</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 폭발적 점유율의 AI IDE 커서 확장성 극대화를 위해 MCP 연동 및 API 기반 에이전트급 도구 개발과 커스텀 워크플로우 니즈를 해결함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 대세 AI 에디터인 커서(Cursor) 내에서 LLM이 외부 도구 및 API와 상호작용하는 표준 규격과 공식 플러그인 예시를 제공합니다. 개발자는 이를 통해 단순 코드 생성을 넘어 데이터베이스 조회, Jira 연동, 사내 API 호출 등 복잡한 태스크를 AI 에이전트가 직접 수행하게 만들 수 있습니다. 실무적으로는 팀 내 특정 기술 스택이나 복잡한 CLI 명령어를 플러그인화하여 신규 입사자의 온보딩 비용을 낮추고 작업 속도를 높이는 데 즉시 활용 가능합니다. 프로젝트를 포크하여 사내 보안 규정을 준수하는 로컬 환경 전용 툴체인이나 특정 산업군에 최적화된 도메인 특화 AI 비서를 구축하는 아이디어로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Shell · ⭐ 319,435 · 🍴 28,485 · 오늘 +1,917 · 🤖 AI 에이전트 및 스킬 프레임워크</div>
+                <div class="orig">원문: An agentic skills framework &amp; software development methodology that works.</div>
+                <div><span class="label">🎯 요약:</span> LLM 에이전트의 소프트웨어 개발 역량을 극대화하는 모듈형 스킬 프레임워크 및 실전 워크플로우 중심의 개발 방법론 제공</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 모호한 LLM 지시 대신 검증된 스킬과 CLI 기반의 명확한 개발 체계를 구축해 에이전트의 실제 코드 구현 및 디버깅 신뢰도를 높여 주목받음</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 단순한 챗봇을 넘어 LLM 에이전트가 특정 도구를 실행하고 결과를 검증할 수 있도록 쉘 스크립트 기반의 재사용 가능한 &#x27;스킬&#x27; 단위로 기능을 모듈화합니다. 개발자는 복잡한 자연어 명령 대신 사전에 정의된 CLI 명령어 조합과 실행 환경을 통해 에이전트가 테스트 코드를 작성하거나 레거시 코드를 리팩토링하도록 정교하게 제어할 수 있습니다. 특히 대규모 코드베이스에서의 버그 수정이나 반복적인 API 연동 작업에 즉시 투입 가능한 실전형 방법론을 제시하며, 기업 내부의 고유한 SDK나 인프라 환경에 최적화된 맞춤형 스킬셋을 추가하여 자동화 범위를 확장하는 방식으로 활용하기 좋습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/ag-ui-protocol/ag-ui" target="_blank">ag-ui-protocol/ag-ui</a> <span class="chg down">▼9</span> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 20,076 · 🍴 2,071 · 오늘 +1,445 · 📦 인프라 및 UI 솔루션</div>
+                <div class="orig">원문: AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.</div>
+                <div><span class="label">🎯 요약:</span> LLM 에이전트와 사용자 간 상호작용을 표준화하여 웹 프론트엔드에 즉시 통합하는 오픈소스 UI 프로토콜임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 복잡한 LLM Tool Calling 및 실행 상태를 시각화하고 동적 UI 렌더링 과정을 TypeScript 기반으로 규격화함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM 에이전트의 복잡한 추론 및 도구 실행 과정을 프론트엔드에서 일관된 사용자 경험으로 변환하는 프로토콜 문제를 해결합니다. 에이전트의 상태 변화와 툴 호출(Tool Call) 결과를 실시간 스트리밍 방식으로 수신하여 React 등 최신 프레임워크에서 동적 UI로 렌더링하는 구조를 갖추고 있습니다. 실무에서는 실시간 데이터 대시보드 조작이나 복잡한 폼 입력을 보조하는 AI 비서 기능 구현에 즉시 투입할 수 있습니다. 포크 시에는 특정 산업군에 최적화된 UI 컴포넌트 세트를 구축하거나, Web3 트랜잭션 승인용 보안 인터페이스가 결합된 에이전트 전용 대시보드로 확장하는 아이디어를 제안합니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
