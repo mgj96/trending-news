@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-19)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> AI 에이전트의 실무 역량 강화와 MCP 표준 확산, 그리고 고성능 개발 환경 구축을 위한 도구들이 트렌드를 주도하고 있습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/cursor/plugins" target="_blank">cursor/plugins</a> <span class="chg up">▲7</span> <span class="meta">🔁 2일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 17,264 · 🍴 1,906 · 오늘 +314 · 🤖 AI 에이전트 및 생태계</div>
+                <div class="orig">원문: Cursor plugin specification and official plugins</div>
+                <div><span class="label">🎯 요약:</span> AI 네이티브 에디터 Cursor의 플러그인 표준 규격과 공식 구현체. MCP 기반 도구 연동 및 TS 활용 기능 확장용 OSS</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM의 외부 API/도구 호출을 돕는 MCP 규격 표준화 및 실전 사례. 단순 생성을 넘어 워크플로우 자동화용 개인화 AI 에이전트 구축 가이드로 주목.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 AI가 코드 작성 중 외부 API 호출이나 로컬 데이터 분석 등 구체적인 액션을 수행할 수 있도록 정의하는 플러그인 인프라입니다. MCP(Model Context Protocol)를 활용해 복잡한 사내 API나 도구를 Cursor 환경에 통합하여 단순한 텍스트 보조를 넘어선 &#x27;실행 가능한&#x27; 에이전트 환경을 구축합니다. 실무에서는 특정 라이브러리의 최신 문서나 DB 스키마를 LLM 컨텍스트로 실시간 주입하는 용도로 즉시 활용 가능합니다. 프로젝트를 포크한다면 보안이 중요한 사내망 전용 도구 연동이나 특정 프레임워크 최적화 디버깅 플러그인 제작에 유용합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/HKUDS/CLI-Anything" target="_blank">HKUDS/CLI-Anything</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 59,869 · 🍴 5,435 · 오늘 +389 · 🤖 AI 에이전트 및 생태계</div>
+                <div class="orig">원문: &quot;CLI-Anything: Making ALL Software Agent-Native&quot; -- CLI-Hub: https://clianything.cc/</div>
+                <div><span class="label">🎯 요약:</span> 모든 SW를 에이전트 친화적 CLI로 변환하여 LLM 연동 및 AI 에이전트 기반 업무 자동화를 구현하는 오픈소스 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 파편화된 GUI 대신 정형화된 CLI를 제공해 LLM의 도구 호출 정확도를 높이고 레거시 앱을 즉시 에이전트용 도구로 전환하는 확장성</div>
+                <div class="detail"><span class="label">📖 상세</span><br>LLM 에이전트가 복잡한 GUI 환경을 직접 조작하며 발생하는 오류를 최소화하기 위해, 기존 소프트웨어의 기능을 표준화된 CLI 명령어로 매핑하여 도구 조작 성공률을 극대화합니다. CLI-Hub를 통해 사전에 정의된 다양한 앱 어댑터를 공유하므로, 개발자는 복잡한 API 설계 없이도 터미널 기반의 지능형 워크플로우를 즉시 구축할 수 있습니다. 실무에서는 레거시 ERP나 특정 생산성 도구를 AI 에이전트와 연결하는 브릿지로 활용하거나, 텍스트 인터페이스만으로 다수의 소프트웨어를 제어하는 자동화 시스템 구축에 적합합니다. 프로젝트를 포크하여 특정 산업군 전용 소프트웨어를 에이전트화하는 도구 모음을 만들거나, 보안이 중요한 로컬 환경 전용 AI 제어 허브로 확장해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/mvanhorn/last30days-skill" target="_blank">mvanhorn/last30days-skill</a> <span class="chg down">▼1</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Python · ⭐ 70,128 · 🍴 6,251 · 오늘 +1,059 · 🤖 AI 에이전트 및 생태계</div>
+                <div class="orig">원문: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary</div>
+                <div><span class="label">🎯 요약:</span> Reddit, X, YouTube, HN 등 6개 플랫폼 데이터를 실시간 검색해 최근 30일간의 트렌드를 요약하는 AI 에이전트 스킬</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 파편화된 SNS 및 커뮤니티 데이터의 수집 한계를 극복하고 Polymarket 등 예측 시장 지표를 포함한 고밀도 RAG 파이프라인 구현</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 Reddit, X(트위터), YouTube, HN 등 실시간성이 중요한 데이터 소스에서 최근 30일간의 정보를 추출해 신뢰할 수 있는 요약을 생성합니다. 단순 웹 검색을 넘어 Polymarket의 예측 데이터까지 활용함으로써 시장의 기대치와 여론을 입체적으로 파악하는 독특한 RAG(검색 증강 생성) 시스템을 구축했습니다. 실무에서는 신규 기술 스택에 대한 개발자 커뮤니티의 실제 반응을 조사하거나, 제품 런칭 후 다각적인 피드백을 수집하는 자동화 파이프라인으로 활용하기 좋습니다. 이를 포크하여 특정 도메인의 전문 포럼 API를 추가 연동하거나, 수집된 데이터를 기반으로 매일 아침 맞춤형 기술 리포트를 자동 발행하는 Slack 봇으로 확장해 보기를 권장합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/getarcaneapp/arcane" target="_blank">getarcaneapp/arcane</a> <span class="chg up">▲2</span> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Go · ⭐ 9,866 · 🍴 568 · 오늘 +547 · 🛠️ 개발 인프라 및 도구</div>
+                <div class="orig">원문: Modern Docker Management, Designed for Everyone</div>
+                <div><span class="label">🎯 요약:</span> Go 기반의 세련된 UI를 갖춘 오픈소스 Docker 관리 플랫폼으로 컨테이너, 이미지, 네트워크 설정을 웹 GUI에서 통합 제어함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 복잡한 CLI 대신 직관적 GUI와 실시간 로그를 제공하며 저사양 환경 최적화 및 로컬 기반 데이터 처리로 보안 강화한 Portainer 대안임</div>
+                <div class="detail"><span class="label">📖 상세</span><br>복잡한 터미널 명령어 없이도 브라우저에서 Docker 스택을 한눈에 파악하고, 원클릭으로 컨테이너 배포 및 리소스 상태를 모니터링할 수 있는 환경을 구축합니다. Go 언어의 높은 성능을 바탕으로 가볍게 구동되며, 실시간 스트리밍 로그와 터미널 액세스 기능을 통해 별도의 SSH 접속 없이도 컨테이너 내부 문제를 즉각 진단할 수 있습니다. 개인 홈서버 관리나 소규모 팀의 내부 배포 확인용으로 적합하며, 포크 시 특정 클라우드 API와 연동하여 멀티 호스트 클러스터 관리 도구로 확장하거나 CI/CD 파이프라인 시각화 모듈을 추가해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/NVIDIA/SkillEvaluator" target="_blank">NVIDIA/SkillEvaluator</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 3,790 · 🍴 521 · 오늘 +312 · 🤖 AI 에이전트 및 생태계</div>
+                <div class="orig">원문: Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.</div>
+                <div><span class="label">🎯 요약:</span> 에이전트 스킬 및 플러그인 품질을 측정하며 합성 데이터 생성과 의미 중복 감지를 지원하는 NVIDIA 기반 다계층 성능 평가 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 스킬이 에이전트 행동에 미치는 영향을 실시간 검증하고 품질 게이트와 합성 데이터로 평가 파이프라인 자동화 및 플러그인 중복 문제를 해결함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>AI 에이전트가 고도화됨에 따라 수많은 플러그인과 스킬이 실제 추론에 미치는 부작용을 사전에 파악하는 것이 중요해졌으며, 본 프로젝트는 이를 위해 품질 게이트와 의미론적 중복 감지 기능을 제공합니다. 합성 데이터 생성 도구를 내장해 부족한 평가 데이터셋을 보강하고, 라이브 에이전트 평가를 통해 특정 스킬 추가가 전체 동작에 미치는 영향을 정밀하게 수치화할 수 있습니다. 엔터프라이즈급 AI 서비스 배포 전 플러그인 간의 충돌이나 성능 저하를 방지하는 실무 검증 용도로 적합합니다. 이를 포크하여 특정 산업군(금융, 의료 등)에 특화된 스킬 벤치마크 시스템을 구축하거나, LLM 옵스(LLMOps)의 CI/CD 파이프라인 내 자동 승인 도구로 확장 개발하기에 유용합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/nvm-sh/nvm" target="_blank">nvm-sh/nvm</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Shell · ⭐ 96,165 · 🍴 10,781 · 오늘 +237 · 🛠️ 개발 인프라 및 도구</div>
+                <div class="orig">원문: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.</div>
+                <div><span class="label">🎯 요약:</span> POSIX 규격 Bash 스크립트 기반으로 프로젝트별 다양한 Node.js 버전을 손쉽게 설치 및 전환 관리하는 CLI 도구임.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 프로젝트마다 상이한 Node.js 버전 충돌 문제를 .nvmrc 설정과 단일 명령어로 즉각 해결하고 최신 LTS 버전을 손쉽게 관리함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 도구는 환경 변수 PATH를 동적으로 변경하여 시스템 전역 설정의 수정 없이도 여러 버전의 Node.js 및 npm 패키지를 독립적으로 운영하게 합니다. 실무에서는 서로 다른 엔진 버전을 요구하는 레거시와 신규 프로젝트를 병행 개발할 때 필수적이며, .nvmrc 파일을 통해 팀 전체의 런타임 환경을 일관되게 동기화합니다. 오픈소스 포크 시에는 특정 CPU 아키텍처용 최적화 빌드를 우선 배포하도록 커스텀하거나, Rust 혹은 Go를 이용해 쉘 실행 속도를 개선한 네이티브 바이너리 버전으로의 확장을 고려할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/astral-sh/uv" target="_blank">astral-sh/uv</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Rust · ⭐ 92,264 · 🍴 3,924 · 오늘 +258 · 🛠️ 개발 인프라 및 도구</div>
+                <div class="orig">원문: An extremely fast Python package and project manager, written in Rust.</div>
+                <div><span class="label">🎯 요약:</span> Rust 기반 초고속 Python 패키지 및 프로젝트 관리 툴로 pip, pip-tools, virtualenv 기능을 통합 대체하는 CLI 솔루션</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Ruff 제작사의 차기작으로 기존 pip 대비 10~100배 빠른 속도 및 글로벌 캐시 기반 의존성 해결로 CI/CD 및 로컬 개발 효율 극대화</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Python 생태계의 고질적인 문제인 복잡한 의존성 관리와 느린 설치 속도를 Rust의 고성능 최적화로 해결하며, 기존 도구 대비 압도적인 패키지 분석 및 설치 성능을 제공합니다. 별도의 Python 환경 없이도 독립형 바이너리로 작동하여 가상 환경 구축부터 락파일 생성까지 한 번에 처리할 수 있어 CI/CD 파이프라인의 빌드 시간을 획기적으로 단축합니다. 실무에서는 대규모 모노레포의 환경 구성이나 머신러닝 라이브러리 의존성 해결에 유용하며, 이를 포크하여 사내 보안 규정을 준수하는 전용 패키지 검증 툴이나 특정 아키텍처에 최적화된 배포 관리자로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/google-research/paper-orchestra" target="_blank">google-research/paper-orchestra</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">Python · ⭐ 4,394 · 🍴 543 · 오늘 +1,524 · 🤖 AI 에이전트 및 생태계</div>
+                <div class="orig">원문: PaperOrchestra is a multi-agent framework for automated AI research paper writing.</div>
+                <div><span class="label">🎯 요약:</span> 구글 리서치 공개, 멀티 에이전트 기반 AI 논문 자동 작성 프레임워크로 주제 선정, 데이터 분석, 초안 작성 및 리뷰 전 과정 수행용</div>
+                <div><span class="label">🔥 흥미 포인트:</span> LLM 단일 생성을 넘어 에이전트 간 협업 구조로 논리적 일관성 확보, 참고문헌 인용 및 데이터 시각화 자동화로 연구 효율 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프레임워크는 연구원, 비평가, 작성자 등 역할을 분담한 에이전트들이 논리적 흐름을 유지하며 학술적 완성도를 높이는 구조입니다. 단순 텍스트 생성이 아닌 실제 데이터와 연동한 도표 생성 및 실시간 문헌 조사를 수행하여 논문의 객관적 신뢰성을 확보합니다. 실무에서는 사내 기술 백서나 R&amp;D 보고서의 초안을 신속하게 구축하는 데 활용할 수 있습니다. 이를 포크하여 특허 명세서 자동 작성기나 기술 블로그 시리즈 생성을 위한 맞춤형 워크플로우로 확장하는 아이디어가 유망합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/google-labs-code/stitch-skills" target="_blank">google-labs-code/stitch-skills</a> <span class="chg down">▼2</span> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 10,441 · 🍴 1,369 · 오늘 +365 · 🤖 AI 에이전트 및 생태계</div>
+                <div class="orig">원문: A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.</div>
+                <div><span class="label">🎯 요약:</span> MCP 서버용 스킬 셋으로 Cursor, Claude Code 등 AI 에이전트 기능을 확장하는 오픈 표준 기반 TypeScript 도구 라이브러리</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 파편화된 AI 에이전트 생태계에서 MCP 표준을 채택해 단일 스킬 구현으로 여러 코딩 IDE 및 CLI 도구에 즉시 기능 배포 및 통합 지원함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 라이브러리는 Anthropic이 제안한 Model Context Protocol(MCP)을 준수하여, 한 번의 스킬 개발로 Cursor, Claude Code, Gemini CLI 등 다양한 AI 에이전트에서 동일한 기능을 수행하도록 돕습니다. TypeScript 기반으로 작성되어 기존 웹 생태계 라이브러리와의 결합이 용이하며, Stitch MCP 서버를 미들웨어로 활용해 에이전트가 로컬 파일 시스템이나 외부 API에 안전하게 접근할 수 있는 통로를 제공합니다. 실무에서는 프로젝트별 맞춤형 코드 리뷰 봇을 구축하거나 팀 내 공통 인프라 제어 명령을 AI가 직접 수행하게 만드는 워크플로우 자동화에 즉시 투입할 수 있습니다. 포크 시 특정 도메인(예: AWS 관리 전용)에 특화된 스킬을 추가하거나 사내 보안 정책을 준수하는 전용 MCP 서버를 구축하여 보안이 강화된 독립적 AI 코딩 환경을 조성하는 아이디어로 확장 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/sveltejs/svelte" target="_blank">sveltejs/svelte</a> <span class="chg new">🆕 NEW</span></div>
+                <div class="meta">JavaScript · ⭐ 89,649 · 🍴 6,208 · 오늘 +692 · 🌐 프론트엔드 프레임워크</div>
+                <div class="orig">원문: web development for the rest of us</div>
+                <div><span class="label">🎯 요약:</span> 빌드 단계에서 바닐라 JS로 컴파일하는 가상 DOM 없는 UI 프레임워크. 런타임 오버헤드 제거로 메모리 효율 및 실행 속도를 극대화한 개발 도구.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Runes 도입으로 상태 관리를 최적화한 Svelte 5 업데이트 기대감. 가상 DOM 없이 수만 개의 노드를 신속히 처리하는 성능 및 직관적 API를 통한 낮은 학습 곡선.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>가상 DOM(Virtual DOM)의 런타임 비교 연산 대신, 빌드 시점에 상태 변경 코드를 직접 주입하는 컴파일러 기반 방식을 채택해 번들 크기와 메모리 사용량을 대폭 줄였습니다. 최근 공개된 Svelte 5의 &#x27;Runes&#x27;는 Signal API를 활용해 복잡한 컴포넌트 간의 반응성 전달을 더욱 명확하고 효율적으로 관리할 수 있게 돕습니다. 저사양 기기나 임베디드 웹 뷰처럼 자원이 제한된 환경에서 탁월한 성능을 발휘하며, 프로젝트를 포크하여 특정 도메인 전용 컴파일러나 WebGL 기반의 고성능 그래픽 라이브러리로 확장하는 아이디어가 가능합니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
