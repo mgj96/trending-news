@@ -41,6 +41,8 @@ permissions:
 jobs:
   run-report:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul # 러너 기본값은 UTC라 새벽 실행 시 리포트 날짜가 하루 전으로 찍힌다
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

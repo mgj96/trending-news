@@ -51,7 +51,9 @@ GitHub Actions가 `outputs` 폴더에 HTML 파일을 생성하고 커밋할 수 
 
 ## 🚀 실행 방법 (Usage)
 
-* **자동 실행 (Scheduled):** 설정된 Cron 표기법(`0 0 * * *`)에 따라 매일 한국 시간 오전 9시에 자동으로 실행됩니다.
+* **자동 실행 (Scheduled):** GitHub schedule은 몇 시간씩 밀리므로, 외부 [cron-job.org](https://cron-job.org)가 매일 새벽 2시(KST)에 아래 API를 호출해 실행합니다.
+  * `POST https://api.github.com/repos/<owner>/trending-news/actions/workflows/daily_report.yml/dispatches`, body `{"ref":"main"}`
+  * 헤더: `Authorization: Bearer <Actions: Read and write 권한만 준 fine-grained 토큰>`, `Accept: application/vnd.github+json`
 * **수동 실행 (Manual):** 1. 레포지토리의 **Actions** 탭으로 이동합니다.
   2. 왼쪽 워크플로우 목록에서 `Daily GitHub Trending Report`를 선택합니다.
   3. 우측의 파란색 **Run workflow** 버튼을 클릭하여 즉시 스크립트를 테스트할 수 있습니다.

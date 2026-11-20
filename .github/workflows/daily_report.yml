@@ -3,8 +3,8 @@ name: GitHub Trending AI Report
 # 이 워크플로우는 "언제 돌릴지"(트리거)만 담당하고,
 # 실제 실행 로직은 _python-report.yml(재사용 워크플로우)에 위임한다.
 on:
-  schedule:
-    - cron: '13 22 * * *' # 매일 한국시간 오전 7시 13분에 실행 (서버 지연 방지)
+  # 매일 새벽 2시(KST)에 외부 cron-job.org가 workflow_dispatch API로 실행한다.
+  # (GitHub schedule은 4~6시간씩 밀려 출근 전에 끝나지 않아 쓰지 않는다)
   workflow_dispatch: # 수동으로 즉시 실행해 볼 수 있는 버튼 활성화
 
 # caller가 부여하는 권한이 called 워크플로우 권한의 상한이 된다.
