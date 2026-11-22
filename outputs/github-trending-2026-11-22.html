@@ -1,0 +1,123 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 20px; color: #333; background-color: #f9f9f9; }
+            .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid #e1e4e8; padding: 30px; border-radius: 12px; }
+            h1 { color: #24292e; border-bottom: 2px solid #eaecef; padding-bottom: 10px; margin-top: 0; }
+            a { color: #0366d6; text-decoration: none; }
+            .meta { color: #57606a; font-size: 0.85em; font-weight: normal; }
+            .overview { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+            .chg { white-space: nowrap; font-weight: bold; }
+            .chg.new { color: #9a6700; }
+            .chg.up { color: #1a7f37; }
+            .chg.down { color: #cf222e; }
+            .item { padding: 18px 0; border-bottom: 1px solid #eaecef; }
+            .item-title { font-weight: bold; font-size: 1.15em; }
+            .orig { color: #888; font-size: 0.82em; font-style: italic; margin: 4px 0 8px; }
+            .label { font-weight: bold; }
+            .detail { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin-top: 8px; font-size: 0.95em; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📖 GitHub Trending 상세 리포트 (2026-11-22)</h1>
+    
+            <div class="overview">💬 <strong>오늘의 흐름:</strong> 실무형 AI 에이전트 확장 도구와 소형 LLM 인프라 및 고성능 서버 기술이 주목받고 있습니다.</div>
+        
+            <div class="item">
+                <div class="item-title">#1 <a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank">elementalsouls/Claude-BugHunter</a> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Python · ⭐ 16,146 · 🍴 1,834 · 오늘 +1,803 · 🤖 AI 에이전트 및 확장</div>
+                <div class="orig">원문: A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.</div>
+                <div><span class="label">🎯 요약:</span> Claude Code용 82개 기술, 15개 명령, 681개 취약점 패턴 기반 자동화 보안 감사 및 버그 헌팅 스킬셋</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Claude AI 추론 성능을 통한 기업용 인프라 공격 매트릭스 분석 및 681개 실제 취약점 사례 기반 레드팀 활동 자동화</div>
+                <div class="detail"><span class="label">📖 상세</span><br>24종의 핵심 취약점 분류와 681개의 실제 리포트 패턴을 활용해 Claude Code가 보안 전문가처럼 사고하도록 돕는 강력한 스킬 라이브러리입니다. 기업용 ID 관리(Identity)와 복잡한 인프라 공격 매트릭스를 지원하여, 단순 코드 리뷰를 넘어 실제 침투 테스트와 레드팀의 외부 공격 시나리오 시뮬레이션을 자동화합니다. 실무에서는 배포 전 CI/CD 파이프라인에 통합해 보안 결함을 전수 조사하거나, 특정 도메인(금융, 의료 등) 전용 취약점 패턴을 추가 학습시킨 사내 특화 보안 에이전트로 포크하여 활용할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#2 <a href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Shell · ⭐ 323,767 · 🍴 28,720 · 오늘 +883 · 🤖 AI 에이전트 및 확장</div>
+                <div class="orig">원문: An agentic skills framework &amp; software development methodology that works.</div>
+                <div><span class="label">🎯 요약:</span> LLM 에이전트용 실행 기술 표준화와 CLI 기반 워크플로우를 결합한 실무 중심 오픈소스 개발 방법론 및 에이전틱 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 단순 코드 생성을 넘어 에이전트의 도구 사용 및 시스템 조작을 체계화하며 추상적 프롬프트 한계를 Shell 기반 기술 구현으로 직접 해결함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>에이전트가 복잡한 개발 과업을 수행할 때 발생하는 일관성 부족 문제를 해결하기 위해, Shell 스크립트로 정의된 구체적인 &#x27;기술(Skills)&#x27;을 에이전트에게 부여하는 구조입니다. CLI 환경에서 에이전트가 파일 조작, 테스트 실행, Git 관리 등을 직접 수행하도록 설계되어 단순 텍스트 기반 제안보다 훨씬 높은 신뢰성을 보장합니다. 실무에서는 반복적인 리팩토링이나 CI/CD 파이프라인 최적화 업무에 즉시 투입할 수 있으며, 포크 시 특정 클라우드 인프라(AWS/GCP) 제어 전용 스킬셋을 추가하여 맞춤형 운영 에이전트로 확장하기 용이합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#3 <a href="https://github.com/HKUDS/CLI-Anything" target="_blank">HKUDS/CLI-Anything</a> <span class="meta">🔁 4일 연속</span></div>
+                <div class="meta">Python · ⭐ 62,106 · 🍴 5,633 · 오늘 +769 · 🤖 AI 에이전트 및 확장</div>
+                <div class="orig">원문: &quot;CLI-Anything: Making ALL Software Agent-Native&quot; -- CLI-Hub: https://clianything.cc/</div>
+                <div><span class="label">🎯 요약:</span> 기존 GUI 소프트웨어를 에이전트용 CLI로 변환해 LLM이 모든 앱을 API 없이 직접 제어하게 돕는 오픈소스 프레임워크</div>
+                <div><span class="label">🔥 흥미 포인트:</span> API 없는 레거시 앱을 비전 인식 기반 CLI로 변환해 LLM 에이전트의 범용 조작성을 확보한 점과 100개 이상의 기구축 CLI-Hub 생태계가 강점</div>
+                <div class="detail"><span class="label">📖 상세</span><br>본 프로젝트는 API가 제공되지 않는 레거시 GUI 소프트웨어를 LLM 에이전트가 조작할 수 있는 표준 CLI 인터페이스로 래핑하여 &#x27;Agent-Native&#x27; 환경을 구축합니다. 화면상의 시각적 요소를 인식하여 구조화된 명령어로 매핑하는 기술을 통해 포토샵이나 전문 CAD 툴 같은 복잡한 도구도 텍스트만으로 제어할 수 있습니다. 실무에서는 반복적인 디자인 작업이나 데이터 추출이 어려운 구형 ERP 시스템의 자동화 파이프라인 구축에 즉시 투입 가능합니다. 이를 포크하여 특정 산업군 전용 에이전트 허브를 구축하거나, 모바일 앱 환경에 최적화된 비전-CLI 브릿지 엔진으로 확장하는 아이디어가 유망합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#4 <a href="https://github.com/jingyaogong/minimind" target="_blank">jingyaogong/minimind</a> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">Python · ⭐ 68,179 · 🍴 8,913 · 오늘 +488 · 🏗️ AI 모델 및 인프라</div>
+                <div class="orig">원문: 🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.</div>
+                <div><span class="label">🎯 요약:</span> Python 기반 64M 규모 소형 LLM을 밑바닥부터 2시간 내 학습 가능한 초경량 모델 빌드 프레임워크 및 데이터셋</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 거대 언어 모델의 복잡한 구조를 64M 파라미터로 압축해 일반 GPU 환경에서 단 2시간 만에 전체 학습 과정을 체험 및 검증 가능한 점</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 데이터 전처리부터 토크나이저 훈련, SFT 및 RLHF까지 LLM 구축의 전 과정을 64M 파라미터 규모로 축소하여 일반 사용자용 GPU에서 재현합니다. Llama 3와 유사한 최신 아키텍처를 채택해 적은 자원으로도 언어 모델의 내부 동작 원리를 명확히 파악하고 실험할 수 있는 환경을 제공합니다. 저사양 온디바이스(On-device) 환경에 특화된 극소형 모델 개발이나, 새로운 학습 알고리즘을 빠르게 테스트하는 연구용 샌드박스로 활용하기에 최적화되어 있습니다. 이를 포크하여 특정 도메인의 소규모 말뭉치를 학습시킨 임베디드 장치용 AI 비서나 맞춤형 자연어 처리 인터페이스를 독립적으로 구현해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#5 <a href="https://github.com/cursor/plugins" target="_blank">cursor/plugins</a> <span class="meta">🔁 5일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 18,122 · 🍴 1,979 · 오늘 +260 · 🤖 AI 에이전트 및 확장</div>
+                <div class="orig">원문: Cursor plugin specification and official plugins</div>
+                <div><span class="label">🎯 요약:</span> Cursor 플러그인 규격 및 TypeScript 기반 LLM 기능 확장과 외부 API 연동을 지원하는 공식 도구 모음</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Cursor LLM 기능을 확장해 문서 검색, 터미널 제어 등 외부 도구를 특정 프로젝트 스택에 맞춰 정밀하게 제어하려는 커스터마이징 수요를 해결함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>Cursor는 현재 가장 주목받는 AI 코드 에디터로, 이 프로젝트는 LLM이 사용자의 로컬 환경이나 외부 API를 직접 호출할 수 있게 돕는 플러그인 인터페이스 스키마를 정의합니다. TypeScript를 통해 AI에게 특정 도구의 사용법을 정의해 주면, AI가 문서 검색, 코드 실행, 파일 시스템 조작 등 복잡한 실무 워크플로우를 직접 수행할 수 있습니다. 실무에서는 사내 전용 라이브러리 가이드 연동이나 CLI 기반의 클라우드 인프라 제어 자동화에 즉시 활용 가능합니다. 포크 시 보안 샌드박스 내 코드 실행기나 Jira/Slack 등 협업 툴과 연동된 에이전트 기능을 독자적으로 구축하는 아이디어로 확장할 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#6 <a href="https://github.com/firecrawl/firecrawl" target="_blank">firecrawl/firecrawl</a> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">TypeScript · ⭐ 206,256 · 🍴 10,784 · 오늘 +1,006 · 🏗️ AI 모델 및 인프라</div>
+                <div class="orig">원문: Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.</div>
+                <div><span class="label">🎯 요약:</span> 550개 이상 소스를 API로 통합해 LLM용 지식을 검색·스크래핑해 정형화하는 TS 기반 지식 인프라</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 웹 스크래핑 노가다를 제거하고 550개 이상 소스에서 정형 데이터를 추출해 LLM 지식 구축 및 RAG 파이프라인 효율을 극대화함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 LLM 에이전트가 웹상의 방대한 정보를 실시간으로 활용할 수 있도록 550개 이상의 데이터 소스를 표준화된 포맷으로 변환하는 통합 API 솔루션입니다. 복잡한 크롤링 로직이나 사이트별 파싱 규칙 없이 단일 인터페이스로 최신 정보를 검색하고 정형화된 데이터로 추출해 RAG 시스템에 즉시 투입할 수 있습니다. 실무에서는 시장 조사 자동화 봇이나 특정 도메인의 실시간 지식 베이스를 구축하는 데이터 파이프라인의 핵심 모듈로 활용하기 좋습니다. 이 프로젝트를 포크한다면 산업 특화 커넥터를 추가하거나 추출 데이터를 Vector DB로 직접 인덱싱하는 자동화 기능을 결합한 SaaS를 구상해볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#7 <a href="https://github.com/nginx/nginx" target="_blank">nginx/nginx</a> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">C · ⭐ 32,743 · 🍴 8,374 · 오늘 +189 · 🌐 서버 및 디자인 도구</div>
+                <div class="orig">원문: The official NGINX Open Source repository.</div>
+                <div><span class="label">🎯 요약:</span> 이벤트 기반 비동기 구조의 고성능 HTTP 서버 및 리버스 프록시, 로드 밸런싱 기능을 제공하는 C 기반 공식 OSS.</div>
+                <div><span class="label">🔥 흥미 포인트:</span> Mercurial에서 GitHub으로 환경 이전 후 PR 기반 기여와 CI/CD 편의성을 높여 커뮤니티 활성화를 본격화함.</div>
+                <div class="detail"><span class="label">📖 상세</span><br>NGINX는 비동기 이벤트 기반 아키텍처를 통해 적은 메모리 점유율로 수만 건의 동시 연결을 처리하며, 현대 백엔드 인프라의 핵심인 리버스 프록시와 API Gateway 역할을 수행합니다. 최근 소스 제어 시스템을 Mercurial에서 GitHub으로 완전히 전환하며 전 세계 개발자들의 PR을 통한 오픈소스 생태계 참여 문턱을 획기적으로 낮췄습니다. 실무에서는 대규모 트래픽 분산을 위한 L7 로드 밸런서나 K8s Ingress Controller로 주로 활용되며, Fork 시에는 NJS나 Wasm을 통합하여 엣지 단에서 실행되는 커스텀 필터 모듈을 직접 구현해 볼 수 있습니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#8 <a href="https://github.com/openvinotoolkit/openvino" target="_blank">openvinotoolkit/openvino</a> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">C++ · ⭐ 11,942 · 🍴 3,651 · 오늘 +200 · 🏗️ AI 모델 및 인프라</div>
+                <div class="orig">원문: OpenVINO™ is an open source toolkit for optimizing and deploying AI inference</div>
+                <div><span class="label">🎯 요약:</span> 인텔 기반 CPU, GPU, NPU에서 AI 모델을 최적화 및 배포하는 고성능 추론 엔진으로 LLM 및 비전 모델 가속 지원함</div>
+                <div><span class="label">🔥 흥미 포인트:</span> AI PC 시대에 맞춰 NPU 활용도를 극대화하고 Llama 3, Phi-3 등 최신 LLM을 로컬 환경에서 저지연으로 구동하는 최적화 기술 지원함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>PyTorch나 TensorFlow 모델을 IR(Intermediate Representation)로 변환해 하드웨어 효율을 극대화하며, 양자화를 통해 모델 크기를 줄여 저사양 PC에서도 원활한 추론을 가능케 합니다. 스마트 팩토리의 실시간 불량 검출이나 의료 기기 내 AI 진단 등 엣지 디바이스 성능이 중요한 실무 현장에서 주로 활용됩니다. 최근 공개된 GenAI API를 활용해 Llama 3와 같은 생성형 AI를 로컬 NPU에서 구동하는 커스텀 챗봇 서비스나 개인용 AI 비서 프로젝트로 확장하기에 최적입니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#9 <a href="https://github.com/cathrynlavery/diagram-design" target="_blank">cathrynlavery/diagram-design</a> <span class="meta">🔁 3일 연속</span></div>
+                <div class="meta">HTML · ⭐ 69,825 · 🍴 4,686 · 오늘 +583 · 🌐 서버 및 디자인 도구</div>
+                <div class="orig">원문: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.</div>
+                <div><span class="label">🎯 요약:</span> Claude Code, Copilot 등 AI 도구용 디자인 45종을 포함한 외부 의존성 없는 HTML/SVG 기반의 편집용 고품질 다이어그램 템플릿 모음</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 천편일률적인 Mermaid 차트 탈피 및 AI 워크플로우 시각화에 최적화된 45종의 편집용 디자인과 순수 SVG 기반의 고해상도 커스텀 환경 제공함</div>
+                <div class="detail"><span class="label">📖 상세</span><br>이 프로젝트는 가독성이 낮은 기존 자동 생성 다이어그램 라이브러리의 한계를 넘어, Claude Code와 Cursor 등 최신 AI 도구의 동작 원리를 고품질로 시각화하는 45가지 편집용 레이아웃을 제공합니다. 외부 라이브러리나 불필요한 그림자 효과 없이 순수 HTML과 SVG만 사용하여 로딩이 빠르고 기술 문서나 블로그에 즉시 삽입 가능한 정갈한 UI가 특징입니다. 실무에서는 아키텍처 설계도나 복잡한 LLM 에이전트의 워크플로우를 설명하는 용도로 활용하기 좋으며, 이를 기반으로 데이터 입력 시 SVG를 자동 생성하는 CLI 툴이나 피그마(Figma) 플러그인으로 확장하는 아이디어가 가능합니다.</div>
+            </div>
+        
+            <div class="item">
+                <div class="item-title">#10 <a href="https://github.com/mvanhorn/last30days-skill" target="_blank">mvanhorn/last30days-skill</a> <span class="meta">🔁 6일 연속</span></div>
+                <div class="meta">Python · ⭐ 72,035 · 🍴 6,375 · 오늘 +560 · 🤖 AI 에이전트 및 확장</div>
+                <div class="orig">원문: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary</div>
+                <div><span class="label">🎯 요약:</span> Reddit, X, YouTube, HN 기반 AI 리서치 도구. 최근 30일 데이터를 교차 분석해 주제별 요약 리포트를 자동 생성하는 파이썬 기반 스킬</div>
+                <div><span class="label">🔥 흥미 포인트:</span> 단순 검색 나열 대신 예측 시장 및 소셜 데이터 중심 교차 분석 수행. LLM 환각 방지를 위한 근거 기반 실시간 트렌드 도출 및 요약 성능 우수</div>
+                <div class="detail"><span class="label">📖 상세</span><br>기존 검색 엔진이 놓치기 쉬운 Reddit, X, HN 등 커뮤니티의 실시간 여론과 Polymarket의 예측 지표를 결합해 정보의 입체감을 높인 것이 특징입니다. 각 데이터 소스에서 수집한 정보를 LLM이 교차 검증하여 근거가 확실한(Grounded) 요약을 생성하며, 답변마다 인용 출처를 명확히 표기해 신뢰성을 확보했습니다. 실무에서는 투자 리서치나 기술 트렌드 모니터링 자동화에 활용 가능하며, 특정 도메인(보안, 가상자산 등)의 데이터 소스를 추가해 전문적인 인사이트 도출용 에이전트로 확장하기 좋습니다.</div>
+            </div>
+        
+            <p style="text-align: center; color: #888; font-size: 0.8em; margin-top: 30px;">본 리포트는 GitHub Actions와 AI API를 통해 자동 생성되었습니다.</p>
+        </div>
+    </body>
+    </html>
+    
